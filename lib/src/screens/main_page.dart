@@ -1,3 +1,5 @@
+import 'dart:ui' as prefix0;
+
 import 'package:flutter/material.dart';
 
 import 'package:frideos/frideos.dart';
@@ -18,7 +20,7 @@ class MainPage extends StatelessWidget {
           streamed: appState.categoriesStream,
           noDataChild: const CircularProgressIndicator(),
           builder: (context, snapshot) {
-            final categories = snapshot.data;
+
 
             return Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -59,56 +61,40 @@ class MainPage extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 40.0,
                           fontWeight: FontWeight.w700,
+                          fontFamily: 'Raleway' ,
                           color: Colors.white,
                           letterSpacing: 4.0,
                           shadows: [
-                            Shadow(
-                              blurRadius: 8.0,
-                              color: Colors.lightBlueAccent,
-                              offset: Offset(3.0, 4.5),
-                            ),
+
                           ],
                         ),
                       ),
+
+
                     ),
-                    const Text(
-                      'Choose a category:',
-                      style: TextStyle(
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                        shadows: [
-                          Shadow(
-                            blurRadius: 14.0,
-                            color: Colors.lightBlueAccent,
-                          ),
-                        ],
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 28.0, vertical: 1.0),
+
+                      child: const Text(
+                        'GCSE Revision App',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.w700,
+                          fontFamily: 'Raleway' ,
+                          color: Colors.white,
+                          letterSpacing: 4.0,
+                          shadows: [
+
+                          ],
+                        ),
+
+
                       ),
+
+
                     ),
-                    ValueBuilder<Category>(
-                      streamed: appState.categoryChosen,
-                      builder: (context, snapshotCategory) =>
-                          DropdownButton<Category>(
-                            isExpanded: true,
-                            value: snapshotCategory.data,
-                            onChanged: appState.setCategory,
-                            items: categories
-                                .map<DropdownMenuItem<Category>>(
-                                  (value) => DropdownMenuItem<Category>(
-                                        value: value,
-                                        child: Text(
-                                          value.name,
-                                          style: const TextStyle(
-                                            fontSize: 16.0,
-                                            fontWeight: FontWeight.w600,
-                                            color: Colors.orange,
-                                          ),
-                                        ),
-                                      ),
-                                )
-                                .toList(),
-                          ),
-                    ),
+
                   ],
                 ),
                 GestureDetector(

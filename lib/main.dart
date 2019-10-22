@@ -29,7 +29,7 @@ class MaterialPage extends StatelessWidget {
         streamed: theme,
         builder: (context, snapshot) {
           return MaterialApp(
-              title: 'Trivia example',
+              title: 'Animal Farm GCSE Revision App',
               theme: _buildThemeData(snapshot.data),
               home: HomePage());
         });

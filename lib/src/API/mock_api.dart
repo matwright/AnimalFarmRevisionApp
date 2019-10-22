@@ -8,6 +8,12 @@ import '../models/category.dart';
 import '../models/question.dart';
 
 import 'api_interface.dart';
+import 'dart:async' show Future;
+import 'package:flutter/services.dart' show rootBundle;
+
+Future<String> loadAsset() async {
+  return await rootBundle.loadString('assets/questions.json');
+}
 
 class MockAPI implements QuestionsAPI {
   @override
@@ -27,12 +33,13 @@ class MockAPI implements QuestionsAPI {
       Category category,
       QuestionDifficulty difficulty,
       QuestionType type}) async {
-    const json =
-        "{\"response_code\":0,\"results\":[{\"type\":\"multiple\",\"difficulty\":\"easy\",\"question\":\"Who was the highest ranking animal before the return of the humans?\",\"correct_answer\":\"Napolean\",\"incorrect_answers\":[\"Snowball\",\"Squealer\",\"Trotsky\"]}]}";
+
+
+     var json=await rootBundle.loadString('assets/questions.json');
 
     final jsonResponse = convert.jsonDecode(json);
 
-    final result = (jsonResponse['results'] as List)
+    final result = (jsonResponse as List)
         .map((question) => QuestionModel.fromJson(question));
 
     questions.value =

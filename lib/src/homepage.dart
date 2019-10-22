@@ -1,3 +1,4 @@
+import 'package:animal_farm/src/screens/rewards_page.dart';
 import 'package:flutter/material.dart';
 
 import 'package:frideos/frideos.dart';
@@ -11,13 +12,40 @@ import 'screens/trivia_page.dart';
 
 /// Styles
 const textStyle = TextStyle(color: Colors.blueGrey);
-const iconColor = Colors.blueGrey;
+const iconColor = Colors.green;
 
 class HomePage extends StatelessWidget {
+
+  Text _switchTitle(AppTab tab, AppState appState) {
+    switch (tab) {
+      case AppTab.main:
+        return Text('Home');
+        break;
+      case AppTab.rewards:
+        return Text('Your Awards');
+        break;
+      case AppTab.trivia:
+        return Text('Revision');
+        break;
+      case AppTab.summary:
+        return Text('Summary');
+        break;
+      case AppTab.summary:
+        return Text('Trotter');
+        break;
+      default:
+        return Text('Home');
+    }
+  }
+
+
   Widget _switchTab(AppTab tab, AppState appState) {
     switch (tab) {
       case AppTab.main:
         return MainPage();
+        break;
+      case AppTab.rewards:
+        return RewardsPage();
         break;
       case AppTab.trivia:
         return TriviaPage();
@@ -30,6 +58,8 @@ class HomePage extends StatelessWidget {
     }
   }
 
+
+
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
@@ -37,15 +67,23 @@ class HomePage extends StatelessWidget {
     return ValueBuilder(
       streamed: appState.tabController,
       builder: (context, snapshot) => Scaffold(
+          appBar: AppBar(
 
-            appBar: snapshot.data != AppTab.main ? null : AppBar(),
+            title: _switchTitle(snapshot.data, appState),
+          ),
+
             drawer: DrawerWidget(),
             body: _switchTab(snapshot.data, appState),
-        bottomNavigationBar:BottomNavigationBar(items: const <BottomNavigationBarItem>[
+        bottomNavigationBar:BottomNavigationBar(
+
+          onTap: (int index) { appState.startScreen(index); },
+
+          items: const <BottomNavigationBarItem>[
 
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
-            title: Text('Revise'),
+            title: Text('Quizz')
+
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.card_giftcard),
