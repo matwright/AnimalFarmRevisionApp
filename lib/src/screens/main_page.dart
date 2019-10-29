@@ -46,7 +46,7 @@ class MainPage extends StatelessWidget {
                           color: Colors.green,
                           child: CircleAvatar(
                             backgroundColor: Colors.blueGrey,
-                            backgroundImage: AssetImage('assets/images/avatar.png'),
+                            backgroundImage: AssetImage('assets/images/avatar/avatar.png'),
                             radius: 80.0,
                           ),
                         ),

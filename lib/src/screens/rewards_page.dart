@@ -52,7 +52,7 @@ return  GridView.count(
             child: CircleAvatar(
 
               backgroundColor: Colors.black26,
-              backgroundImage: index<4?AssetImage('assets/images/medal.png'):null,
+              backgroundImage: index<4?AssetImage('assets/images/badge/medal.png'):null,
               radius: 80.0,
             ),
           ),
