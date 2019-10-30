@@ -1,11 +1,16 @@
 class Character {
-  Character({this.id, this.name,this.avatar});
+  Character({this.id, this.name,this.bio,this.strapLine});
 
-  factory Character.fromJson(Map<String, dynamic> json) {
-    return Character(id: json['id'], name: json['name']);
+  factory Character.fromObject(Map<String, dynamic> json) {
+    return Character(id: json['id'], name: json['name'],bio:json['bio'],strapLine:json['strap_line']);
   }
 
-  int id;
+  factory Character.fromJson(Map<String, dynamic> json) {
+    return Character(id: json['id'], name: json['name'],bio:json['bio'],strapLine:json['strap_line']);
+  }
+
+  String id;
   String name;
-  String avatar;
+  String bio;
+  String strapLine;
 }

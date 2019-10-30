@@ -1,5 +1,6 @@
 import 'dart:ui' as prefix0;
 
+import 'package:animal_farm/src/models/character.dart';
 import 'package:flutter/material.dart';
 
 import 'package:frideos/frideos.dart';
@@ -16,8 +17,8 @@ class MainPage extends StatelessWidget {
       duration: 750,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 36.0),
-        child: ValueBuilder<List<Category>>(
-          streamed: appState.categoriesStream,
+        child: ValueBuilder<List<Character>>(
+          streamed: appState.characterStream,
           noDataChild: const CircularProgressIndicator(),
           builder: (context, snapshot) {
 

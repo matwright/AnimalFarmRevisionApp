@@ -1,5 +1,7 @@
 import 'dart:ui' as prefix0;
 
+import 'package:animal_farm/src/models/character.dart';
+import 'package:animal_farm/src/models/reward.dart';
 import 'package:flutter/material.dart';
 
 import 'package:frideos/frideos.dart';
@@ -19,8 +21,8 @@ class RewardsPage extends StatelessWidget {
 
           margin: const EdgeInsets.symmetric(vertical: 20.0),
         padding: const EdgeInsets.symmetric(horizontal: 36.0),
-        child: ValueBuilder<List<Category>>(
-          streamed: appState.categoriesStream,
+        child: ValueBuilder<List<Reward>>(
+          streamed: appState.rewardsStream,
           noDataChild: const CircularProgressIndicator(),
 
           builder: (context, snapshot) {

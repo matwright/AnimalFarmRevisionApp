@@ -1,3 +1,4 @@
+import 'package:animal_farm/src/screens/messages_page.dart';
 import 'package:animal_farm/src/screens/rewards_page.dart';
 import 'package:flutter/material.dart';
 
@@ -10,11 +11,14 @@ import 'screens/settings_page.dart';
 import 'screens/summary_page.dart';
 import 'screens/trivia_page.dart';
 
+
 /// Styles
 const textStyle = TextStyle(color: Colors.blueGrey);
 const iconColor = Colors.green;
 
 class HomePage extends StatelessWidget {
+
+
 
   Text _switchTitle(AppTab tab, AppState appState) {
     switch (tab) {
@@ -27,10 +31,8 @@ class HomePage extends StatelessWidget {
       case AppTab.trivia:
         return Text('Revision');
         break;
-      case AppTab.summary:
-        return Text('Summary');
-        break;
-      case AppTab.summary:
+
+      case AppTab.messages:
         return Text('Trotter');
         break;
       default:
@@ -46,6 +48,9 @@ class HomePage extends StatelessWidget {
         break;
       case AppTab.rewards:
         return RewardsPage();
+        break;
+      case AppTab.messages:
+        return MessagesPage();
         break;
       case AppTab.trivia:
         return TriviaPage();
@@ -63,6 +68,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
+
 
     return ValueBuilder(
       streamed: appState.tabController,
@@ -103,7 +109,13 @@ class HomePage extends StatelessWidget {
 class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final appState = AppStateProvider.of<AppState>(context);
+
+    int elapsed=appState.getStopwatch();
+
+     //String elapsed=" seconds";
     return Drawer(
+
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
@@ -140,8 +152,8 @@ class DrawerWidget extends StatelessWidget {
               );
             },
           ),
-          const AboutListTile(
-            child: Text('Made with Flutter'),
+           AboutListTile(
+            child:  Text(elapsed.toString()+" minutes"),
           ),
         ],
       ),
