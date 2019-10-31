@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:animal_farm/src/blocs/nav_bloc.dart';
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
 import 'package:animal_farm/src/models/reward.dart';
@@ -28,13 +29,22 @@ class AppState extends AppStateModel {
 
   AppState._internal() {
     print('-------APP STATE INIT--------');
+
+
+
     _createThemes(themes);
+
+    navBloc = NavBloc(
+        stopwatchStream: stopwatchStream,
+
+        tabController: tabController);
 
     countdown.value = 10.toString();
     countdown.setTransformer(validateCountdown);
 
     questionsAmount.value = 5.toString();
     questionsAmount.setTransformer(validateAmount);
+
 
     triviaBloc = TriviaBloc(
         countdownStream: countdown,
@@ -45,7 +55,7 @@ class AppState extends AppStateModel {
   static final AppState _singletonAppState = AppState._internal();
   //TIMER
 
-
+  final stopwatchStream = StreamedTransformed<String, String>(initialData: "ok");
 
 
   // THEMES
@@ -63,7 +73,7 @@ class AppState extends AppStateModel {
 
   // TABS
   final tabController = StreamedValue<AppTab>(initialData: AppTab.main);
-
+  final numMessages = StreamedValue(initialData: 0);
   // TRIVIA
   final categoryChosen = StreamedValue<Category>();
   final questions = StreamedList<Question>();
@@ -88,7 +98,7 @@ class AppState extends AppStateModel {
 
   // BLOC
   TriviaBloc triviaBloc;
-
+NavBloc navBloc;
   // COUNTDOWN
   final countdown = StreamedTransformed<String, String>();
 
@@ -121,7 +131,7 @@ class AppState extends AppStateModel {
   }
 
 
- int getStopwatch() => stopwatch.elapsed.inMinutes;
+ int getStopwatch() => stopwatch.elapsed.inSeconds;
 
 
 
@@ -135,7 +145,7 @@ class AppState extends AppStateModel {
 
   Future _loadMessages() async {
 
-   await api.getMessages(messagesStream);
+   await api.getMessages(messagesStream,numMessages);
 
   }
 
@@ -213,6 +223,7 @@ class AppState extends AppStateModel {
       case 2:
         _loadCharacters();
         _loadMessages();
+
         _changeTab = AppTab.messages;
         break;
 
@@ -241,5 +252,6 @@ class AppState extends AppStateModel {
     questionsDifficulty.dispose();
     tabController.dispose();
     triviaBloc.dispose();
+    navBloc.dispose();
   }
 }

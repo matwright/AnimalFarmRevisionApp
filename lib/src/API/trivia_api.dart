@@ -41,7 +41,7 @@ class TriviaAPI implements AppAPI {
   }
 
   @override
-  Future<bool> getMessages(StreamedList<Message> messages) async {
+  Future<bool> getMessages(StreamedList<Message> messages,StreamedValue numMessages) async {
 
     return true;
   }

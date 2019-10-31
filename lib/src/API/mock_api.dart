@@ -59,7 +59,7 @@ class MockAPI implements AppAPI {
   }
 
   @override
-  Future<bool> getMessages(StreamedList<Message> messages) async {
+  Future<bool> getMessages(StreamedList<Message> messages,StreamedValue numMessages) async {
 
     var json=await rootBundle.loadString('assets/messages.json');
 
@@ -68,7 +68,7 @@ class MockAPI implements AppAPI {
     messages.value = (jsonResponse as List)
         .map((message) => Message.fromJson(message)).toList();
 
-
+    numMessages.value=messages.value.length;
     return true;
   }
 }

@@ -40,7 +40,7 @@ class MessagesPage extends StatelessWidget {
                   Message message = snapshot.data[index];
                   Map character=characters.singleWhere((character) => character["id"] == message.createdBy, orElse: () => null);
                   return MessageWidget(
-                    img: 'assets/images/post/example.jpg',
+                    img: 'assets/images/post/'+message.image,
                     name:character['name'],
                     text:message.text,
                     avatar: 'assets/images/avatar/'+character['avatar'],
