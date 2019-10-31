@@ -91,7 +91,7 @@ class TriviaBloc {
     triviaState.refresh();
     stopTimer();
 
-    Timer(Duration(milliseconds: 1500), () {
+    Timer(Duration(milliseconds: 3000), () {
       // this is reset here to not trigger the start of the
       // countdown animation while waiting for the summary page.
       triviaState.value.isAnswerChosen = false;

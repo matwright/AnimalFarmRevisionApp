@@ -1,4 +1,4 @@
-enum AppTab { main, trivia, summary, stats }
+enum AppTab { main,rewards,social, trivia, summary, stats }
 
 enum ApiType { mock, remote }
 

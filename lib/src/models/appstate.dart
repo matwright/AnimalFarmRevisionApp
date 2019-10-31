@@ -170,6 +170,25 @@ class AppState extends AppStateModel {
     _changeTab = AppTab.trivia;
   }
 
+  void startScreen(int index){
+    switch (index) {
+      case 0:
+        _changeTab = AppTab.main;
+        break;
+      case 1:
+        _changeTab = AppTab.rewards;
+        break;
+      case 2:
+        _changeTab = AppTab.social;
+        break;
+
+      default:
+        startTrivia();
+    }
+
+
+  }
+
   void endTrivia() => tabController.value = AppTab.main;
 
   void showSummary() => tabController.value = AppTab.summary;
