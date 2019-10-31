@@ -1,6 +1,20 @@
 [
-{"type":"multiple","difficulty":"easy","question":"Who was the highest ranking animal before the return of the humans?","correct_answer":"Napolean","incorrect_answers":["Snowball","Squealer","Trotsky"]},
-{"type":"multiple","difficulty":"easy","question":"Who was the highest ranking animal before the return of the humans?","correct_answer":"Napolean","incorrect_answers":["Snowball","Squealer","Trotsky"]},
-{"type":"multiple","difficulty":"easy","question":"Who was the highest ranking animal before the return of the humans?","correct_answer":"Napolean","incorrect_answers":["Snowball","Squealer","Trotsky"]},
-{"type":"multiple","difficulty":"easy","question":"Who was the highest ranking animal before the return of the humans?","correct_answer":"Napolean","incorrect_answers":["Snowball","Squealer","Trotsky"]}
+{"type":"multiple","difficulty":"easy","question":"Who was the highest ranking animal before the return of the humans?","correct_answer":"Napoleon","incorrect_answers":["Snowball","Squealer","Trotsky"]},
+{"type":"multiple","difficulty":"easy","question":"Who was the highest ranking animal before the return of the humans?","correct_answer":"Napoleon","incorrect_answers":["Snowball","Squealer","Trotsky"]},
+{"type":"multiple","difficulty":"easy","question":"Who was the highest ranking animal before the return of the humans?","correct_answer":"Napoleon","incorrect_answers":["Snowball","Squealer","Trotsky"]},
+{"type":"multiple","difficulty":"easy","question":"Who was the highest ranking animal before the return of the humans?","correct_answer":"Napoleon","incorrect_answers":["Snowball","Squealer","Trotsky"]}
 ]
+{"type":"multiple","difficulty":"easy","question":"Who is the character of Snowball based upon?","correct_answer":"Trotsky","incorrect_answers":["Hitler","Stalin","Lenin"]},
+{"type":"multiple","difficulty":"easy","question":"Who does Old Major represent?","correct_answer":"Lenin","incorrect_answers":["Stalin","Trotsky","Tsar Nicholas II"]},
+{"type":"multiple","difficulty":"easy","question":"Who does Farmer Jones represent?", "correct_answer":"Tsar Nicholas II","incorrect_answers":["Lenin","Stalin","Trotsky"]},
+{"type":"multiple","difficulty":"easy","question":"Who is the character of Napoleon based upon?","correct_answer":"Stalin","incorrect_answers":["Lenin","Trotsky","Tsar Nicholas II"]},
+{"type":"multiple","difficulty":"hard","question":"Who does Napoleon sell the farm's timber to?","correct_answer":"Mr Frederick","incorrect_answers":["Mr Pilkington","Snowball","Mr Jones"]}
+{"type":"multiple","difficulty":"hard","question":"Which animal hides during the Battle of the Cowshed?","correct_answer":"Mollie","incorrect_answers":["Boxer","Clover","Jessie"]}
+{"type":"multiple","difficulty":"easy","question":"How does Napoleon react to Snowball's windmill plans?","correct_answer":"By urinating on them","incorrect_answers":["By spitting on them","By giving a supportive speech","By writing Snowball a letter"]}
+{"type":"multiple","difficulty":"hard","question":"Who reduced the ideas of Animalism to the phrase \"Four legs good, two legs bad?","correct_answer":"Snowball","incorrect_answers":["Napoleon","Squealer","Boxer"]}
+{"type":"multiple","difficulty":"hard","question":"Who teaches the sheep to chant \"Four legs good, two legs better?","correct_answer":"Squealer","incorrect_answers":["Napoleon","Moses","Clover"]}
+{"type":"multiple","difficulty":"easy","question":"What is Sugarcandy Mountain?","correct_answer":"Moses the raven's idea of animal heaven","incorrect_answers":["The mountain the animals can see from the farm","Old Major talks about it in his dream","The place Squealer uses an example of how the farm could be"]}
+{"type":"multiple","difficulty":"hard","question":"How many letters of the alphabet does Boxer learn?","correct_answer":"4","incorrect_answers":["0","6","26"]}
+{"type":"multiple","difficulty":"hard","question":"Which of the pigs proves the best writer?","correct_answer":"Snowball","incorrect_answers":["Napoleon","Curly","Squealer"]}
+{"type":"multiple","difficulty":"hard","question":"What does Napoleon rename Animal Farm at the end of the novel?","correct_answer":"Manor Farm","incorrect_answers":["The Napoleon Farm","Pig Farm","Animal Farm"]}
+{"type":"multiple","difficulty":"easy","question":"Why does Napoleon think he is dying the morning after he drinks the whisky?","correct_answer":"He has a hangover","incorrect_answers":["He sees the ghost of Old Major","He wanted to leave Animal Farm","He doesn't remember what it used to be like in the farm"]}
