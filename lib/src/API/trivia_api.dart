@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'dart:convert' as convert;
 
+import 'package:animal_farm/src/models/character.dart';
+import 'package:animal_farm/src/models/message.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:frideos_core/frideos_core.dart';
@@ -11,7 +13,7 @@ import '../models/question.dart';
 
 import 'api_interface.dart';
 
-class TriviaAPI implements QuestionsAPI {
+class TriviaAPI implements AppAPI {
   @override
   Future<bool> getCategories(StreamedList<Category> categories) async {
     const categoriesURL = 'https://opentdb.com/api_category.php';
@@ -31,6 +33,17 @@ class TriviaAPI implements QuestionsAPI {
       print('Request failed with status: ${response.statusCode}.');
       return false;
     }
+  }
+
+  @override
+  Future<bool> getCharacters(StreamedList<Character> characters) async {
+    return true;
+  }
+
+  @override
+  Future<bool> getMessages(StreamedList<Message> messages,StreamedValue numMessages) async {
+
+    return true;
   }
 
   @override

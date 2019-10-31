@@ -1,0 +1,13 @@
+[{
+  "created_by": "napoleon",
+  "text": "Napoleon is here to stay! Don't mess with me, or else!",
+  "image": "example.jpg",
+  "delay": "10"
+},
+  {
+    "created_by": "napoleon",
+    "text": "Napoleon was here!",
+    "image": "marx.gif",
+    "delay": "10"
+  }
+]

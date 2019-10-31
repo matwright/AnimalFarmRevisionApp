@@ -2,6 +2,9 @@ import 'dart:async';
 
 import 'dart:convert' as convert;
 
+import 'package:animal_farm/src/models/character.dart';
+import 'package:animal_farm/src/models/message.dart';
+import 'package:animal_farm/util/data.dart' as prefix0;
 import 'package:frideos_core/frideos_core.dart';
 
 import '../models/category.dart';
@@ -11,11 +14,8 @@ import 'api_interface.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 
-Future<String> loadAsset() async {
-  return await rootBundle.loadString('assets/questions.json');
-}
 
-class MockAPI implements QuestionsAPI {
+class MockAPI implements AppAPI {
   @override
   Future<bool> getCategories(StreamedList<Category> categories) async {
     categories.value = [];
@@ -45,6 +45,30 @@ class MockAPI implements QuestionsAPI {
     questions.value =
         result.map((question) => Question.fromQuestionModel(question)).toList();
 
+    return true;
+  }
+
+  @override
+  Future<bool> getCharacters(StreamedList<Character> characters) async {
+
+    characters.value =(prefix0.characters)
+        .map((character) => Character.fromObject(character)).toList();
+
+
+    return true;
+  }
+
+  @override
+  Future<bool> getMessages(StreamedList<Message> messages,StreamedValue numMessages) async {
+
+    var json=await rootBundle.loadString('assets/messages.json');
+
+    final jsonResponse = convert.jsonDecode(json);
+
+    messages.value = (jsonResponse as List)
+        .map((message) => Message.fromJson(message)).toList();
+
+    numMessages.value=messages.value.length;
     return true;
   }
 }

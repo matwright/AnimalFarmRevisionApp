@@ -5,10 +5,15 @@ import 'package:frideos/frideos.dart';
 import 'src/homepage.dart';
 import 'src/models/appstate.dart';
 import 'src/models/theme.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
-void main() => runApp(App());
+FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
+void main()async {
+  flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+  runApp(App());
+}
 
-class App extends StatelessWidget {
+class App extends StatelessWidget  {
   final appState = AppState();
 
   @override

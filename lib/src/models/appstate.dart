@@ -1,5 +1,9 @@
 import 'dart:async';
 
+import 'package:animal_farm/src/blocs/nav_bloc.dart';
+import 'package:animal_farm/src/models/character.dart';
+import 'package:animal_farm/src/models/message.dart';
+import 'package:animal_farm/src/models/reward.dart';
 import 'package:flutter/material.dart';
 
 import 'package:frideos_core/frideos_core.dart';
@@ -14,20 +18,33 @@ import '../models/category.dart';
 import '../models/models.dart';
 import '../models/question.dart';
 import '../models/theme.dart';
-
+import 'package:clock/clock.dart';
 class AppState extends AppStateModel {
+
+
   factory AppState() => _singletonAppState;
+
+
+  var stopwatch = clock.stopwatch()..start();
 
   AppState._internal() {
     print('-------APP STATE INIT--------');
+
+
+
     _createThemes(themes);
-    _loadCategories();
+
+    navBloc = NavBloc(
+        stopwatchStream: stopwatchStream,
+
+        tabController: tabController);
 
     countdown.value = 10.toString();
     countdown.setTransformer(validateCountdown);
 
     questionsAmount.value = 5.toString();
     questionsAmount.setTransformer(validateAmount);
+
 
     triviaBloc = TriviaBloc(
         countdownStream: countdown,
@@ -36,20 +53,28 @@ class AppState extends AppStateModel {
   }
 
   static final AppState _singletonAppState = AppState._internal();
+  //TIMER
+
+  final stopwatchStream = StreamedTransformed<String, String>(initialData: "ok");
+
 
   // THEMES
   final themes = List<MyTheme>();
   final currentTheme = StreamedValue<MyTheme>();
 
   // API
-  QuestionsAPI api = MockAPI();
+  AppAPI api = MockAPI();
   final apiType = StreamedValue<ApiType>(initialData: ApiType.mock);
+ //SOCIAL
+  final messagesStream = StreamedList<Message>();
+  final characterStream = StreamedList<Character>();
+  //Rewards
+  final rewardsStream = StreamedList<Reward>();
 
   // TABS
   final tabController = StreamedValue<AppTab>(initialData: AppTab.main);
-
+  final numMessages = StreamedValue(initialData: 0);
   // TRIVIA
-  final categoriesStream = StreamedList<Category>();
   final categoryChosen = StreamedValue<Category>();
   final questions = StreamedList<Question>();
   final questionsDifficulty =
@@ -73,7 +98,7 @@ class AppState extends AppStateModel {
 
   // BLOC
   TriviaBloc triviaBloc;
-
+NavBloc navBloc;
   // COUNTDOWN
   final countdown = StreamedTransformed<String, String>();
 
@@ -91,6 +116,9 @@ class AppState extends AppStateModel {
     }
   });
 
+
+
+
   @override
   Future<void> init() async {
     final String lastTheme = await Prefs.getPref('apptheme');
@@ -102,12 +130,25 @@ class AppState extends AppStateModel {
     }
   }
 
-  Future _loadCategories() async {
-    final isLoaded = await api.getCategories(categoriesStream);
-    if (isLoaded) {
-      categoryChosen.value = categoriesStream.value.last;
-    }
+
+ int getStopwatch() => stopwatch.elapsed.inSeconds;
+
+
+
+  Future _loadCharacters() async {
+
+    await api.getCharacters(characterStream);
+
   }
+
+
+
+  Future _loadMessages() async {
+
+   await api.getMessages(messagesStream,numMessages);
+
+  }
+
 
   Future _loadQuestions() async {
     await api.getQuestions(
@@ -131,7 +172,8 @@ class AppState extends AppStateModel {
       } else {
         api = TriviaAPI();
       }
-      _loadCategories();
+
+
     }
   }
 
@@ -179,7 +221,10 @@ class AppState extends AppStateModel {
         _changeTab = AppTab.rewards;
         break;
       case 2:
-        _changeTab = AppTab.social;
+        _loadCharacters();
+        _loadMessages();
+
+        _changeTab = AppTab.messages;
         break;
 
       default:
@@ -188,6 +233,8 @@ class AppState extends AppStateModel {
 
 
   }
+
+
 
   void endTrivia() => tabController.value = AppTab.main;
 
@@ -205,5 +252,6 @@ class AppState extends AppStateModel {
     questionsDifficulty.dispose();
     tabController.dispose();
     triviaBloc.dispose();
+    navBloc.dispose();
   }
 }
