@@ -1,31 +1,4 @@
-[{
-		"type": "multiple",
-		"difficulty": "easy",
-		"question": "Who was the highest ranking animal before the return of the humans?",
-		"correct_answer": "Napoleon",
-		"incorrect_answers": ["Snowball", "Squealer", "Trotsky"]
-	},
-	{
-		"type": "multiple",
-		"difficulty": "easy",
-		"question": "Who was the highest ranking animal before the return of the humans?",
-		"correct_answer": "Napoleon",
-		"incorrect_answers": ["Snowball", "Squealer", "Trotsky"]
-	},
-	{
-		"type": "multiple",
-		"difficulty": "easy",
-		"question": "Who was the highest ranking animal before the return of the humans?",
-		"correct_answer": "Napoleon",
-		"incorrect_answers": ["Snowball", "Squealer", "Trotsky"]
-	},
-	{
-		"type": "multiple",
-		"difficulty": "easy",
-		"question": "Who was the highest ranking animal before the return of the humans?",
-		"correct_answer": "Napoleon",
-		"incorrect_answers": ["Snowball", "Squealer", "Trotsky"]
-	}, {
+[ {
 		"type": "multiple",
 		"difficulty": "easy",
 		"question": "Who is the character of Snowball based upon?",
