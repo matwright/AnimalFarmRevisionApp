@@ -94,5 +94,30 @@
 		"question": "Who lies to the animals when he tells them that Boxer died peacefully at the hospital?",
 		"correct_answer": "Squealer",
 		"incorrect_answers": ["Napoleon", "Snowball", "Clover"]
-	}, 
+	}, { 
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "Who does Napoleon play cards with at the end of the story?",
+		"correct_answer": "Mr Pilkington",
+		"incorrect_answers": ["Mr Jones", "Mr Frederick", "Mr Wiltshire"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "What is Boxer's motto?",
+		"correct_answer": "I will work harder",
+		"incorrect_answers": ["Benjamin is always right", "For the glory of Animal Farm", "Snowball is always right"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "Who leaves the farm through choice?",
+		"correct_answer": "Mollie",
+		"incorrect_answers": ["Boxer", "Squealer", "Napoleon"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "What happens to Boxer in the end?",
+		"correct_answer": "Napoleon sells him to a glue factory",
+		"incorrect_answers": ["He dies of overwork", "The windmill falls on him", "He runs away"]
+	}
+		
 ]
