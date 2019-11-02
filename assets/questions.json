@@ -82,5 +82,17 @@
 		"question": "Why does Napoleon think he is dying the morning after he drinks the whisky?",
 		"correct_answer": "He has a hangover",
 		"incorrect_answers": ["He sees the ghost of Old Major", "He wanted to leave Animal Farm", "He doesn't remember what it used to be like in the farm"]
-	}
+	}, {	
+		"type": "multiple",
+	    	"difficulty": "easy",
+		"question": "How many commandments are there initially?",
+		"correct_answer": "7",
+		"incorrect_answers": ["3", "10", "8"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "Who lies to the animals when he tells them that Boxer died peacefully at the hospital?",
+		"correct_answer": "Squealer",
+		"incorrect_answers": ["Napoleon", "Snowball", "Clover"]
+	}, 
 ]
