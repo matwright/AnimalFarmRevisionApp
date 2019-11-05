@@ -11,75 +11,90 @@
     "delay": "10"
   },
  {
-   "created_by": "Old Major",
+   "created_by": "old_major",
    "text": "Barn meeting Tuesday after Jones' rounds. #CommunityMeeting #IHadADream",
    "delay": "10"
  },
  {
-   "created_by": "Mollie",
+   "created_by": "mollie",
    "text": "Who moved my sugar?",
    "delay": "10"
  },
- { "created_by": "Snowball",
+ { 
+   "created_by": "snowball",
    "text": "This Wednesday morning, reading lessons. Open to all. #ReadThoseCommandments",
    "delay": "10"
  },
- { "created_by": "Napoleon",
+ { 
+   "created_by": "napoleon",
    "text": "DO NOT feed the hens under any circumstances. They are refusing to work for the greater good. #EggsForAll #GiveUsYourEggs",
    "delay": "10"
  },
- { "created_by": "Snowball",
+ { 
+   "created_by": "snowball",
    "text": "Remember the flag raising ceremony this Sunday. #AnimalFarm #Animalism #LoveAFlag",
    "image": "flag.jpg",
    "delay": "10"
  },
- { "created_by": "Clover",
+ { 
+   "created_by": "clover",
    "text": "Just for fun!  What is your Animal Farm name?  Ask Muriel to read it to you if you need help. Reply with your new name! #JustForFun #WhatsYourName #DistractionTactic",
    "image": "newname.jpg",
    "delay": "10"
  },
- { "created_by": "Boxer",
+ { 
+   "created_by": "boxer",
    "text": "Animalism is the answer. #NapoleonAlwaysRight #KeepWorking",
    "delay": "10"
  },
- { "created_by": "Napoleon",
+ { 
+   "created_by": "napoleon",
    "text": "I am now President. Thanks to all who voted for me. It's an honour. #PresidentNapoleon #LongLiveNapoleon #NapoleonRocks",
    "delay": "10"
  },
- { "created_by": "Snowball",
+ { 
+   "created_by": "snowball",
    "text": "Our Flag. Pls ReTrot. #Animalism #HoofAndHorn",
    "image": "flag.jpg",
    "delay": "10"
  },
- { "created_by": "Moses",
+ { 
+   "created_by": "moses",
    "text": "Sugarcandy Mountain is the future. #EternalLife #Utopia #Paradise",
    "delay": "10"
  },
- { "created_by": "Squealer",
+ { 
+   "created_by": "squealer",
    "text": "Thanks for the generous contribution of milk and apples to the pigs. #PigBrainWorkers #FarmSuccess",
    "delay": "10"
  },
- { "created_by": "Snowball",
+ { 
+   "created_by": "snowball",
    "text": "Do you want to build a windmill? #Frozen3 #WarmWinter #Teamwork",
    "delay": "10"
  },
- { "created_by": "Benjamin",
+ { 
+   "created_by": "benjamin",
    "text": "Bored. Bored. Bored. Bored. #EyeRoll #GrumpyMe",
    "delay": "10"
  },
- { "created_by": "Mollie",
+ { 
+   "created_by": "mollie",
    "text": "Laters Everyone! #HereComesTheSugar #NosePetting #PrettyRibbons",
    "delay": "10"
  }, 
- { "created_by": "Muriel",
+ { 
+   "created_by": "muriel",
    "text": "Every afternoon, meet me in the barn for a reading session.  Everyone welcome. #Reading #Community",
    "delay": "10"
  },
- { "created_by": "Mollie",
+ { 
+   "created_by": "mollie",
    "text": "Sorry everyone, gonna be late for work again.  Will make it up to you. #Overslept #Teamwork",
    "delay": "10"
  },
- { "created_by": "Napoleon",
+ { 
+   "created_by": "napoleon",
    "text": "Thank you everyone for the Order of the Green Banner. #IDeserveIt #GoMe",
    "delay": "10"
  }
