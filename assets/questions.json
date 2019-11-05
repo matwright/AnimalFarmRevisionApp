@@ -1,31 +1,4 @@
-[{
-		"type": "multiple",
-		"difficulty": "easy",
-		"question": "Who was the highest ranking animal before the return of the humans?",
-		"correct_answer": "Napoleon",
-		"incorrect_answers": ["Snowball", "Squealer", "Trotsky"]
-	},
-	{
-		"type": "multiple",
-		"difficulty": "easy",
-		"question": "Who was the highest ranking animal before the return of the humans?",
-		"correct_answer": "Napoleon",
-		"incorrect_answers": ["Snowball", "Squealer", "Trotsky"]
-	},
-	{
-		"type": "multiple",
-		"difficulty": "easy",
-		"question": "Who was the highest ranking animal before the return of the humans?",
-		"correct_answer": "Napoleon",
-		"incorrect_answers": ["Snowball", "Squealer", "Trotsky"]
-	},
-	{
-		"type": "multiple",
-		"difficulty": "easy",
-		"question": "Who was the highest ranking animal before the return of the humans?",
-		"correct_answer": "Napoleon",
-		"incorrect_answers": ["Snowball", "Squealer", "Trotsky"]
-	}, {
+[ {
 		"type": "multiple",
 		"difficulty": "easy",
 		"question": "Who is the character of Snowball based upon?",
@@ -109,5 +82,150 @@
 		"question": "Why does Napoleon think he is dying the morning after he drinks the whisky?",
 		"correct_answer": "He has a hangover",
 		"incorrect_answers": ["He sees the ghost of Old Major", "He wanted to leave Animal Farm", "He doesn't remember what it used to be like in the farm"]
+	}, {	
+		"type": "multiple",
+	    	"difficulty": "easy",
+		"question": "How many commandments are there initially?",
+		"correct_answer": "7",
+		"incorrect_answers": ["3", "10", "8"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "Who lies to the animals when he tells them that Boxer died peacefully at the hospital?",
+		"correct_answer": "Squealer",
+		"incorrect_answers": ["Napoleon", "Snowball", "Clover"]
+	}, { 
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "Who does Napoleon play cards with at the end of the story?",
+		"correct_answer": "Mr Pilkington",
+		"incorrect_answers": ["Mr Jones", "Mr Frederick", "Mr Wiltshire"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "What is Boxer's motto?",
+		"correct_answer": "I will work harder",
+		"incorrect_answers": ["Benjamin is always right", "For the glory of Animal Farm", "Snowball is always right"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "Who leaves the farm through choice?",
+		"correct_answer": "Mollie",
+		"incorrect_answers": ["Boxer", "Squealer", "Napoleon"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "What happens to Boxer in the end?",
+		"correct_answer": "Napoleon sells him to a glue factory",
+		"incorrect_answers": ["He dies of overwork", "Farmer Jones shoots him", "He runs away"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "Who was late for work every morning?",
+		"correct_answer": "Mollie",
+		"incorrect_answers": ["Benjamin", "Moses", "Squealer"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "What year was Animal Farm published?",
+		"correct_answer": "1945",
+		"incorrect_answers": ["1946", "1944", "1947"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "Who starts work half an hour earlier than all the others?",
+		"correct_answer": "Boxer",
+		"incorrect_answers": ["Clover", "Jessie", "Bluebell"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "Which of the pigs composes the song that replaces \"Beasts of England?",
+		"correct_answer": "Minimus",
+		"incorrect_answers": ["Snowball", "Maximus", "Napoleon"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "What title does Napoleon choose for himself?",
+		"correct_answer": "President of the Republic",
+		"incorrect_answers": ["Lord of Animal Farm", "Napoleon the Great", "The Great Napoleon"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "Which animal refuses to become excited about the windmill?",
+		"correct_answer": "Benjamin",
+		"incorrect_answers": ["Old Major", "Boxer", "Mollie"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "Why does the windmill collapse initially?",
+		"correct_answer": "It falls in a storm",
+		"incorrect_answers": ["Snowball sabotages it", "The farmers blow it up with dynamite", "Napoleon vandalises it and blames Snowball"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "Which animals were thought to be the cleverest?",
+		"correct_answer": "The pigs",
+		"incorrect_answers": ["Moses", "The horses", "The dogs"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "What is the song the animals sing at the end of Old Major's speech?",
+		"correct_answer": "Beasts of England",
+		"incorrect_answers": ["Tyrant Man", "The Fruitful Fields of England", "Beasts of Every Land and Clime"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "Who asked if there would be sugar after the rebellion?",
+		"correct_answer": "Mollie",
+		"incorrect_answers": ["Old Major", "Squealer", "Snowball"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "What name do the animals give to the battle in which Mr Jones is defeated when he returns to claim the farm?",
+		"correct_answer": "The Battle of the Cowshed",
+		"incorrect_answers": ["The Battle of the Pig Sty", "Snowball's Victory", "The Battle of the Stable"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "What Russian institution does Moses represent?",
+		"correct_answer": "The Russian Orthodox Church",
+		"incorrect_answers": ["The Education System", "The KGB", "The Tsar's Family"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "What is Mr Jones' main vice?",
+		"correct_answer": "Alcohol",
+		"incorrect_answers": ["Food", "Cigars", "Gambling"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "What is the single law that the Seven Commandments of Animalism are reduced to?",
+		"correct_answer": "All animals are equal, but some animals are more equal than others.",
+		"incorrect_answers": ["All animals must sacrifice for the common good of the whole", "No animals shall drink alcohol", "No animal shall sleep in a bed",]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "What is the name of Mr Jones' farm before the animals rename it Animal Farm?",
+		"correct_answer": "Manor Farm",
+		"incorrect_answers": ["Old Farm", "Jones' Farm", "Chestnut Hill Farm"]
+	}, {	
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "Who inspires the animals to begin planning their rebellion?",
+		"correct_answer": "Old Major",
+		"incorrect_answers": ["Napoleon", "Boxer", "Snowball"]
+	}, {
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "Who had the dream at the beginning of the book?",
+		"correct_answer": "Old Major",
+		"incorrect_answers": ["Boxer", "Napoleon", "Snowball"]
+	}, {
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "Who said \"War is war.  The only good human being ia a dead one?",
+		"correct_answer": "Snowball", 
+		"incorrect_answers": ["Moses", "squealer", "Bluebell"]
 	}
+				     	
 ]
