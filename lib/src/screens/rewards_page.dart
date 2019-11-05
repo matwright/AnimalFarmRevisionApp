@@ -2,6 +2,7 @@ import 'dart:ui' as prefix0;
 
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/reward.dart';
+import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'package:frideos/frideos.dart';
@@ -14,7 +15,23 @@ class RewardsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
 
-    return FadeInWidget(
+
+    return ValueBuilder(
+        streamed: appState.numMessages,
+        builder: (context, snapshotNumMessages) {
+      return Scaffold(
+          bottomNavigationBar:BottomNavWidget(selectedIndex: 2),
+          appBar: AppBar(
+
+          leading: IconButton(icon: Icon(Icons.arrow_back),
+    onPressed: () => Navigator.pop(context, false),
+    ),
+    title: Text('Awards'),
+    ),
+
+
+    // drawer: DrawerWidget(),
+    body: FadeInWidget(
 
       duration: 750,
       child: Container(
@@ -66,7 +83,8 @@ return  GridView.count(
     })
 
     )
-    );
+    )
+      );});
     }
 
 }

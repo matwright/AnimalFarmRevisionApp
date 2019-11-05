@@ -69,6 +69,7 @@ class _MessageState extends State<MessageWidget> {
             ),
 
           ],
+
         ),
         onTap: (){},
       ),
