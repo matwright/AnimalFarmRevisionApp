@@ -1,6 +1,7 @@
 import 'dart:ui' as prefix0;
 
 import 'package:animal_farm/src/models/message.dart';
+import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:animal_farm/src/widgets/message_widget.dart';
 
 import 'package:animal_farm/util/data.dart';
@@ -17,8 +18,24 @@ class MessagesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
+    appState.loadMessages();
 
-    return FadeInWidget(
+    return ValueBuilder(
+        streamed: appState.numMessages,
+        builder: (context, snapshotNumMessages) {
+      return Scaffold(
+          bottomNavigationBar:BottomNavWidget(selectedIndex:3),
+          appBar: AppBar(
+
+          leading:  Icon(Icons.chat)
+
+    ,
+    title: Text('Trotter Newsfeed'))
+    ,
+
+
+    // drawer: DrawerWidget(),
+    body: FadeInWidget(
 
       duration: 750,
       child: Container(
@@ -30,11 +47,15 @@ class MessagesPage extends StatelessWidget {
           noDataChild: const CircularProgressIndicator(),
 
           builder: (context, snapshot) {
+
             return Scaffold(
 
 
-              body: ListView.builder(
+              body: ListView.separated(
                 padding: EdgeInsets.symmetric(horizontal: 20),
+                separatorBuilder: (context, index) {
+                  return Divider();
+                },
                 itemCount: snapshot.data.length,
                 itemBuilder: (BuildContext context, int index) {
                   Message message = snapshot.data[index];
@@ -53,7 +74,7 @@ class MessagesPage extends StatelessWidget {
     })
 
     )
-    );
+    ));});
     }
 
 }

@@ -1,19 +1,26 @@
 import 'dart:async';
 
+import 'package:animal_farm/src/models/trivia_stats.dart';
 import 'package:frideos_core/frideos_core.dart';
 
 import '../models/models.dart';
 import '../models/question.dart';
-import '../models/trivia_stats.dart';
+
 
 const refreshTime = 100;
 
 class TriviaBloc {
   TriviaBloc({this.countdownStream, this.questions, this.tabController}) {
+
+    stats.value= TriviaStats();
+
     // Getting the questions from the API
     questions.onChange((data) {
       if (data.isNotEmpty) {
-        final questions = data..shuffle();
+        index=0;
+        data.shuffle();
+        final questions = data;
+        print("_startTrivia 22 trivia bloc");
         _startTrivia(questions);
       }
     });
@@ -33,15 +40,18 @@ class TriviaBloc {
   final answersAnimation = StreamedValue<AnswerAnimation>(
       initialData: AnswerAnimation(chosenAnswerIndex: 0, startPlaying: false));
 
-  // QUESTIONS, ANSWERS, STATS
+  // QUESTIONS, ANSWERS, stats.value
   int index = 0;
   String chosenAnswer;
-  final stats = TriviaStats();
 
+  final stats = StreamedValue<TriviaStats>();
   // TIMER, COUNTDOWN
   final StreamedTransformed<String, String> countdownStream;
   int countdown; // Milliseconds
   Timer timer;
+
+
+
 
   void _startTrivia(List<Question> data) {
     index = 0;
@@ -50,8 +60,8 @@ class TriviaBloc {
     // To show the main page and summary buttons
     triviaState.value.isTriviaEnd = false;
 
-    // Reset the stats
-    stats.reset();
+    // Reset the stats.value
+    stats.value.reset();
 
     // To set the initial question (in this case the countdown
     // bar animation won't start).
@@ -71,6 +81,7 @@ class TriviaBloc {
   }
 
   void playTrivia() {
+
     timer = Timer.periodic(Duration(milliseconds: refreshTime), (Timer t) {
       currentTime.value = refreshTime * t.tick;
 
@@ -83,38 +94,43 @@ class TriviaBloc {
     });
   }
 
+
   void _endTrivia() {
+    print("endTrivia");
+
     // RESET
     timer.cancel();
     currentTime.value = 0;
     triviaState.value.isTriviaEnd = true;
     triviaState.refresh();
     stopTimer();
+    // this is reset here to not trigger the start of the
+    // countdown animation while waiting for the summary page.
+    triviaState.value.isAnswerChosen = false;
+    // Show the summary page after 1.5s
 
-    Timer(Duration(milliseconds: 3000), () {
-      // this is reset here to not trigger the start of the
-      // countdown animation while waiting for the summary page.
-      triviaState.value.isAnswerChosen = false;
-      // Show the summary page after 1.5s
-      tabController.value = AppTab.summary;
 
-      // Clear the last question so that it doesn't appear
-      // in the next game
-      currentQuestion.value = null;
+    // Clear the last question so that it doesn't appear
+    // in the next game
+    currentQuestion.value = null;
+    triviaState.value.isTriviaEnd = true;
+    Timer(Duration(milliseconds: 1), () {
+
+
     });
   }
 
   void notAnswered(Question question) {
-    stats.addNoAnswer(question);
+    stats.value.addNoAnswer(question);
   }
 
   void checkAnswer(Question question, String answer) {
     if (!triviaState.value.isTriviaEnd) {
       question.chosenAnswerIndex = question.answers.indexOf(answer);
       if (question.isCorrect(answer)) {
-        stats.addCorrect(question);
+        stats.value.addCorrect(question);
       } else {
-        stats.addWrong(question);
+        stats.value.addWrong(question);
       }
 
       timer.cancel();
@@ -128,6 +144,7 @@ class TriviaBloc {
     index++;
 
     if (index < questions.length) {
+
       triviaState.value.questionIndex++;
       currentQuestion.value = questions.value[index];
       playTrivia();
@@ -171,6 +188,7 @@ class TriviaBloc {
     currentQuestion.dispose();
     currentTime.dispose();
     questions.dispose();
+    stats.dispose();
     tabController.dispose();
     triviaState.dispose();
   }

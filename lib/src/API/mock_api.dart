@@ -34,16 +34,19 @@ class MockAPI implements AppAPI {
       QuestionDifficulty difficulty,
       QuestionType type}) async {
 
-
+    print("getQuestions");
      var json=await rootBundle.loadString('assets/questions.json');
 
     final jsonResponse = convert.jsonDecode(json);
 
-    final result = (jsonResponse as List)
-        .map((question) => QuestionModel.fromJson(question));
+    final result = (jsonResponse as List);
+
+     result.shuffle();
+     List newData=result.sublist(0,3);
+     Iterable questionData=newData.map((question) => QuestionModel.fromJson(question));
 
     questions.value =
-        result.map((question) => Question.fromQuestionModel(question)).toList();
+        questionData.map((question) => Question.fromQuestionModel(question)).toList();
 
     return true;
   }

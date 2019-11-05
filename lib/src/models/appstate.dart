@@ -4,6 +4,7 @@ import 'package:animal_farm/src/blocs/nav_bloc.dart';
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
 import 'package:animal_farm/src/models/reward.dart';
+import 'package:animal_farm/util/data.dart';
 import 'package:flutter/material.dart';
 
 import 'package:frideos_core/frideos_core.dart';
@@ -24,7 +25,7 @@ class AppState extends AppStateModel {
 
   factory AppState() => _singletonAppState;
 
-
+  
   var stopwatch = clock.stopwatch()..start();
 
   AppState._internal() {
@@ -45,23 +46,27 @@ class AppState extends AppStateModel {
     questionsAmount.value = 5.toString();
     questionsAmount.setTransformer(validateAmount);
 
+    rewardsStream.value=List();
+    rewardsStream.value.add(new Reward());
 
     triviaBloc = TriviaBloc(
         countdownStream: countdown,
         questions: questions,
         tabController: tabController);
+
   }
 
   static final AppState _singletonAppState = AppState._internal();
   //TIMER
 
   final stopwatchStream = StreamedTransformed<String, String>(initialData: "ok");
+ //Avatar
 
-
+  final currentCharacter =StreamedValue<Character>();
+  final bioCharacter =StreamedValue<Character>();
   // THEMES
   final themes = List<MyTheme>();
   final currentTheme = StreamedValue<MyTheme>();
-
   // API
   AppAPI api = MockAPI();
   final apiType = StreamedValue<ApiType>(initialData: ApiType.mock);
@@ -121,6 +126,7 @@ NavBloc navBloc;
 
   @override
   Future<void> init() async {
+    _loadCharacters();
     final String lastTheme = await Prefs.getPref('apptheme');
     if (lastTheme != null) {
       currentTheme.value = themes.firstWhere((theme) => theme.name == lastTheme,
@@ -128,8 +134,18 @@ NavBloc navBloc;
     } else {
       currentTheme.value = themes[0];
     }
-  }
 
+
+    final String appCharacter = await Prefs.getPref('appCharacter');
+    if (appCharacter != null) {
+      currentCharacter.value = getCharacterById(appCharacter);
+
+    } else {
+      currentCharacter.value = new Character(id:"noavatar",name: "Comrade" );
+
+    }
+
+  }
 
  int getStopwatch() => stopwatch.elapsed.inSeconds;
 
@@ -140,8 +156,15 @@ NavBloc navBloc;
     await api.getCharacters(characterStream);
 
   }
+   loadQuestions() {
+     print("loadQuestions appstate 158");
+    _loadQuestions();
+  }
 
 
+  loadMessages(){
+    _loadMessages();
+  }
 
   Future _loadMessages() async {
 
@@ -151,6 +174,7 @@ NavBloc navBloc;
 
 
   Future _loadQuestions() async {
+    print("_loadQuestions 176 appstate");
     await api.getQuestions(
         questions: questions,
         number: int.parse(questionsAmount.value),
@@ -183,22 +207,35 @@ NavBloc navBloc;
         name: 'Default',
         brightness: Brightness.dark,
         backgroundColor: const Color(0xff111740),
+
         scaffoldBackgroundColor: const Color(0xff111740),
         primaryColor: const Color(0xff283593),
         primaryColorBrightness: Brightness.dark,
         accentColor: Colors.blue[300],
+        bottomAppBarColor: Colors.blueGrey[900],
+        dividerColor:const Color(0xfffaf333 ),
+        buttonColor: const Color(0xffd63737),
+        secondaryHeaderColor: const Color(0xffd63737),
+        cardColor:const Color(0xff283593),
+
       ),
       MyTheme(
         name: 'Dark',
         brightness: Brightness.dark,
         backgroundColor: Colors.black,
         scaffoldBackgroundColor: Colors.black,
-        primaryColor: Colors.blueGrey[900],
+        primaryColor:Colors.blueGrey[900],
         primaryColorBrightness: Brightness.dark,
-        accentColor: Colors.blue[900],
+        accentColor: Colors.greenAccent[400],
+        bottomAppBarColor: Colors.blueGrey[900],
+        dividerColor:const Color(0xfffaf333 ),
+        buttonColor: const Color(0xffd63737),
+        secondaryHeaderColor: const Color(0xffd63737),
+        cardColor:const Color(0xff111740),
       ),
     ]);
   }
+
 
   void setTheme(MyTheme theme) {
     currentTheme.value = theme;
@@ -207,32 +244,43 @@ NavBloc navBloc;
 
   set _changeTab(AppTab appTab) => tabController.value = appTab;
 
-  void startTrivia() {
-    _loadQuestions();
-    _changeTab = AppTab.trivia;
+
+  void characterChoices() {
+    _loadCharacters();
+    _changeTab = AppTab.avatar;
   }
 
-  void startScreen(int index){
-    switch (index) {
-      case 0:
-        _changeTab = AppTab.main;
-        break;
-      case 1:
-        _changeTab = AppTab.rewards;
-        break;
-      case 2:
-        _loadCharacters();
-        _loadMessages();
+  void navigate(BuildContext context,route){
+    Navigator.pushNamed(context,route);
+  }
 
-        _changeTab = AppTab.messages;
-        break;
+  void characterBio(Character character,BuildContext context) {
+   bioCharacter.value=character;
+   Navigator.pushNamed(context, '/bio');
+  }
 
-      default:
-        startTrivia();
+
+
+  Character getCharacterById(String id){
+    _loadCharacters();
+    var characterObject=characters.singleWhere((character) => character["id"] ==id, orElse: () => null);
+    if(characterObject!=null){
+      Character characterModel=new Character.fromObject(characterObject);
+      return characterModel;
     }
-
-
+return null;
   }
+
+
+
+  void chooseCharacter(String id) {
+
+    Prefs.savePref<String>('appCharacter', id);
+    currentCharacter.value=getCharacterById(id);
+    _changeTab = AppTab.main;
+  }
+
+
 
 
 
