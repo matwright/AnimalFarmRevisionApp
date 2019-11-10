@@ -38,7 +38,7 @@ class AvatarPage extends StatelessWidget {
           body:
      FadeInWidget(
 
-      duration: 750,
+      duration: 100,
 
       child: Container(
 

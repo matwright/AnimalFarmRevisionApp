@@ -19,6 +19,11 @@ class BioPage extends StatelessWidget {
       return ValueBuilder(
           streamed: appState.numMessages,
           builder: (context, snapshotNumMessages) {
+
+            void selectCharacter(String character){
+              appState.chooseCharacter(character);
+              Navigator.pushNamed(context, '/');
+            }
             return Scaffold(
                 bottomNavigationBar:BottomNavWidget(selectedIndex: 0),
                 appBar: AppBar(
@@ -34,7 +39,7 @@ class BioPage extends StatelessWidget {
                 body:
 
                 FadeInWidget(
-                  duration: 750,
+                  duration: 100,
                   child: Container(
                     padding: const EdgeInsets.only(bottom: 10.0),
                     child: ValueBuilder(
@@ -52,53 +57,16 @@ class BioPage extends StatelessWidget {
                               children: <Widget>[
 
 
-                                Container(
-
-                                  padding: const EdgeInsets.only(bottom: 10.0),
-                                  child: Text(
-
-                                    character.name,
-                                    style: TextStyle(
-                                      fontSize: 24.0,
-                                      fontWeight: FontWeight.w700,
-
-                                      color: Colors.white,
-                                      letterSpacing: 2.0,
-                                      shadows: [
-                                      ],
-                                    ),
-                                  ),
 
 
-                                ),
 
 
-                                Container(
-                                  padding: EdgeInsets.all(20),
-
-                                  child: Text(
-
-                                    character.bio,
-
-                                    style: TextStyle(
-                                      fontSize: 16.0,
-
-                                      color: Colors.white,
-
-                                      shadows: [
-                                      ],
-                                    ),
-                                  ),
-
-
-                                )
-                                ,
                                 Container(
                                   width: double.infinity,
 
                                   child: AvatarGlow(
                                     startDelay: Duration(milliseconds: 1000),
-                                    glowColor: Colors.white,
+                                    glowColor: Colors.yellow,
                                     endRadius: 120.0,
 
                                     duration: Duration(milliseconds: 2000),
@@ -108,7 +76,9 @@ class BioPage extends StatelessWidget {
                                         milliseconds: 100),
                                     child: Material(
                                         elevation: 8.0,
-                                        shape: CircleBorder(),
+                                        shape: CircleBorder(
+
+                                        ),
                                         color: Colors.white70,
 
                                         child: GestureDetector(
@@ -118,7 +88,7 @@ class BioPage extends StatelessWidget {
                                           child: CircleAvatar(
                                             backgroundColor: (character != null
                                                 ? character.color
-                                                : Colors.blueGrey),
+                                                : Colors.white),
 
                                             backgroundImage: AssetImage(
                                                 'assets/images/avatar/' +
@@ -164,6 +134,49 @@ class BioPage extends StatelessWidget {
 
 
                                 ),
+
+                                Container(
+                                  padding: EdgeInsets.all(20),
+
+                                  child:
+
+                                  Bubble(
+
+                                      padding: BubbleEdges.all(10),
+                                      color: character.color,
+                                      child:Container(
+                                          height: 170,
+                                          alignment: Alignment.center,
+                                          child: new Scrollbar(
+
+                                              child:new SingleChildScrollView(
+                                                  scrollDirection: Axis.vertical,
+                                                  reverse: false,primary: true,
+                                                  child:
+
+
+
+                                                  Text(
+                                                    character.bio,
+
+                                                    style: TextStyle(
+                                                      fontSize: 16.0,
+letterSpacing: 1,fontWeight: FontWeight.w300,
+                                                      color: character.textColor,
+
+                                                      shadows: [
+                                                      ],
+                                                    ),
+                                                  )
+                                              )))
+                                  ),
+
+
+
+
+                                )
+
+
                               ],
                             ),
                             GestureDetector(
@@ -187,11 +200,13 @@ class BioPage extends StatelessWidget {
                                 child: Text(
                                   "Play As " + character.name,
                                   style: TextStyle(
-                                    fontWeight: FontWeight.w500,
+
+                                    fontWeight: FontWeight.w400,
                                     fontSize: 20.0,),
                                 ),
                               ),
-                              onTap: ()=>Navigator.pushNamed(context, '/trivia'),
+                                onTap: ()=>selectCharacter(character.id)
+
                             ),
                           ],
                         );

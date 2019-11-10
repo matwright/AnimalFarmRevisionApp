@@ -33,7 +33,7 @@ class SummaryPage extends StatelessWidget {
               drawer: DrawerWidget(),
               // drawer: DrawerWidget(),
               body: FadeInWidget(
-                duration: 750,
+                duration: 100,
                 child: Container(
                   padding: const EdgeInsets.only(bottom: 10.0),
                   child: ValueBuilder(
@@ -85,7 +85,7 @@ class SummaryPage extends StatelessWidget {
                                 padding:
                                 const EdgeInsets.only(bottom: 10.0),
                                 child: Text(
-                                  'Hey, ' + character.name,
+                                  (stats.corrects.length>0?(stats.corrects.length>3?'Formidable!':'Bravo!'):'Oh dear, '+ character.name+'!') ,
                                   style: TextStyle(
                                     fontSize: 24.0,
                                     fontWeight: FontWeight.w700,
@@ -100,7 +100,10 @@ class SummaryPage extends StatelessWidget {
                                 padding:
                                 const EdgeInsets.only(bottom: 50.0),
                                 child: Text(
-                                  "You answered "+stats.corrects.length.toString()+' questions correctly!',
+                      (stats.corrects.length==0?
+                              "You didn't answer any questions correctly!"
+                          :    "You answered "+stats.corrects.length.toString()+' question'+(stats.corrects.length!=1?'s':'')+' correctly!')
+                          ,
                                   style: TextStyle(
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.w700,
@@ -127,10 +130,7 @@ class SummaryPage extends StatelessWidget {
                                       elevation: 8.0,
                                       shape: CircleBorder(),
                                       color: Colors.white70,
-                                      child: FlatButton(
-                                        onPressed: () =>
-                                            Navigator.pushNamed(
-                                                context, "/avatar"),
+
                                         child: CircleAvatar(
                                           backgroundColor:
                                           (character != null
@@ -149,7 +149,8 @@ class SummaryPage extends StatelessWidget {
                                             children: <Widget>[],
                                           ),
                                         ),
-                                      )),
+
+                                  ),
                                 ),
                               ),
                             ],
@@ -158,7 +159,7 @@ class SummaryPage extends StatelessWidget {
                             child: Container(
                               alignment: Alignment.center,
                               height: 60,
-                              width: 150,
+                              width: 260,
                               decoration: BoxDecoration(
                                   color: Theme
                                       .of(context)
@@ -169,11 +170,11 @@ class SummaryPage extends StatelessWidget {
                                   boxShadow: [
                                     BoxShadow(
                                         color: Colors.blue,
-                                        blurRadius: 2.0,
+                                        blurRadius: 4.0,
                                         spreadRadius: 2.5),
                                   ]),
                               child: const Text(
-                                "Let's Revise!",
+                                "Let's Some More Revision!",
                                 style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   fontSize: 20.0,

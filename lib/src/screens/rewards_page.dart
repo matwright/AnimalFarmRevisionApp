@@ -15,7 +15,7 @@ class RewardsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
 
-
+    appState.loadRewards();
     return ValueBuilder(
         streamed: appState.numMessages,
         builder: (context, snapshotNumMessages) {
@@ -33,7 +33,7 @@ class RewardsPage extends StatelessWidget {
     // drawer: DrawerWidget(),
     body: FadeInWidget(
 
-      duration: 750,
+      duration: 100,
       child: Container(
 
           margin: const EdgeInsets.symmetric(vertical: 20.0),
@@ -49,8 +49,13 @@ return  GridView.count(
   // horizontal, this produces 2 rows.
   crossAxisCount: 3,
   // Generate 100 widgets that display their index in the List.
-  children:  List.generate(12, (index)
+  children:  List.generate(15, (index)
   {
+    Reward reward;
+    if(index<snapshot.data.length){
+       reward=snapshot.data[index];
+    }
+
     return Container(
         margin: const EdgeInsets.all(10.0),
 
@@ -71,7 +76,7 @@ return  GridView.count(
             child: CircleAvatar(
 
               backgroundColor: Colors.black26,
-              backgroundImage: index<4?AssetImage('assets/images/badge/medal.png'):null,
+              backgroundImage: reward!=null?AssetImage('assets/images/badge/'+reward.image):null,
               radius: 80.0,
             ),
           ),

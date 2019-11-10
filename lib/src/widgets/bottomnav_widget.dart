@@ -1,4 +1,5 @@
 import 'package:animal_farm/src/models/appstate.dart';
+import 'package:animal_farm/src/widgets/empty_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:frideos/frideos.dart';
 
@@ -20,7 +21,7 @@ class _BottomNavState extends State<BottomNavWidget> {
 
   @override
   void initState() {
-    print("initSTate nav");
+
     print( widget.selectedIndex.toString());
     super.initState();
     if(widget.selectedIndex!=null){
@@ -55,7 +56,13 @@ class _BottomNavState extends State<BottomNavWidget> {
   Widget build(BuildContext context) {
 
 
-
+AppState appState=AppStateProvider.of(context);
+return ValueBuilder(
+    streamed: appState.messagesUnseenStream,
+    builder: (context, snapshotUnseenMessages) {
+return ValueBuilder(
+    streamed: appState.rewardsUnseenStream,
+    builder: (context, snapshotUnseenRewards) {
     return BottomNavigationBar(
 
         backgroundColor: Theme.of(context).bottomAppBarColor,
@@ -73,11 +80,12 @@ selectedItemColor:Colors.blue[200],
               title: Text('Awards'),
               icon: new Stack(children: <Widget>[
                 new Icon(Icons.card_giftcard),
+
                 new Positioned(
                     // draw a red marble
                     top: 0.0,
                     right: -0.0,
-                    child: new Container(
+                    child:  (snapshotUnseenRewards.data>0? new Container(
                       padding: EdgeInsets.all(1),
                       decoration: new BoxDecoration(
                         color: Colors.red,
@@ -88,14 +96,14 @@ selectedItemColor:Colors.blue[200],
                         minHeight: 10,
                       ),
                       child: new Text(
-                        "1",
+                        snapshotUnseenRewards.data.toString(),
                         style: new TextStyle(
                           color: Colors.white,
                           fontSize: 8,
                         ),
                         textAlign: TextAlign.center,
                       ),
-                    ))
+                    ):new Container()))
               ])),
           BottomNavigationBarItem(
               title: Text('Social'),
@@ -105,7 +113,7 @@ selectedItemColor:Colors.blue[200],
                   // draw a red marble
                   top: 0.0,
                   right: -0.0,
-                  child: new Container(
+                  child: (snapshotUnseenMessages.data>0?new Container(
                     padding: EdgeInsets.all(1),
                     decoration: new BoxDecoration(
                       color: Colors.red,
@@ -116,7 +124,7 @@ selectedItemColor:Colors.blue[200],
                       minHeight: 10,
                     ),
                     child: new Text(
-                      "10",
+                      snapshotUnseenMessages.data.toString(),
                       //snapshotNumMessages.data.toString(),
                       style: new TextStyle(
                         color: Colors.white,
@@ -124,9 +132,9 @@ selectedItemColor:Colors.blue[200],
                       ),
                       textAlign: TextAlign.center,
                     ),
-                  ),
+                  ):new Container()),
                 )
               ])),
-        ]);
+        ]);});});
   }
 }

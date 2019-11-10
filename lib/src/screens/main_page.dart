@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:ui' as prefix0;
 
 import 'package:animal_farm/src/models/character.dart';
@@ -21,6 +22,7 @@ class MainPage extends StatelessWidget {
         barrierDismissible: true,
         context: context,
         builder: (BuildContext context) {
+
           // return object of type Dialog
           return AlertDialog(
             shape: RoundedRectangleBorder(
@@ -66,6 +68,15 @@ class MainPage extends StatelessWidget {
           return ValueBuilder(
               streamed: appState.numMessages,
               builder: (context, snapshotNumMessages) {
+               List greetings=[
+                  "Production is constantly rising!",
+                  "The end of the revolution is nigh!",
+                      "Happy tomorrows!",
+                      "Production is constantly rising!"].toList()..shuffle();
+
+
+
+
                 return Scaffold(
                     appBar: AppBar(
                       title: Text('Home'),
@@ -73,7 +84,7 @@ class MainPage extends StatelessWidget {
                     drawer: DrawerWidget(),
                     // drawer: DrawerWidget(),
                     body: FadeInWidget(
-                      duration: 750,
+                      duration: 100,
                       child: Container(
                         padding: const EdgeInsets.only(bottom: 10.0),
                         child: ValueBuilder(
@@ -81,7 +92,7 @@ class MainPage extends StatelessWidget {
                           noDataChild: const CircularProgressIndicator(),
                           builder: (context, snapshot) {
                             Character character = snapshot.data;
-                            String subHeader = "";
+                            String subHeader = greetings.first;
 
                             //only show notice if no avatar set and current context is this page
                             if (character.id == "noavatar" &&
