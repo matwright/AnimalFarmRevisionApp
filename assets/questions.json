@@ -201,7 +201,7 @@
 		"difficulty": "easy",
 		"question": "What is the single law that the Seven Commandments of Animalism are reduced to?",
 		"correct_answer": "All animals are equal, but some animals are more equal than others.",
-		"incorrect_answers": ["All animals must sacrifice for the common good of the whole", "No animals shall drink alcohol", "No animal shall sleep in a bed",]
+		"incorrect_answers": ["All animals must sacrifice for the common good of the whole", "No animals shall drink alcohol", "No animal shall sleep in a bed"]
 	}, {
 		"type": "multiple",
 		"difficulty": "easy",

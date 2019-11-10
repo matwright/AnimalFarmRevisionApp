@@ -1,9 +1,9 @@
 class Reward {
   Reward({this.id, this.name,this.image,this.strapLine});
 
-  factory Reward.fromJson(Map<String, dynamic> json) {
-    return Reward(id: json['id'], name: json['name'],image:json['image'],strapLine:json['strap_line']);
-  }
+
+  factory Reward.fromObject(Map<String, dynamic> object) {
+    return Reward(id: object['id'], name: object['name'],image:object['image'],strapLine:object['strap_line']); }
 
   String id;
   String name;
