@@ -7,10 +7,11 @@ List<Map<String, dynamic>> rewards = [
   {
     //When the student opens the app
     "id": "startApp",
+    "achievement":"Began Study",
     "image": "startApp.png",
     "name": "George Orwell Award.",
     "description":
-        "George Orwell wrote Animal Farm because he felt he needed to say something about the political climate in which he was living. This award recognises desire."
+        "George Orwell wrote Animal Farm because he felt he needed to say something about the political climate in which he was living. This award recognises desire to learn."
   },
   {
     
