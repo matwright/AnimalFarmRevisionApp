@@ -54,6 +54,7 @@ return  GridView.count(
     Reward reward;
     if(index<snapshot.data.length){
        reward=snapshot.data[index];
+
     }
 
     return Container(
@@ -79,7 +80,7 @@ return  GridView.count(
             child: CircleAvatar(
 
               backgroundColor: Colors.black26,
-              backgroundImage: reward!=null?AssetImage('assets/images/badge/medal.png'):null,
+              backgroundImage: (reward!=null?AssetImage('assets/images/badge/'+reward.image):null),
               radius: 80.0,
 
             ),

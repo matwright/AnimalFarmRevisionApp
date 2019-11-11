@@ -30,7 +30,7 @@ class RewardPage extends StatelessWidget {
                   leading: IconButton(icon: Icon(Icons.arrow_back),
                     onPressed: () => Navigator.pop(context, false),
                   ),
-                  title: Text('Choose Your Reward'),
+                  title: Text(reward.name),
                 ),
 
 
@@ -51,8 +51,30 @@ class RewardPage extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: <Widget>[
 
+                                Container(
+
+                                  padding: EdgeInsets.fromLTRB(20, 10, 20, 20),
+                                  child:
+                                  Center(
+                                      child:
+                                      Text(
+
+                                        'Achievement: ' + reward.achievement + '!',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+
+                                          fontSize: 16.0,
+fontWeight: FontWeight.bold,
+
+                                          color: Colors.white,
+                                          letterSpacing: 2.0,
+                                          shadows: [
+                                          ],
+                                        ),
+                                      )),
 
 
+                                ),
 
 
 
@@ -84,10 +106,10 @@ class RewardPage extends StatelessWidget {
 
                                             backgroundImage: AssetImage(
                                                 'assets/images/badge/' +
-                                                    (reward == null
-                                                        ? 'noavatar'
-                                                        : 'firstHour') +
-                                                    '.png'),
+                                                    (reward.image == null
+                                                        ? 'noavatar.png'
+                                                        : reward.image)
+                                                 ),
                                             radius: 100.0,
                                             child: Column(
                                               mainAxisAlignment: MainAxisAlignment
@@ -110,7 +132,7 @@ class RewardPage extends StatelessWidget {
                                       child:
                                       Text(
 
-                                        '"' + reward.achievement + '"',
+                                        '"' + reward.name + '"',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
 
@@ -133,7 +155,7 @@ class RewardPage extends StatelessWidget {
                                   child:
 
                                   Bubble(
-
+                                      color: Theme.of(context).primaryColor,
                                       padding: BubbleEdges.all(10),
 
                                       child:Container(
@@ -152,9 +174,9 @@ class RewardPage extends StatelessWidget {
                                                     reward.description,
 
                                                     style: TextStyle(
-                                                      color: Colors.black,
+                                                      color: Theme.of(context).appBarTheme.color,
                                                       fontSize: 16.0,
-letterSpacing: 1,fontWeight: FontWeight.w300,
+letterSpacing: 0.8,fontWeight: FontWeight.w300,
 
 
                                                       shadows: [

@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:ui' as prefix0;
 
 import 'package:animal_farm/src/models/character.dart';
@@ -68,7 +69,7 @@ class MessagesPage extends StatelessWidget {
                     text:message.text,
                     rune:message.rune,
                     avatar: 'assets/images/avatar/'+character['avatar'],
-                    time: (index+2).toString()+' mins ago',
+                    time: character['name'],
                     appState:AppState()
                   );
                 },
