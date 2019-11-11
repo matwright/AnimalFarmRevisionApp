@@ -3,6 +3,7 @@ import 'package:animal_farm/src/screens/avatar_page.dart';
 import 'package:animal_farm/src/screens/bio_page.dart';
 import 'package:animal_farm/src/screens/main_page.dart';
 import 'package:animal_farm/src/screens/messages_page.dart';
+import 'package:animal_farm/src/screens/reward_page.dart';
 import 'package:animal_farm/src/screens/rewards_page.dart';
 import 'package:animal_farm/src/screens/summary_page.dart';
 import 'package:animal_farm/src/screens/trivia_page.dart';
@@ -45,6 +46,7 @@ class MaterialPage extends StatelessWidget {
               home: MainPage(),
           routes: {
             // When navigating to the "/" route, build the FirstScreen widget.
+            '/reward': (context) => RewardPage(),
             '/rewards': (context) => RewardsPage(),
             '/trivia': (context) => TriviaPage(),
             '/summary': (context) => SummaryPage(),

@@ -84,6 +84,7 @@ int totalMessages;
   //Rewards
   final rewardsStream = StreamedList<Reward>();
   final rewardsUnseenStream = StreamedValue<int>(initialData: 0);
+  final rewardInfoStream = StreamedValue<Reward>();
   // TABS
   final tabController = StreamedValue<AppTab>(initialData: AppTab.main);
   final numMessages = StreamedValue(initialData: 0);
@@ -348,6 +349,11 @@ int totalMessages;
 
   void navigate(BuildContext context, route) {
     Navigator.pushNamed(context, route);
+  }
+
+  void rewardInfo(Reward reward, BuildContext context) {
+    rewardInfoStream.value = reward;
+    Navigator.pushNamed(context, '/reward');
   }
 
   void characterBio(Character character, BuildContext context) {

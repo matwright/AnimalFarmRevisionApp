@@ -60,6 +60,9 @@ return  GridView.count(
         margin: const EdgeInsets.all(10.0),
 
         child:
+            GestureDetector(
+              onTap:  () =>appState.rewardInfo(reward,context),
+              child:
         AvatarGlow(
           startDelay: Duration(milliseconds: 1000),
           glowColor: Colors.white,
@@ -76,11 +79,12 @@ return  GridView.count(
             child: CircleAvatar(
 
               backgroundColor: Colors.black26,
-              backgroundImage: reward!=null?AssetImage('assets/images/badge/'+reward.image):null,
+              backgroundImage: reward!=null?AssetImage('assets/images/badge/medal.png'):null,
               radius: 80.0,
+
             ),
           ),
-        ));
+        )));
   }),
 
 );
