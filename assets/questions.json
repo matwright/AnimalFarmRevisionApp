@@ -878,8 +878,495 @@
 		"question": "what does anthropomorphic mean?",
 		"correct_answer": "Ascribing human form or attributes to a being or thing not human",
 		"incorrect_answers": ["A cross between an ant and a pomeranian dog", "A description of a human with animal parts", "The study of people"]
+		
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which organisation did Orwell write propaganda for?",
+		"correct_answer": "BBC Eastern Service",
+		"incorrect_answers": ["BBC World Service", "BBC iPlayer", "BBC Western Service"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does Squealer finish every argument with when telling the animals of any changes?",
+		"correct_answer": "Surely none of you wish to see Jones back",
+		"incorrect_answers": ["These are Napoleon's words", "You know it makes sense", "We all agreed this, do you not remember?"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What is totalitariansim?",
+		"correct_answer": "One party government requiring total subservience to the state.",
+		"incorrect_answers": ["Political and economic theory advocating state control of production", "Taking things such as companies into state ownership", "Social and political system based on public ownership."]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What do the animals call each other to denote equality?",
+		"correct_answer": "comrade",
+		"incorrect_answers": ["friend", "mate", "compatriot"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who persuades the birds that a wing is a leg?",
+		"correct_answer": "Snowball",
+		"incorrect_answers": ["Squealer", "Clover", "Muriel"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What are the first two rituals the animals adopt?",
+		"correct_answer": "Hoisting the flag and singing the Beasts of England.",
+		"incorrect_answers": ["Hoisting the flag and shooting Jones' gun", "Chanting commandments and singing Beasts of England", "Shooting Jones' gun and singing Beasts of England"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does Old Major stop the dogs doing?",
+		"correct_answer": "Chasing rats",
+		"incorrect_answers": ["pushing animals out of the way", "talking during his talk", "chasing pigeons"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who said \"No animal must ever kill any other animal",
+		"correct_answer": "Old Major",
+		"incorrect_answers": ["Boxer", "Snowball", "Moses"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which two animals, not pigs, could be thought of as corrupt?",
+		"correct_answer": "Moses and Mollie", 
+		"incorrect_answers": ["Moses and Benjamin", "Mollie and Benjamin", "Moses and Muriel"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which character or characters prefer slavery to freedom?",
+		"correct_answer": "Mollie",
+		"incorrect_answers": ["The cows", "Muriel", "the dogs"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does Jones use during the rebellion?",
+		"correct_answer": "Whips",
+		"incorrect_answers": ["Gun", "Sticks", "Chains"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who said \"Tactics, comrades, tactics!",
+		"correct_answer": "Squealer",
+		"incorrect_answers": ["Snowball", "Napoleon", "Muriel"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who said \"If comrade Napoleon says it, it must be right.",
+		"correct_answer": "Boxer",
+		"incorrect_answers": ["Clover", "Muriel", "Benjamin"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Why does Napoleon utter a high-pitched whimper?",
+		"correct_answer": "To summon the dogs",
+		"incorrect_answers": ["Because someone stood on his tail", "To summon the pigs", "To summon the pigeons"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Where does Snowball draw the plans for the windmill?",
+		"correct_answer": "On the floor of a shed",
+		"incorrect_answers": ["On the wall of the barn", "On the wall of the farmhouse", "On the floor of the barn"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who was given the decoration \"Animal Hero, 2nd Class",
+		"correct_answer": "Snowball",
+		"incorrect_answers": ["The Hens", "Mollie", "Moses"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Where is Old Major buried?",
+		"correct_answer": "In the orchard",
+		"incorrect_answers": ["Outside the barn", "By the vegetable garden", "In the pasture"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What was Boxer's ambition?",
+		"correct_answer":"To see the windmill nearly finished before his retirement",
+		"incorrect_answers": ["To finish the windmill before his retirement", "To have his name on the finished windmill", "To put the last stone in place on the windmill"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "The retirement age for horses was decided as 12",
+		"correct_answer": "true",
+		"incorrect_answer": "false"
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "The retirement age for cows was decided as 10",
+		"correct_answer": "false",
+		"incorrect_answer": "true"
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What reward was offered to catch Snowball alive?",
+		"correct_answer": "A full bushel of apples",
+		"incorrect_answers": ["half a bushel of apples", "apples and milk", "a day off from work"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "One of the sheep kicks in the store-shed door at the start of the Rebellion",
+		"correct_answer": "false",
+		"incorrect_answer": "true"
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Why does the cat join Snowball's Re-Education Committee?",
+		"correct_answer": "To make \"friends\" with the birds",
+		"incorrect_answers": ["To get on the right side of the pigs", "They wandered in by mistake", "They're interested in Snowball's ideas"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Benjamin watches the blowing up of the windmill with horror",
+		"correct_answer": "false",
+		"incorrect_answer": "true"
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who does Clover look after in the barn?",
+		"correct_answer": "Boxer",
+		"incorrect_answers": ["Mollie", "Muriel", "The Rats"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Clover has doubts about Animalism and tells Boxer",
+		"correct_answer": "false",
+		"incorrect_answer": "true"
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Boxer is admired and loved by the other animals",
+		"correct_answer": "true",
+		"incorrect_answer": "false"
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which animal was described as sly?",
+		"correct_answer": "Squealor",
+		"incorrect_answers": ["Napoleon", "Snowball", "Moses"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Animal Farm uses satire to expose the USSR and similar regimes",
+		"correct_answer": "true",
+		"incorrect_answer": "false"
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "The animals destroy the whips and other symbols of tyranny after they drive Jones off the farm.",
+		"correct_answer": "true",
+		"incorrect_answer": "false"
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question":"Who tells the animals the seven commandments form an unalterable law?",
+		"correct_answer": "Snowball",
+		"incorrect_answers": ["Squealer", "Napoleon", "Moses"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What are the three dogs who live on the farm called?",
+		"correct_answer": "Jessie, Bluebell and Pitcher",
+		"incorrect_answers": ["Pitcher, Snowball and Jessie", "Bluebell, Fletcher and Jessie", "Bluebell, Flossie and Pitcher"]
+	},{
+		
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "A vote was held to decide whether the rats should be called comrade",
+		"correct_answer": "true",
+		"incorrect_answer":"false"
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What is the sixth commandment?",
+		"correct_answer": "No animal shall kill any other animal",
+		"incorrect_answers": ["No animal shall drink alcohol", "No animal shall sleep in a bed", "All animals are equal"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "The pigs used an old spelling book to teach themselves to read",
+		"correct_answer": "true",
+		"incorrect_answer": "false"
+	},{
+		
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What was the point of the Wild Comrades Re-education Committee?",
+		"correct_answer": "To tame the rats and rabbits",
+		"incorrect_answers": ["To motivate the cat to be part of the animals lives", "To teach the animals each time the commandment changed", "To teach the sheep all the chants"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Mollie is seen standing outside a pub in Willngdon",
+		"correct_answer": "true",
+		"incorrect_answer": "false"
+	},{
+		
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Boxer works by moonlight",
+		"correct_answer": "true",
+		"incorrect_answer": "false"
+	},{
+		
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who has a death sentence placed on them?",
+		"correct_answer": "Snowball and Mr Frederick",
+		"incorrect_answers": ["Boxer and Snowball", "Moses and Mr Frederick", "Jones and Mr Frederick"]
+	},{
+
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Napoleon gets up earlier than everyone else",
+		"correct_answer": "false",
+		"incorrect_answer": "true"
+	},{
+		
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What card does Napoleon and Mr Pilkington both show that starts the argument?",
+		"correct_answer": "Ace of Spades",
+		"incorrect_answers": ["Ace of hearts", "Ace of clubs", "Ace of diamonds"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which animal is said can turn black into white?",
+		"correct_answer": "Squealer",
+		"incorrect_answers": ["Napoleon", "Boxer", "Mollie"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Muriel treated Boxer's hoof with poultices of herbs",
+		"correct_answer": "true",
+		"incorrect_answer": "false"
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Maximus writes poems and songs for Napoleon",
+		"correct_answer": "false",
+		"incorrect_answer": "true"
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "In the last chapter, who was so fat, they could barely see out of their eyes?",
+		"correct_answer": "Squealer",
+		"incorrect_answers": ["Napoleon", "Clover", "Benjamin"]
+
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who claims to have seen lump sugar growing on hedges?",
+		"correct_answer": "Moses",
+		"incorrect_answers": ["Clover", "Mollie", "Benjamin"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Squealer paints the words \"Animal Farm\" on top of the gate",
+		"correct_answer": "false",
+		"incorrect_answers": "true"
+	},{
+		
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who reads the final, single commandment to Clover?",
+		"correct_answer": "Benjamin",
+		"incorrect_answers": ["Muriel", "Minimus", "Snowball"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who sends a message to Napoleon that says \"serves you right?",
+		"correct_answer": "Pilkington",
+		"incorrect_answers": ["Frederick", "Whymper", "Jones"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who said \"The truest happiness lays in working hard and living frugally?",
+		"correct_answer": "Napoleon",
+		"incorrect_answers": ["Boxer", "Squealer", "Pilkington"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which animals grew richer as the farm grew richer?",
+		"correct_answer": "The pigs and the dogs",
+		"incorrect_answers": ["The pigs", "The dogs", "All the animals"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What did Squealer say the pigs did with the files and reportes when they were written?",
+		"correct_answer": "Burnt in the furnaces",
+		"incorrect_answers": ["Put on the wall in the farmhouse", "Hidden in the barn", "Kept in the farmhouse kitchen"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Years later, what were the older animals trying to remember?",
+		"correct_answer": "Whether things had been better or worse after Jones' expulsion",
+		"incorrect_answers": ["Whether the commandments had changed", "The names of their friends who were no longer with them", "Who first suggested the rebellion"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who said they remembered every detail of their long life?",
+		"correct_answer": "Benjamin",
+		"incorrect_answers": ["Clover", "Muriel", "Boxer"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "Near the end of the book, the animals hummed Beasts of England secretly",
+		"correct_answer": "true",
+		"incorrect_answer": "false"
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Why did Clover neigh terrifyingly?",
+		"correct_answer": "She saw a pig walking on his hind legs",
+		"incorrect_answers": ["She saw Jones and the men running towards them", "Boxer had collapsed", "The windmill was blown up"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "How long did it take the sheep to learn \"Four legs good, two legs better?",
+		"correct_answer": "One week",
+		"incorrect_answers": ["Five days", "Three days", "Two weeks"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What was Napoleon's toast at the end of the book?",
+		"correct_answer": "To the prosperity of Manor Farm!",
+		"incorrect_answers": ["To the prosperity of Animal Farm!", "To the new friendship with Pilkington", "To the comfort of the farmhouse"]
+	},{
+		
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "How did the flag change?",
+		"correct_answer": "The hoof and horn were removed",
+		"incorrect_answers": ["A trotter and snout replace the hoof and horn", "The green background became brown", "The horn was removed"]
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "The lower animals on Animal Farm did more work and received more food than any animals in the county.",
+		"correct_answer": "false",
+		"incorrect_answer": "true"
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "The seven commandments became \"All animals are equal but some are more equal than others.",
+		"correct_answer": "true",
+		"incorrect_answer": "false"
+	},{
+		"type": "boolean",
+		"difficulty": "medium",
+		"question": "The Pigs had a subscription the the Daily Mail",
+		"correct_answer": "false",
+		"incorrect_answer": "true"
+	},{
+		
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who proposed the first toast at the meal at the end of the book?",
+		"correct_answer": "Pilkington",
+		"incorrect_answers": ["Napoleon", "Squealer", "Frederick"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who shouted\"Boxer! Get out! Get out quickly!",
+		"correct_answer": "Clover",
+		"incorrect_answers": ["Benjamin", "Muriel", "The cows"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What do the pigs spend the money they get from selling Boxer on?",
+		"correct_answer": "Whisky",
+		"incorrect_answers": ["Extra land", "Food for the pigs", "Beer"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who did the pigs blame for everything?",
+		"correct_answer": "Snowball",
+		"incorrect_answers": ["Benjamin","Mollie", "Moses"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "When Animal Farm became a republic, how many candidates were standing for President?",
+		"correct_answer": "1",
+		"incorrect_answers": ["3", "2", "0"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What was next to the poem about Napoleon on the wall opposite the COmmandments?",
+		"correct_answer": "A portrait of Napoleon by Squealer, in white paint",
+		"incorrect_answers": ["A portrait of Napoleon by Squealer, in black paint", "A portrait of Napoleon by Snowball, in black paint", "A portrait of Napoleon by Snowball, in white paint"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What did the black cockerel do?",
+		"correct_answer": "Marched in front of Napoleon letting out a loud \"cock-a-doodle-do",
+		"incorrect_answers": ["Rode on Napoleon's back when he was inspecting the farm", "He made sure everyone was silent before Napoleon spoke", "He stopped anyone getting too close to Napoleon"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What did Boxer say when Squealer said Snowball was Jones' agent from the start, according to Napoleon?",
+		"correct_answer": "If Comrade Napoleon says it, it must be right.",
+		"incorrect_answers": ["I don't believe that Snowball was a traitor", "Snowball was so brave in the Battle of the Cowshed", "How did Napoleon find out?"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who were the first animals to be executed?",
+		"correct_answer": "Four pigs", 
+		"incorrect_answers": ["Three hens", "Two sheep", "A goose"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "How thick were the windmill walls the second time it was built?",
+		"correct_answer": "3 feet thick",
+		"incorrect_answers": ["2 feet thick", "4 feet thick", "3.5 feet thick"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who was the first pig walking on their hind legs?",
+		"correct_answer": "Squealer",
+		"incorrect_answers": ["Napoleon", "Minimus", "Mrs Napoleon"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Tsar Nicholas II was forced to abdicate in",
+		"correct_answer": "1917",
+		"incorrect_answers": ["1916", "1918", "1915"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What time is Animal set in?",
+		"correct_answer": "an unspecified time",
+		"incorrect_answers": ["1917", "1945", "1939"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Why was it assumed the pigs should be the leaders?",
+		"correct_answer": "They were the most intelligent",
+		"incorrect_answers": ["There were more of them", "Old Major was a pig", "They were the most assertive"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What is the second commandment?",
+		"correct_answer": "Whatever goes upon four legs, or has wings, is a friend",
+		"incorrect_answers": ["No animals shall wear clothes", "Whatever goes upon two legs in an enemy", "All animals are equal"]
+	},{
+				      
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who owns the title-deeds of the farm?",
+		"correct_answer": "The pigs",
+		"incorrect_answers": ["All the animals equally", "Pilkington", "Jones"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What happened to Old Major's skull near the end of the book?",
+		"correct_answer": "It was removed from the post and buried",
+		"incorrect_answers": ["It was attached to a post", "It was thrown away", "It was stolen"]
 	}
 		
 		
-				     	
+		
+		
 ]
