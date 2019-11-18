@@ -525,6 +525,7 @@
 		"question": "What is the windmill built from?",
 		"correct_answer": "Stones from the Quarry",
 		"incorrect_answers": ["Bricks from the farmhouse", "Lego", "Stones from the garden"]
+	},{
 	
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1052,9 +1053,271 @@
 		"question": "What happened to Old Major's skull near the end of the book?",
 		"correct_answer": "It was removed from the post and buried",
 		"incorrect_answers": ["It was attached to a post", "It was thrown away", "It was stolen"]
-	}
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who is the first pig to carry a whip?",
+		"correct_answer": "Napoleon",
+		"incorrect_answers": ["Squealer", "Minimus", "Snowball"] 
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "When is Jones' gun fired?",
+		"correct_answer": "Midsummer's Day and October 12th",
+		"incorrect_answers": ["Midwinter and June 22nd", "January 1st and Napoleon's birthday", "Midsummer's Day and Napoleon's birthday"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who wears Mrs Jones' silk dress?",
+		"correct_answer": "Napoleon's favourite sow",
+		"incorrect_answers": ["Squealer", "The oldest girl pig", "No-one"] 
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What do the pigs use to deceive?",
+		"correct_answer": "Language",
+		"incorrect_answers":["violence", "fear", "humour"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What do the pigs use to intimidate?",
+		"correct_answer": "Violence",
+		"incorrect_answers": ["Fear", "Language", "Teasing"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What do the pigs use to control?",
+		"correct_answer": "Fear",
+		"incorrect_answers": ["Violence", "Language", "Whips"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What was Old Major's death caused by?",
+		"correct_answer": "Old age",
+		"incorrect_answers": ["Jones", "Poison", "Tripping over"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does the animal farm flag have?",
+		"correct_answer": "A hoof and a horn",
+		"incorrect_answers": ["A black background", "A hammer and a hoof", "A blue background"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does Old Major tell the animals?",
+		"correct_answer": "Man is their enemy",
+		"incorrect_answers": ["Have a meeting every week to share your news and views", "Leave Manor Farm and move to a better farm", "Try and work with Jones"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who does Snowball learn his military tactics from?",
+		"correct_answer": "Julius Caesar.",
+		"incorrect_answers": ["Mark Anthony", "Genghis Khan", "Alexander the Great"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "When was Animal Farm written?",
+		"correct_answer": "During the Second World War",
+		"incorrect_answers": ["Before the Second World War", "After the Second World War", "During the First World War"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Where was Boxer buried?",
+		"correct_answer": "nowhere",
+		"incorrect_answers": ["in the orchard", "by the windmill", "in the pasture"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who is defeated in the Battles of the Cowshed?",
+		"correct_answer": "Jones",
+		"incorrect_answers": ["Napoleon", "Pilkington", "Frederick"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Were any of the animals allowed to retire?",
+		"correct_answer": "No",
+		"incorrect_answers": ["Yes", "Only the pigs", "When they reached 17"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium", 
+		"question": "How much beer was every pig (except Napoleon) given daily?",
+		"correct_answer": "A pint",
+		"incorrect_answers": ["Half a pint", "A gallon", "Two pints"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who has the idea for the Windmill?",
+		"correct_answer": "Snowball",
+		"incorrect_answers": ["Napoleon", "Boxer", "Jones"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who is the first pig to deal with the humans?",
+		"correct_answer": "Napoleon",
+		"incorrect_answers": ["Snowball", "Squealer", "Old Major"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What was George Orwell's real name?",
+		"correct_answer": "Eric Blair",
+		"incorrect_answers": ["Derek Blair", "Philip Mair", "Nigel Blair"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who blows up the windmill?",
+		"correct_answer": "Frederick",
+		"incorrect_answers": ["Pilkington", "Jones", "Whymper"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What did the seven commandments become?",
+		"correct_answer": "All animals are equal, but some animals are more equal than others",
+		"incorrect_answers": ["4 legs good 2 legs better", "No animal shall sleep in a a bed with sheets", "No animal shall drink alcohol to excess"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What is the book's subtitle?",	
+		"correct_answer": "A fairy story",
+		"incorrect_answers": ["A historical story", "A pig story", "A rebellious story"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who is blamed for everything?",
+		"correct_answer": "Snowball",
+		"incorrect_answers": ["Squealer", "The porkers", "Napoleon"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What did the animals do secretly near the end of the book?",
+		"correct_answer": "Hum Beasts of England", 
+		"incorrect_answers": ["Hide food", "Have meetings", "Plot against Napoleon"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who wrote poems and songs for Napoleon?",
+		"correct_answer": "Minimus",
+		"incorrect_answers": ["Maximus", "Squealer", "Boxer"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What did Frederick tell everyone about the animals in Animal Farm?",
+		"correct_answer": "That they practised cannibalism",
+		"incorrect_answers": ["That they were all sick", "That they wanted Jones back", "That half of them had run away"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Where is the Animal Farm flag raised?",
+		"correct_answer": "In the farmhouse garden",
+		"incorrect_answers": ["In the barn", "By the windmill", "By the hen houses"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who do Napoleon's dogs represent?",
+		"correct_answer": "The Secret Police",
+		"incorrect_answers": ["The Workers", "The Bolsheviks", "No-one"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What is the retirment age for cows?",
+		"correct_answer": "14",
+		"incorrect_answers": ["12", "11", "10"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What is the retirment age for horses?",
+		"correct_answer": "12",
+		"incorrect_answers": ["14", "10", "13"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What is the retiremnte age for sheep?",
+		"correct_answer": "7",
+		"incorrect_answer": ["10", "8", "9"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "How does the rebellion start",
+		"correct_answer": "One of the cow's kicks in the store-shed door",
+		"incorrect_answers": ["One of the sheep kicks in the store-shed door", "The cockerel crows three times", "The pigeons drop stones on Jones and the men as they go through the gate of the farm."]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question":"Where is Mollie seen after she leaves the farm?",
+		"correct_answer": "Standing outside a pub in Willingdon",
+		"incorrect_answers": ["In Foxwood Farm", "In Pinchfield Farm", "Pulling a cart along the road outside Animal Farm"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does Pinchfield Farm represent?",
+		"correct_answer": "Germany",
+		"incorrect_answers": ["England", "France", "Poland"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does Foxwood Farm represent?",
+		"correct_answer": "England",
+		"incorrect_answers": ["Germany", "France", "Scotland"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "How do the pigs teach themselves to read?",
+		"correct_answer": "An old spelling book",
+		"incorrect_answers": ["News of the World", "One of Jones' children's story books", "Old scraps of newspapers"]
+	},{
 		
-		
-		
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which two characters are always disagreeing?",
+		"correct_answer": "Napoleon and Snowball",
+		"incorrect_answers": ["Benjamin and Clover", "Muriel and Mollie", "Minimus and Maximus"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who paints Animal Farm on the gate?",
+		"correct_answer": "Snowball",
+		"incorrect_answers": ["Squealer", "Boxer", "Benjamin"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who isn't much of a talker but still gets their own way",
+		"correct_answer": "Napoleon",
+		"incorrect_answers": ["Boxer", "Clover", "Snowball"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does the Battle of the Cowshed mirror?",
+		"correct_answer": "The Russian Civil War",
+		"incorrect_answers": ["The Second World War", "The Spanish Civil War", "The Tsar fighting back"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Why is the rebellion called the Battle of the Cowshed?",
+		"correct_answer": "It is where the animals hid waiting to ambush the men",
+		"incorrect_answers": ["Where Snowball planned the attack", "Where the fight took place", "The animals' favourite place on the farm"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who uttered a high-pitched whimper?",
+		"correct_answer": "Napoleon",
+		"incorrect_answers": ["Squealer", "Clover", "Mollie"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Why is the cockerel black?",
+		"correct_answer": "The colour of fascism",
+		"incorrect_answers": ["The breed of the cockerel", "The colour of socialism", "The colour of capitalism"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does Napoleon having dogs wait on him mean?",
+		"correct_answer": "Animals are no longer equal",
+		"incorrect_answers": ["They are loyal because he raised them", "They want to please him", "It is all they know"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who tastes all Napoleon's food to make sure it isn't poisoned?",
+		"correct_answer": "Pinkeye",
+		"incorrect_answers": ["Squealer", "One of the dogs", "Curly"]
+	}		
 		
 ]
