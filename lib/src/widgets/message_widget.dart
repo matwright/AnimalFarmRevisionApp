@@ -6,12 +6,13 @@ import 'package:animal_farm/src/widgets/empty_widget.dart';
 import 'package:bubble/bubble.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:frideos/frideos.dart';
 
 class MessageWidget extends StatefulWidget {
   final String avatar;
   final String name;
-  final String time;
+  final String location;
   final String img;
   final String text;
   final String rune;
@@ -22,7 +23,7 @@ class MessageWidget extends StatefulWidget {
       {Key key,
       @required this.avatar,
       @required this.name,
-      @required this.time,
+      @required this.location,
       @required this.img,
       this.appState,
       this.character,
@@ -61,127 +62,169 @@ class _MessageState extends State<MessageWidget> {
       rune = new Runes(runeValue);
     }
 
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: 10),
-      child: Column(
-        children: <Widget>[
-          ListTile(
-              isThreeLine: true,
-              dense: false,
-              trailing: InkWell(
-                  onTap: () =>
-                      widget.appState.characterBio(widget.character, context),
-                  child: CircleAvatar(
-                    backgroundColor: widget.character.color,
-                    backgroundImage: AssetImage(
-                      "${widget.avatar}",
-                    ),
-                  )),
-              contentPadding: EdgeInsets.only(bottom: 0),
-              subtitle: widget.text != null
-                  ? new Bubble(
-                      margin: BubbleEdges.only(top: 10),
-                      stick: false,
-                      nip: BubbleNip.rightTop,
-                      color: widget.character.color,
-                      padding: BubbleEdges.all(10),
-                      child: Text(
-                          widget.text +
-                              ' ' +
-                              (rune != null
-                                  ? (new String.fromCharCodes(rune))
-                                  : ""),
-                          style: TextStyle(color: widget.character.textColor)))
-                  : Text('')),
-          (widget.img == null
-              ? Visibility(
-                  child: Divider(),
-                  visible: false,
-                )
-              : new Flex(
-                  direction: Axis.vertical,
-                  children: <Widget>[
-                    !_isImageShown
-                        ? Center(
-                            child: GestureDetector(
-                              onTap: () => setState(
-                                  () => _isImageShown = !_isImageShown),
-                              child: Stack(children: <Widget>[
-                                Opacity(
-                                    opacity: 0.4,
-                                    child: Padding(
-                                        padding:
-                                            EdgeInsets.fromLTRB(0, 20, 0, 0),
-                                        child: new Image.asset(
-                                          widget.img,
-                                          height: 170,
-                                          width:
-                                              MediaQuery.of(context).size.width,
-                                          fit: BoxFit.fitWidth,
-                                        ))),
-                                Padding(
-                                    padding: EdgeInsets.fromLTRB(0, 25, 10, 0),
-                                    child: Align(
-                                        alignment: Alignment.topRight,
-                                        child: Icon(
-                                            Icons.photo_size_select_actual)))
-                              ]),
-                            ),
-                          )
-                        : SizedBox(),
-                    _isImageShown
-                        ? Center(
-                            child: GestureDetector(
-                                onTap: () => setState(
-                                    () => _isImageShown = !_isImageShown),
-                                child: Stack(children: <Widget>[
-                                  Padding(
-                                      padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
-                                      child: new Image.asset(
-                                        widget.img,
-                                        fit: BoxFit.cover,
-                                      )),
-                                  Padding(
-                                      padding:
-                                          EdgeInsets.fromLTRB(0, 25, 10, 0),
-                                      child: Align(
-                                          alignment: Alignment.topRight,
-                                          child: Icon(
-                                              Icons.photo_size_select_large)))
-                                ])),
-                          )
-                        : SizedBox(),
-                  ],
-                )),
-          new Center(
-              child: Wrap(
-                  spacing: 8.0, // gap between adjacent chips,
-                  alignment: WrapAlignment.center,
-                  children: <Widget>[
+return Column(children: <Widget>[
+
+  Row(
+  crossAxisAlignment  : CrossAxisAlignment.start,
+
+  children: <Widget>[
+
+
+    InkWell(
+
+        onTap: () =>
+            widget.appState.characterBio(widget.character, context),
+        child: CircleAvatar(
+
+          radius: 30,
+          backgroundColor: widget.character.color,
+          backgroundImage: AssetImage(
+            "${widget.avatar}",
+          ),
+        )),
+        Expanded(child:
+    Column(children: <Widget>[
+
+Bubble(
+  margin: BubbleEdges.fromLTRB(5,30,0,0),
+
+  color: widget.character.color,
+
+    stick: false,
+    nip: BubbleNip.leftTop,
+    nipWidth: 10,
+
+    child: Column(
+    children: <Widget>[
+    ListTile(
+
+    isThreeLine: false,
+    dense: false,
+
+    contentPadding: EdgeInsets.only(bottom: 0),
+    subtitle: widget.text != null
+    ? new Container(
+
+
+    child: Text(
+    widget.text +
+    ' ' +
+    (rune != null
+    ? (new String.fromCharCodes(rune))
+        : ""),
+    style: TextStyle(color: widget.character.textColor)))
+        : Text('')),
+    (widget.img == null
+    ? Visibility(
+    child: Divider(),
+    visible: false,
+    )
+        : new Flex(
+    direction: Axis.vertical,
+    children: <Widget>[
+    !_isImageShown
+    ? Center(
+    child: GestureDetector(
+    onTap: () => setState(
+    () => _isImageShown = !_isImageShown),
+    child: Stack(children: <Widget>[
+    Opacity(
+
+    opacity: 0.3,
+    child: Padding(
+    padding:
+    EdgeInsets.fromLTRB(0, 20, 0, 0),
+    child: new Image.asset(
+
+    widget.img,
+    height: 170,
+    width:
+    MediaQuery.of(context).size.width,
+    fit: BoxFit.fitWidth,
+    ))),
+    Padding(
+    padding: EdgeInsets.fromLTRB(0, 25, 10, 0),
+    child: Align(
+    alignment: Alignment.topRight,
+    child: Icon(
+    Icons.photo_size_select_actual)))
+    ]),
+    ),
+    )
+        : SizedBox(),
+    _isImageShown
+    ? Center(
+    child: GestureDetector(
+    onTap: () => setState(
+    () => _isImageShown = !_isImageShown),
+    child: Stack(children: <Widget>[
+    Padding(
+    padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+    child: new Image.asset(
+    widget.img,
+    fit: BoxFit.cover,
+    )),
+    Padding(
+    padding:
+    EdgeInsets.fromLTRB(0, 25, 10, 0),
+    child: Align(
+    alignment: Alignment.topRight,
+    child: Icon(
+    Icons.photo_size_select_large)))
+    ])),
+    )
+        : SizedBox(),
+    ],
+    ))
+
+
+    ]
+    )
+    ),
+      Container(
+
+          margin: EdgeInsets.only(top:20),
+          child:    Wrap(
+
+              spacing: 8.0, // gap between adjacent chips,
+
+              children: <Widget>[
                 Chip(
                   backgroundColor: Theme.of(context).primaryColor,
-                  padding: EdgeInsets.all(2),
+
                   label: Text(widget.text.length.toString(),
                       style: TextStyle(color: Colors.white70)),
                   avatar: Icon(Icons.insert_emoticon, color: Colors.white70),
                 ),
                 Chip(
-                  padding: EdgeInsets.all(2),
+
                   backgroundColor: Theme.of(context).canvasColor,
                   label: Text(widget.character.name,
                       style: TextStyle(color: Colors.white70)),
                   avatar: Icon(Icons.account_circle, color: Colors.white70),
                 ),
                 Chip(
-                  padding: EdgeInsets.all(2),
+
                   backgroundColor: Colors.blueGrey,
-                  label: Text('Old Windmill',
+                  label: Text(widget.location,
                       style: TextStyle(color: Colors.white70)),
                   avatar: Icon(Icons.location_on, color: Colors.white70),
                 )
-              ]))
-        ],
-      ),
-    );
+              ])
+      )
+]
+    )
+
+        ),
+
+    ]
+),
+
+
+
+
+    ]);
+
+
   }
 }

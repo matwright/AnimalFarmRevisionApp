@@ -114,7 +114,7 @@ class TriviaPage extends StatelessWidget {
                                 child: Text(
                                   'Time left: ${((bloc.countdown - snapshot.data) / 1000)}',
                                   style: const TextStyle(
-                                      color: Colors.white,
+
                                       fontSize: 12,
                                       fontStyle: FontStyle.italic),
                                 ),

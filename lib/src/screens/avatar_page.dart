@@ -1,7 +1,7 @@
 import 'dart:ui' as prefix0;
 
 import 'package:animal_farm/src/models/character.dart';
-import 'package:animal_farm/src/models/reward.dart';
+import 'package:animal_farm/src/models/award.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:flutter/material.dart';
 

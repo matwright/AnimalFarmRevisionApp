@@ -15,7 +15,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
-    bool messageShown = false;
+
     void _showDialog() {
       // flutter defined function
       showDialog(
@@ -62,18 +62,6 @@ class MainPage extends StatelessWidget {
       );
     }
 
-    return ValueBuilder(
-        streamed: appState.tabController,
-        builder: (context, snapshotTabs) {
-          return ValueBuilder(
-              streamed: appState.numMessages,
-              builder: (context, snapshotNumMessages) {
-               List greetings=[
-                  "Production is constantly rising!",
-                  "The end of the revolution is nigh!",
-                      "Happy tomorrows!",
-                      "Production is constantly rising!"].toList()..shuffle();
-
 
 
 
@@ -84,13 +72,22 @@ class MainPage extends StatelessWidget {
                     drawer: DrawerWidget(),
                     // drawer: DrawerWidget(),
                     body: FadeInWidget(
-                      duration: 100,
-                      child: Container(
+                      duration: 20,
+
+                      child:
+
+                      Container(
                         padding: const EdgeInsets.only(bottom: 10.0),
                         child: ValueBuilder(
+
                           streamed: appState.currentCharacter,
                           noDataChild: const CircularProgressIndicator(),
                           builder: (context, snapshot) {
+                            List greetings=[
+                              "Production is constantly rising!",
+                              "The end of the revolution is nigh!",
+                              "Happy tomorrows!",
+                              "Production is constantly rising!"].toList()..shuffle();
                             Character character = snapshot.data;
                             String subHeader = greetings.first;
 
@@ -115,11 +112,12 @@ class MainPage extends StatelessWidget {
                                           const EdgeInsets.only(bottom: 10.0),
                                       child: const Text(
                                         'Animal Farm',
+
                                         style: TextStyle(
                                           fontSize: 16.0,
                                           fontWeight: FontWeight.w700,
                                           fontFamily: 'Raleway',
-                                          color: Colors.white70,
+
                                           letterSpacing: 3.0,
                                           shadows: [],
                                         ),
@@ -134,7 +132,7 @@ class MainPage extends StatelessWidget {
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.w700,
                                           fontFamily: 'Raleway',
-                                          color: Colors.white70,
+
                                           letterSpacing: 3.0,
                                           shadows: [],
                                         ),
@@ -149,7 +147,7 @@ class MainPage extends StatelessWidget {
                                           fontSize: 24.0,
                                           fontWeight: FontWeight.w700,
                                           fontFamily: 'Raleway',
-                                          color: Colors.white,
+
                                           letterSpacing: 2.0,
                                           shadows: [],
                                         ),
@@ -175,8 +173,10 @@ class MainPage extends StatelessWidget {
                                       child: AvatarGlow(
                                         startDelay:
                                             Duration(milliseconds: 1000),
-                                        glowColor: Colors.white,
-                                        endRadius: 120.0,
+                                        glowColor: (character != null
+                                            ? character.color
+                                            : Colors.blueGrey),
+                                        endRadius: 130.0,
                                         duration: Duration(milliseconds: 2000),
                                         repeat: true,
                                         showTwoGlows: true,
@@ -185,7 +185,9 @@ class MainPage extends StatelessWidget {
                                         child: Material(
                                             elevation: 8.0,
                                             shape: CircleBorder(),
-                                            color: Colors.white70,
+                                            color:(character != null
+                                                ? character.color
+                                                : Colors.blueGrey),
                                             child: FlatButton(
                                               onPressed: () =>
                                                   Navigator.pushNamed(
@@ -201,7 +203,7 @@ class MainPage extends StatelessWidget {
                                                             ? 'noavatar'
                                                             : character.id) +
                                                         '.png'),
-                                                radius: 100.0,
+                                                radius: 90.0,
                                                 child: Column(
                                                   mainAxisAlignment:
                                                       MainAxisAlignment.center,
@@ -219,13 +221,13 @@ class MainPage extends StatelessWidget {
                                     height: 60,
                                     width: 150,
                                     decoration: BoxDecoration(
-                                        color: Theme.of(context).primaryColor,
+                                        color: Theme.of(context).buttonColor,
                                         borderRadius: const BorderRadius.all(
                                           Radius.circular(35),
                                         ),
                                         boxShadow: [
                                           BoxShadow(
-                                              color: Colors.blue,
+                                              color: Theme.of(context).primaryColor,
                                               blurRadius: 2.0,
                                               spreadRadius: 2.5),
                                         ]),
@@ -246,21 +248,27 @@ class MainPage extends StatelessWidget {
                       ),
                     ),
                     bottomNavigationBar: BottomNavWidget(selectedIndex: 0));
-              });
-        });
+
   }
 }
 
 class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     final appState = AppStateProvider.of<AppState>(context);
 
-    int elapsed = appState.getStopwatch();
 
-    //String elapsed=" seconds";
+
+    return ValueBuilder(
+        streamed: appState.stopwatchStream,
+        builder: (context, snapshot) {
+      int elapsed = snapshot.data;
+
     return Drawer(
+
       child: ListView(
+
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
@@ -272,13 +280,7 @@ class DrawerWidget extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                   color: Colors.white,
                   letterSpacing: 4.0,
-                  shadows: [
-                    Shadow(
-                      blurRadius: 8.0,
-                      color: Colors.lightGreenAccent,
-                      offset: Offset(3.0, 4.5),
-                    ),
-                  ],
+
                 ),
               ),
             ),
@@ -287,7 +289,7 @@ class DrawerWidget extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: const Text('Settings'),
+            title: const Text('Theme'),
             onTap: () {
               Navigator.pop(context);
               Navigator.push(
@@ -297,10 +299,10 @@ class DrawerWidget extends StatelessWidget {
             },
           ),
           AboutListTile(
-            child: Text(elapsed.toString() + " minutes"),
+            child: Text(elapsed.toString() + " seconds"),
           ),
         ],
       ),
-    );
+    );});
   }
 }

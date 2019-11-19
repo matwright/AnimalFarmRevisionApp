@@ -66,8 +66,8 @@ class _AnswersWidgetState extends State<AnswersWidget>
     }
 
     colorAnimation = ColorTween(
-      begin: answerBoxColor,
-      end: answerBoxColor,
+      begin: Theme.of(context).primaryColor,
+      end: Theme.of(context).primaryColor,
     ).animate(controller);
   }
 
@@ -102,7 +102,7 @@ class _AnswersWidgetState extends State<AnswersWidget>
     }
 
     colorAnimation = ColorTween(
-      begin: answerBoxColor,
+      begin: Theme.of(context).primaryColor,
       end: newColor,
     ).animate(controller);
 
@@ -141,7 +141,7 @@ class _AnswersWidgetState extends State<AnswersWidget>
                 decoration: BoxDecoration(
                     color: (index == widget.answerAnimation.chosenAnswerIndex)
                         ? colorAnimation.value
-                        : const Color(0xff283593),
+                        : Theme.of(context).primaryColor,
                     borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(35),
                       topRight: Radius.circular(15),
@@ -153,7 +153,7 @@ class _AnswersWidgetState extends State<AnswersWidget>
                           color:
                               (colorAnimation.status == AnimationStatus.forward)
                                   ? colorAnimation.value
-                                  : Colors.blue[500],
+                                  :  Theme.of(context).primaryColor.withOpacity(0.5),
                           blurRadius:
                               (colorAnimation.status == AnimationStatus.forward)
                                   ? 19.0

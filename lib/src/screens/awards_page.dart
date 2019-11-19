@@ -1,7 +1,7 @@
 import 'dart:ui' as prefix0;
 
 import 'package:animal_farm/src/models/character.dart';
-import 'package:animal_farm/src/models/reward.dart';
+import 'package:animal_farm/src/models/award.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -10,15 +10,13 @@ import 'package:frideos/frideos.dart';
 import '../models/appstate.dart';
 import '../models/category.dart';
 import  'package:avatar_glow/avatar_glow.dart';
-class RewardsPage extends StatelessWidget {
+class AwardsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
 
-    appState.loadRewards();
-    return ValueBuilder(
-        streamed: appState.numMessages,
-        builder: (context, snapshotNumMessages) {
+    appState.loadAwards();
+
       return Scaffold(
           bottomNavigationBar:BottomNavWidget(selectedIndex: 2),
           appBar: AppBar(
@@ -33,13 +31,13 @@ class RewardsPage extends StatelessWidget {
     // drawer: DrawerWidget(),
     body: FadeInWidget(
 
-      duration: 100,
+      duration: 20,
       child: Container(
 
           margin: const EdgeInsets.symmetric(vertical: 20.0),
         padding: const EdgeInsets.symmetric(horizontal: 36.0),
-        child: ValueBuilder<List<Reward>>(
-          streamed: appState.rewardsStream,
+        child: ValueBuilder<List<Award>>(
+          streamed: appState.awardsStream,
           noDataChild: const CircularProgressIndicator(),
 
           builder: (context, snapshot) {
@@ -51,9 +49,9 @@ return  GridView.count(
   // Generate 100 widgets that display their index in the List.
   children:  List.generate(15, (index)
   {
-    Reward reward;
+    Award award;
     if(index<snapshot.data.length){
-       reward=snapshot.data[index];
+       award=snapshot.data[index];
 
     }
 
@@ -62,7 +60,7 @@ return  GridView.count(
 
         child:
             GestureDetector(
-              onTap:  () =>appState.rewardInfo(reward,context),
+              onTap:  () {if(award!=null){appState.awardInfo(award,context);}},
               child:
         AvatarGlow(
           startDelay: Duration(milliseconds: 1000),
@@ -80,7 +78,7 @@ return  GridView.count(
             child: CircleAvatar(
 
               backgroundColor: Colors.black26,
-              backgroundImage: (reward!=null?AssetImage('assets/images/badge/'+reward.image):null),
+              backgroundImage: (award!=null?AssetImage('assets/images/badge/'+award.image):null),
               radius: 80.0,
 
             ),
@@ -94,7 +92,7 @@ return  GridView.count(
 
     )
     )
-      );});
+      );
     }
 
 }

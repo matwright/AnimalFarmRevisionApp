@@ -28,4 +28,6 @@ class MyTheme {
   Color buttonColor;
   Color secondaryHeaderColor;
   Color cardColor;
+
+
 }

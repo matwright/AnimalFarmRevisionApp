@@ -5,6 +5,7 @@ import 'dart:convert' as convert;
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
 import 'package:animal_farm/util/data.dart' as prefix0;
+import 'package:frideos/frideos.dart';
 import 'package:frideos_core/frideos_core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -68,12 +69,15 @@ class MockAPI implements AppAPI {
     var json=await rootBundle.loadString('assets/messages.json');
     final jsonResponse = convert.jsonDecode(json);
     List jsonList=(jsonResponse as List);
+
+    final String appCharacter = await Prefs.getPref('appCharacter');
+    jsonList.removeWhere((item) => item['created_by'] == appCharacter);
     totalMessages=jsonList.length;
 
 
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    //set default awards if none set
-
+    //prefs.setInt('playerMessages',0);
+    //prefs.setInt('seenAwards',0);
      int playerMessages = prefs.getInt('playerMessages');
       if(playerMessages>jsonList.length){
 
@@ -83,7 +87,7 @@ class MockAPI implements AppAPI {
       }
 
     messages.value = (jsonResponse as List).sublist(0,playerMessages)
-        .map((message) => Message.fromJson(message)).toList();
+        .map((message) => Message.fromJson(message)).toList().reversed.toList();
 
     numMessages.value=messages.value.length;
 

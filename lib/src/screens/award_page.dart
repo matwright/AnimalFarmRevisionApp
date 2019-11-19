@@ -1,6 +1,6 @@
 import 'dart:ui' as prefix0;
 
-import 'package:animal_farm/src/models/reward.dart';
+import 'package:animal_farm/src/models/award.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:bubble/bubble.dart';
 import 'package:flutter/material.dart';
@@ -10,17 +10,17 @@ import 'package:frideos/frideos.dart';
 import '../models/appstate.dart';
 import '../models/category.dart';
 import  'package:avatar_glow/avatar_glow.dart';
-class RewardPage extends StatelessWidget {
+class AwardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
 
 
       return ValueBuilder(
-          streamed: appState.rewardInfoStream,
+          streamed: appState.awardInfoStream,
 
           builder: (context, snapshot) {
-            Reward reward = snapshot.data;
+            Award award = snapshot.data;
             String subHeader = "";
 
             return Scaffold(
@@ -30,7 +30,7 @@ class RewardPage extends StatelessWidget {
                   leading: IconButton(icon: Icon(Icons.arrow_back),
                     onPressed: () => Navigator.pop(context, false),
                   ),
-                  title: Text(reward.name),
+                  title: Text(award.name),
                 ),
 
 
@@ -59,7 +59,7 @@ class RewardPage extends StatelessWidget {
                                       child:
                                       Text(
 
-                                        'Achievement: ' + reward.achievement + '!',
+                                        'Achievement: ' + award.achievement + '!',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
 
@@ -106,9 +106,9 @@ fontWeight: FontWeight.bold,
 
                                             backgroundImage: AssetImage(
                                                 'assets/images/badge/' +
-                                                    (reward.image == null
+                                                    (award.image == null
                                                         ? 'noavatar.png'
-                                                        : reward.image)
+                                                        : award.image)
                                                  ),
                                             radius: 100.0,
                                             child: Column(
@@ -132,7 +132,7 @@ fontWeight: FontWeight.bold,
                                       child:
                                       Text(
 
-                                        '"' + reward.name + '"',
+                                        '"' + award.name + '"',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
 
@@ -171,7 +171,7 @@ fontWeight: FontWeight.bold,
 
 
                                                   Text(
-                                                    reward.description,
+                                                    award.description,
 
                                                     style: TextStyle(
                                                       color: Theme.of(context).appBarTheme.color,

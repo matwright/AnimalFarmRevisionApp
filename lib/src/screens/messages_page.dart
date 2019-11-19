@@ -1,30 +1,29 @@
-import 'dart:math';
-import 'dart:ui' as prefix0;
+
 
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
+
 import 'package:animal_farm/src/widgets/message_widget.dart';
 
 import 'package:animal_farm/util/data.dart';
-import 'package:clock/clock.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:frideos/frideos.dart';
 
 import '../models/appstate.dart';
-import '../models/category.dart';
-import  'package:avatar_glow/avatar_glow.dart';
+
 
 class MessagesPage extends StatelessWidget {
+
+  static const   DEFAULT_LOCATION="The Barn";
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
     appState.loadMessages();
 
-    return ValueBuilder(
-        streamed: appState.numMessages,
-        builder: (context, snapshotNumMessages) {
+
       return Scaffold(
           bottomNavigationBar:BottomNavWidget(selectedIndex:3),
           appBar: AppBar(
@@ -39,11 +38,11 @@ class MessagesPage extends StatelessWidget {
     // drawer: DrawerWidget(),
     body: FadeInWidget(
 
-      duration: 100,
+      duration: 20,
       child: Container(
 
           margin: const EdgeInsets.symmetric(vertical: 20.0),
-        padding: const EdgeInsets.symmetric(horizontal: 18.0),
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: ValueBuilder<List<Message>>(
               streamed: appState.messagesStream,
           noDataChild: const CircularProgressIndicator(),
@@ -56,7 +55,7 @@ class MessagesPage extends StatelessWidget {
               body: ListView.separated(
                 padding: EdgeInsets.symmetric(vertical: 0),
                 separatorBuilder: (context, index) {
-                  return Divider();
+                  return Padding(padding: EdgeInsets.all(10),);
                 },
                 itemCount: snapshot.data.length,
                 itemBuilder: (BuildContext context, int index) {
@@ -69,7 +68,7 @@ class MessagesPage extends StatelessWidget {
                     text:message.text,
                     rune:message.rune,
                     avatar: 'assets/images/avatar/'+character['avatar'],
-                    time: character['name'],
+                      location: message.location??DEFAULT_LOCATION,
                     appState:AppState()
                   );
                 },
@@ -79,7 +78,7 @@ class MessagesPage extends StatelessWidget {
     })
 
     )
-    ));});
+    ));
     }
 
 }

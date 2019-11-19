@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:animal_farm/src/models/trivia_stats.dart';
 import 'package:frideos_core/frideos_core.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/models.dart';
 import '../models/question.dart';
@@ -95,7 +96,7 @@ class TriviaBloc {
   }
 
 
-  void _endTrivia() {
+  void _endTrivia() async{
     print("endTrivia");
 
     // RESET
@@ -114,6 +115,10 @@ class TriviaBloc {
     // in the next game
     currentQuestion.value = null;
     triviaState.value.isTriviaEnd = true;
+    //set total correct answers in the prefs
+    SharedPreferences prefs= await SharedPreferences.getInstance();
+    int currentCorrectAnswers=prefs.getInt('correctAnwers')??0;
+    prefs.setInt('currentCorrectAnswers', currentCorrectAnswers+stats.value.corrects.length);
     Timer(Duration(milliseconds: 1), () {
 
 

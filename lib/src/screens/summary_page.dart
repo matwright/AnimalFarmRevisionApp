@@ -60,7 +60,7 @@ class SummaryPage extends StatelessWidget {
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.w700,
                                     fontFamily: 'Raleway',
-                                    color: Colors.white70,
+
                                     letterSpacing: 3.0,
                                     shadows: [],
                                   ),
@@ -75,7 +75,7 @@ class SummaryPage extends StatelessWidget {
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.w700,
                                     fontFamily: 'Raleway',
-                                    color: Colors.white70,
+
                                     letterSpacing: 3.0,
                                     shadows: [],
                                   ),
@@ -90,7 +90,7 @@ class SummaryPage extends StatelessWidget {
                                     fontSize: 24.0,
                                     fontWeight: FontWeight.w700,
                                     fontFamily: 'Raleway',
-                                    color: Colors.white,
+
                                     letterSpacing: 2.0,
                                     shadows: [],
                                   ),
@@ -108,7 +108,7 @@ class SummaryPage extends StatelessWidget {
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.w700,
                                     fontFamily: 'Raleway',
-                                    color: Colors.white,
+
                                     letterSpacing: 2.0,
                                     shadows: [],
                                   ),
@@ -119,7 +119,9 @@ class SummaryPage extends StatelessWidget {
                                 child: AvatarGlow(
                                   startDelay:
                                   Duration(milliseconds: 1000),
-                                  glowColor: Colors.white,
+                                  glowColor:(character != null
+                                      ? character.color
+                                      : Colors.blueGrey),
                                   endRadius: 120.0,
                                   duration: Duration(milliseconds: 2000),
                                   repeat: true,
@@ -129,7 +131,9 @@ class SummaryPage extends StatelessWidget {
                                   child: Material(
                                       elevation: 8.0,
                                       shape: CircleBorder(),
-                                      color: Colors.white70,
+                                      color: (character != null
+                                          ? character.color
+                                          : Colors.blueGrey),
 
                                         child: CircleAvatar(
                                           backgroundColor:

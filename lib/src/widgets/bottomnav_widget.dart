@@ -1,5 +1,9 @@
 import 'package:animal_farm/src/models/appstate.dart';
+import 'package:animal_farm/src/screens/main_page.dart';
+import 'package:animal_farm/src/screens/messages_page.dart';
+import 'package:animal_farm/src/screens/awards_page.dart';
 import 'package:animal_farm/src/widgets/empty_widget.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:frideos/frideos.dart';
 
@@ -35,18 +39,19 @@ class _BottomNavState extends State<BottomNavWidget> {
 
       switch(index){
         case(0):
-        Navigator.pushNamed(context, "/");
+
+        Navigator.push(context, MaterialPageRoute(builder: (context) => MainPage()));
         break;
         case(1):
           Navigator.pushNamed(context, "/trivia");
           break;
         case(2):
-          Navigator.pushNamed(context, "/rewards");
+          Navigator.push(context, MaterialPageRoute(builder: (context) => AwardsPage()));
           break;
 
         case(3):
+          Navigator.push(context, MaterialPageRoute(builder: (context) => MessagesPage()));
 
-          Navigator.pushNamed(context, "/messages");
           break;
       }
     });
@@ -61,17 +66,18 @@ return ValueBuilder(
     streamed: appState.messagesUnseenStream,
     builder: (context, snapshotUnseenMessages) {
 return ValueBuilder(
-    streamed: appState.rewardsUnseenStream,
-    builder: (context, snapshotUnseenRewards) {
+    streamed: appState.awardsUnseenStream,
+    builder: (context, snapshotUnseenAwards) {
     return BottomNavigationBar(
-
+        selectedItemColor:Theme.of(context).primaryColor,
         backgroundColor: Theme.of(context).bottomAppBarColor,
         currentIndex: widget.selectedIndex,
-selectedItemColor:Colors.blue[200],
+      unselectedItemColor:Theme.of(context).primaryColor.withOpacity(0.4),
 
         onTap: _onItemTapped,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
+
               icon: Icon(Icons.account_circle), title: Text('Home')),
 
           BottomNavigationBarItem(
@@ -85,7 +91,7 @@ selectedItemColor:Colors.blue[200],
                     // draw a red marble
                     top: 0.0,
                     right: -0.0,
-                    child:  (snapshotUnseenRewards.data>0? new Container(
+                    child:  (snapshotUnseenAwards.data>0? new Container(
                       padding: EdgeInsets.all(1),
                       decoration: new BoxDecoration(
                         color: Colors.red,
@@ -96,9 +102,9 @@ selectedItemColor:Colors.blue[200],
                         minHeight: 10,
                       ),
                       child: new Text(
-                        snapshotUnseenRewards.data.toString(),
+                        snapshotUnseenAwards.data.toString(),
                         style: new TextStyle(
-                          color: Colors.white,
+
                           fontSize: 8,
                         ),
                         textAlign: TextAlign.center,
