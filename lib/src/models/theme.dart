@@ -8,7 +8,13 @@ class MyTheme {
       this.scaffoldBackgroundColor,
       this.primaryColor,
       this.primaryColorBrightness,
-      this.accentColor});
+      this.accentColor,
+        this.bottomAppBarColor,
+        this.dividerColor,
+        this.buttonColor,
+        this.secondaryHeaderColor,
+        this.cardColor
+      });
 
   String name;
   Brightness brightness;
@@ -17,4 +23,11 @@ class MyTheme {
   Color primaryColor;
   Brightness primaryColorBrightness;
   Color accentColor;
+  Color bottomAppBarColor;
+  Color dividerColor;
+  Color buttonColor;
+  Color secondaryHeaderColor;
+  Color cardColor;
+
+
 }

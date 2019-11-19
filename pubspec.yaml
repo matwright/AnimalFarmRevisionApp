@@ -23,11 +23,14 @@ dependencies:
   frideos: ^0.6.0
   avatar_glow: 1.0.0
   clock:  ^1.0.1
-  flutter_local_notifications: ^0.8.4
+  bubble: ^1.1.9
+  photo_view: ^0.7.0
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   sticky_headers: ^0.1.8
+  shared_preferences: ^0.5.3
+  flutter_ringtone_player: ^1.0.3
 dev_dependencies:
   flutter_test:
     sdk: flutter
