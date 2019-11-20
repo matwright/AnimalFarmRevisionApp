@@ -2,7 +2,8 @@ import 'dart:math';
 import 'dart:ui' as prefix0;
 
 import 'package:animal_farm/src/models/character.dart';
-import 'package:animal_farm/src/screens/settings_page.dart';
+import 'package:animal_farm/src/models/theme.dart';
+import 'package:animal_farm/src/screens/instructions_page.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -169,7 +170,7 @@ class MainPage extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      width: double.infinity,
+                                      width: double.maxFinite,
                                       child: AvatarGlow(
                                         startDelay:
                                             Duration(milliseconds: 1000),
@@ -258,6 +259,14 @@ class DrawerWidget extends StatelessWidget {
 
     final appState = AppStateProvider.of<AppState>(context);
 
+    List<Widget> _buildThemesList() {
+      return appState.themes.map((MyTheme appTheme) {
+        return DropdownMenuItem<MyTheme>(
+          value: appTheme,
+          child: Text(appTheme.name, style: const TextStyle(fontSize: 14.0)),
+        );
+      }).toList();
+    }
 
 
     return ValueBuilder(
@@ -272,7 +281,9 @@ class DrawerWidget extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
+
             child: Center(
+
               child: const Text(
                 'Animal Farm',
                 style: TextStyle(
@@ -289,7 +300,8 @@ class DrawerWidget extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: const Text('Theme'),
+            leading: Icon(Icons.info,color: Theme.of(context).primaryColor.withOpacity(0.5),size: 32,),
+            title: const Text('Instructions'),
             onTap: () {
               Navigator.pop(context);
               Navigator.push(
@@ -298,9 +310,39 @@ class DrawerWidget extends StatelessWidget {
               );
             },
           ),
-          AboutListTile(
-            child: Text(elapsed.toString() + " seconds"),
+          ListTile(
+            title: const Text('Colour Theme'),
+            leading: Icon(Icons.color_lens,color: Theme.of(context).primaryColor.withOpacity(0.5),size: 32,)
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+
+              ),
+              ValueBuilder<MyTheme>(
+                  streamed: appState.currentTheme,
+                  builder: (context, snapshot) {
+                    return DropdownButton<MyTheme>(
+
+                      hint: const Text('Theme'),
+                      value: snapshot.data,
+                      items: _buildThemesList(),
+                      onChanged: appState.setTheme,
+                    );
+                  }),
+            ],
+          ),
+
+          AboutListTile(
+
+            applicationIcon: Image(image:AssetImage('assets/images/trotter.png'),width: 64),
+            applicationName: "Animal Farm",
+            applicationVersion: "1.0.0.beta",
+            icon: Image(image:AssetImage('assets/images/trotter.png'),width: 32),
+            applicationLegalese: "More equal than the others",
+          )
         ],
       ),
     );});

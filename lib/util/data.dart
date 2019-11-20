@@ -94,6 +94,48 @@ List<Map<String, dynamic>> characters = [
     "text_color": Color(0xff333333)
   },
   {
+    "id": "sheep",
+    "name": "Sheep",
+    "avatar": "sheep.png",
+    "bio":
+    "Sheep",
+    "strap_line": "baaaah",
+    "color": Color(0xFFF9A825),
+    "text_color": Color(0xff333333)
+  },
+  {
+    "id": "cow",
+    "name": "Cow",
+    "avatar": "cow.png",
+    "bio":
+    "Cow",
+    "strap_line": "Moooo.",
+    "color": Color(0xFFF9A825),
+    "text_color": Color(0xff333333)
+  },
+  {
+    "id": "rats",
+    "name": "Rats",
+    "avatar": "rats.png",
+    "bio":
+    "Rats",
+    "strap_line": "Hello",
+    "color": Color(0xFFF9A825),
+    "text_color": Color(0xff333333)
+  },
+
+  {
+    "id": "birds",
+    "name": "Birds",
+    "avatar": "birds.png",
+    "bio":
+    "birds",
+    "strap_line": "Tweet",
+    "color": Color(0xFFF9A825),
+    "text_color": Color(0xff333333)
+  },
+
+  {
     "id": "benjamin",
     "name": "Benjamin",
     "avatar": "benjamin.png",

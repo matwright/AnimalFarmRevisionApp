@@ -34,8 +34,8 @@ class AwardsPage extends StatelessWidget {
       duration: 20,
       child: Container(
 
-          margin: const EdgeInsets.symmetric(vertical: 20.0),
-        padding: const EdgeInsets.symmetric(horizontal: 36.0),
+          margin: const EdgeInsets.symmetric(vertical: 10.0),
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
         child: ValueBuilder<List<Award>>(
           streamed: appState.awardsStream,
           noDataChild: const CircularProgressIndicator(),
@@ -45,7 +45,7 @@ class AwardsPage extends StatelessWidget {
 return  GridView.count(
   // Create a grid with 2 columns. If you change the scrollDirection to
   // horizontal, this produces 2 rows.
-  crossAxisCount: 3,
+  crossAxisCount: 2,
   // Generate 100 widgets that display their index in the List.
   children:  List.generate(15, (index)
   {
@@ -62,28 +62,15 @@ return  GridView.count(
             GestureDetector(
               onTap:  () {if(award!=null){appState.awardInfo(award,context);}},
               child:
-        AvatarGlow(
-          startDelay: Duration(milliseconds: 1000),
-          glowColor: Colors.white,
-          endRadius: 100.0,
-          duration: Duration(milliseconds: 2000),
-          repeat: true,
-          showTwoGlows: true,
-          repeatPauseDuration: Duration(milliseconds: 100),
-          child: Material(
+   CircleAvatar(
 
-            elevation: 8.0,
-            shape: CircleBorder(),
-            color: Colors.black26,
-            child: CircleAvatar(
+              backgroundColor:Theme.of(context).scaffoldBackgroundColor,
+              backgroundImage: (award!=null?AssetImage('assets/images/badge/'+award.image):AssetImage('assets/images/badge/medal.png')),
 
-              backgroundColor: Colors.black26,
-              backgroundImage: (award!=null?AssetImage('assets/images/badge/'+award.image):null),
-              radius: 80.0,
 
             ),
           ),
-        )));
+        );
   }),
 
 );

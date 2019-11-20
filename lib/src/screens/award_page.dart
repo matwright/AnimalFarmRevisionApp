@@ -66,7 +66,7 @@ class AwardPage extends StatelessWidget {
                                           fontSize: 16.0,
 fontWeight: FontWeight.bold,
 
-                                          color: Colors.white,
+
                                           letterSpacing: 2.0,
                                           shadows: [
                                           ],
@@ -79,30 +79,11 @@ fontWeight: FontWeight.bold,
 
 
                                 Container(
-                                  width: double.infinity,
+                                  padding: EdgeInsets.all(10),
 
-                                  child: AvatarGlow(
-                                    startDelay: Duration(milliseconds: 1000),
-                                    glowColor: Colors.yellow,
-                                    endRadius: 120.0,
-
-                                    duration: Duration(milliseconds: 2000),
-                                    repeat: true,
-                                    showTwoGlows: true,
-                                    repeatPauseDuration: Duration(
-                                        milliseconds: 100),
-                                    child: Material(
-                                        elevation: 8.0,
-                                        shape: CircleBorder(
-
-                                        ),
-                                        color: Colors.white70,
-
-
-
-
+height:300,width:300,
                                           child: CircleAvatar(
-                                            backgroundColor:  Theme.of(context).backgroundColor,
+                                            backgroundColor:  Theme.of(context).scaffoldBackgroundColor,
 
                                             backgroundImage: AssetImage(
                                                 'assets/images/badge/' +
@@ -110,7 +91,8 @@ fontWeight: FontWeight.bold,
                                                         ? 'noavatar.png'
                                                         : award.image)
                                                  ),
-                                            radius: 100.0,
+                                            minRadius: 100.0,
+                                            maxRadius:  double.maxFinite,
                                             child: Column(
                                               mainAxisAlignment: MainAxisAlignment
                                                   .center,
@@ -119,8 +101,8 @@ fontWeight: FontWeight.bold,
                                             ),
                                           ),
 
-                                    ),
-                                  ),
+
+
                                 ),
 
 
@@ -139,7 +121,7 @@ fontWeight: FontWeight.bold,
                                           fontSize: 16.0,
                                           fontStyle: prefix0.FontStyle.italic,
 
-                                          color: Colors.white,
+
                                           letterSpacing: 2.0,
                                           shadows: [
                                           ],
@@ -150,14 +132,14 @@ fontWeight: FontWeight.bold,
                                 ),
 
                                 Container(
-                                  padding: EdgeInsets.all(20),
+
 
                                   child:
 
                                   Bubble(
-                                      color: Theme.of(context).primaryColor,
+                                      color: Theme.of(context).secondaryHeaderColor,
                                       padding: BubbleEdges.all(10),
-
+                                      margin: BubbleEdges.fromLTRB(10,10,10,0),
                                       child:Container(
 
                                           alignment: Alignment.center,
