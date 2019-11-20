@@ -20,14 +20,14 @@
    "created_by": "old_major",
    "text": "Meeting Preview: \"Get your singing voice ready. #Teaser"
  },{
-   "created_by": "birds",
-   "text":"We can sing!  This is what we've been waiting for. Thanks @OldMajor"
+   "created_by": "clover",
+   "text":"The birds can sing. Think I may need to mime!"
  },{
     "created_by": "old_major",
     "text": "Meeting Preview: \"Man is the only creature that consumes without producing #Teaser #DontBeLate"
  },{
-    "created_by": "rats",
-    "text": "Yay! Thanks everyone for voting us as comrades. #PartOfTheTeam"
+    "created_by": "boxer",
+    "text": "Well done Rats, so glad you're now comrades. #PartOfTheTeam"
  },{
     "created_by": "boxer",
     "text": "Amazing meeting. Thanks @OldMajor. I love \"Beasts of England"
@@ -88,16 +88,14 @@
    "created_by": "benjamin",
    "text": "Where's Jones? I'm starving. #NoFood."
  },{
-   "created_by": "cow",
-   "text": "Ok. Hang on everyone.  I'm going to ram the door.  We MUST eat soon. #SoHungry #NomNom"
+   "created_by": "clover",
+   "text": "Wonder if anyone could ram the door.  We MUST eat soon. #SoHungry #NomNom"
  },{
    "created_by": "benjamin",
    "text": "Oh look. There goes Moses. With the humans. Surprise surprise. #Traitor #Spy"
- },
- 
- {
+ },{
    "created_by": "boxer",
-   "text": "Bye straw hat. You've been good to me...",
+   "text": "Bye straw hat. You've been good to me, but no clothes allowed",
    "image": "strawhat.png"
  },{
    "created_by": "mollie",
@@ -109,6 +107,11 @@
    "created_by": "snowball",
    "text": "8am tomorrow. Recce of the farm. OUR farm. Pls ReTrot. #WeWon #Rebellion #LoadsOfRoom"
  },{
+   "created_by": "benjamin",
+   "text": "Boxer made me do this",
+   "image": "spotlightonbenjamin.jpg"
+ },{
+
    "created_by": "napoleon",
    "text": "As agreed.  The farmhouse is now a museum.  Not a place to live."
  },{
@@ -117,11 +120,14 @@
    "image": "gate.png"
  },{
    "created_by": "snowball",
+   "image": "farmname.gif"
+ },{
+   "created_by": "snowball",
    "text": "You seen the latest? Pls ReTrot #7Commandments",
    "image": "7comm.jpg"
  },{
    "created_by": "snowball",
-   "text": "Which is your favourite commandment?  Answer in the comments/ #LoveTheSeven #TheWayForward"
+   "text": "Which is your favourite commandment?  Answer in the comments. #LoveTheSeven #TheWayForward"
  },{
    "created_by": "napoleon",
    "text": "Nice work on the harvest, comrades. #WotNoMilk #NothingToSeeHere",
@@ -138,6 +144,10 @@
  },{
    "created_by": "snowball",
    "text": "A big shout out to the hens and ducks for making sure there was no wastage. #TheVeryLastStalk"
+ },{
+   "created_by": "snowball",
+   "text": "Look how cute I was",
+   "image": "SnowballTBT.jpg"
  },{
    "created_by": "muriel",
    "text": "@Boxer, you are working like 3 horses.How do you do it? #SoStrong #MyHero"
@@ -200,24 +210,19 @@
    "created_by": "snowball",
    "text": "Change of plan everyone. To make things easier, we've decided to reduce the 7 commandments to \"Four Legs Good. Two Legs Bad.\" Pls ReTrot. #JustOneToRemember #Animalism"
  },{
-   "created_by":"birds",
-   "text": "Erm. Excuse us @Snowball. WE ONLY HAVE TOW LEGS #WhatAboutUs #BirdsAreComradesToo"
+   "created_by":"muriel",
+   "text": "What about the birds @Snowball? #BirdsAreComradesToo"
  },{
    "created_by": "snowball",
    "text": "Wings count."
  },{
-   "created_by": "birds",
-   "text": "Thanks @Snowball. #SnowballFans #4LegsGood2LegsBad"
- },{
-   "created_by": "clover",
-   "text": "Thanks to the pigs for encouraging us in the field #motiation"
- },{
-   "created_by": "sheep",
-   "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
- },{
    
-   "created_by": "sheep",
-   "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
+   "created_by": "clover",
+   "text": "Thanks to the pigs for encouraging us in the field. #motiation"
+ },{
+   "created_by": "muriel",
+   "text": "This was fun to do!",
+   "image": "spotlightonmuriel.jpg"
  },{
    "created_by": "napoleon",
    "text": "Thanks for the puppies. #EducateThemYoung #SchoolLoft"
@@ -230,9 +235,6 @@
  },{
    "created_by": "squealer",
    "text": "Milk and apples proven to help pigs’ brains. Science: Milk + apples for pigs = No. More. Jones. #Animalism #Rebellion #LongLiveAnimalFarm"
- },{
-   "created_by": "pigeons",
-   "text": "Done it! #SpreadTheWord #BeastsOfEngland"
  },{
    "created_by": "jones",
    "text": "Good-for-nothing animals. #ItsMyFarm"
@@ -255,20 +257,17 @@
    "created_by": "snowball",
    "text": "Great work by the pigeons. Beasts of England is being sung across all the farms #BiggerRebellion #Animalism #4LegsGood2LegsBad"
  },{
-   "created_by": "pigeons",
+   "created_by": "mollie",
    "text": "Jones is back. With his men and other farmers. Jones is back. JONES IS BACK."
  },{
    "created_by": "snowball",
-   "text": "Right everyioe. This is it. #WhatWouldCaesarDo"
+   "text": "Right everyone. This is it. #WhatWouldCaesarDo"
  },{
    "created_by": "boxer",
    "text": "What have I done? I have no wish to take a life. #BigShoes #BrokenHeart"
  },{
    "created_by": "snowball",
-   "text": "War is war. The only good human is a dead one. #QuoeOfTheDay"
- },{
-   "created_by": "sheep",
-   "text": "Baaaaaa Baaaaaa Baaaaaa #RIPHarrietSheep"
+   "text": "War is war. The only good human is a dead one. #QuoteOfTheDay"
  },{
    "created_by": "snowball",
    "text": "Thank you to Harriet Sheep for sacrificing her life. We plant this hawthorn bush to remember her. #RIPHarrietSheep"
@@ -307,12 +306,12 @@
    "created_by": "mollie",
    "text": "Laters Everyone! #HereComesTheSugar #NosePetting #PrettyRibbons"
  },{
-   "created_by": "pigeons",
-   "text": "She's gone to the enemy camp. We saw her. In Willingdon. With ribbons. And being stroked. #MollieTraitor #NotToBementionedAgain"
+   "created_by": "benjamin",
+   "text": "I heard the pigeons saw her. In Willingdon. With ribbons. And being stroked. #MollieTraitor #NotToBementionedAgain"
  },{
-   "created_by": "sheep",
-   "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
- },{
+   "created_by": "snowball",
+   "image": "spotlightonsnowball"
+ },{  
    "created_by": "napoleon",
    "text": "Snowball is wasting his time on complicated schemes and plans. They won't work. Don't waste your time with him. #IAmTopPig #WhoNeedsPlans"
  },{
@@ -324,7 +323,7 @@
    "image": "books.jpg"
  },{
    "created_by": "snowball",
-   "text": "Do you want tobuild a windmill? #Frozen3 #WarmWinter #NoOlafHere"
+   "text": "Do you want to build a windmill? #Frozen3 #WarmWinter #NoOlafHere"
  },{
    "created_by": "napoleon",
    "text": "The windmill won't work. It's a crazy idea. #SnowballLostIt"
@@ -369,13 +368,7 @@
    "created_by": "napoleon",
    "text": "No more Sunday meetings to discuss farm business. The pigs will discuss and report back our decisions. But we will still meet to sing Beasts of England."
  },{
-    "created_by": "sheep",
-    "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
- },{
-    "created_by": "sheep",
-    "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad.",
-    "image": "4legs.jpg"
- },{
+    
    "created_by": "squealer",
    "text": "Loyalty and obedience are the way forward and the only way to stop Jones returning.  Surely comrades you do not want Jones back? #FakeNews #PigsKnowBest."
  },{
@@ -386,16 +379,17 @@
    "text": "Why has Old Major's skull been dug up? #LetHimRIP"
  },{
    "created_by": "benjamin",
-   "text": "Another order. Great. We must file past if every Sunday before getting our orders for the week. #DoImissJones?"
+   "text": "Another order. Great. We must file past it every Sunday before getting our orders for the week. #DoImissJones?"
+ },{
+   "created_by": "boxer",
+   "text": "For my best comrade, Benjamin",
+   "image": "benjaminTBT"
  },{
    "created_by": "napoleon",
    "text": "The windmill will be built. It will be hard work and rations may be reduced. The build will take two years. The pigs have planned it all. #PigsRule #WindmillWasMyIdea"
  },{
    "created_by": "squealer",
    "text": "The windmill was Napoleon's idea and Snowball sole his plan. #FakeNews #TheyFellForIt"
- },{
-    "created_by": "sheep",
-   "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
  },{
    "created_by": "benjamin",
    "text": "Oh for goodness sake. Make your mind up. #Eyeroll #Sigh #Bored"
@@ -415,9 +409,6 @@
     "created_by": "benjamin",
     "text": "What she said. #BFF"
  },{
-    "created_by": "bluebell",
-    "text": "Has anyone seen the dog biscuits? #hungry"
- },{
     "created_by": "clover",
     "text": "We need some iron for our shoes. Anyone moved it? #Can'tFindTheIron"
  },{
@@ -427,17 +418,8 @@
     "created_by": "napoleon",
     "text": "We are starting to trade with neighbouring farms, just to get the materials we need. #SellThatHay"
  },{
-    "created_by": "sheep",
-    "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
- },{
-    "created_by": "sheep",
-   "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
- },{
     "created_by": "napoleon",
     "text": "May need to sell some eggs at the market. @TheHens you get to contribute to the windmill build in your own special way #EggsForSale"
- },{
-    "created_by": "whymper",
-    "text": "Pleased to be dealing with the animals at Animal Farm.  Should make some good commission. #TradeWithPigs"
  },{
     "created_by": "squealer",
     "text": "For those of you wondering about money and trade, there was never anything said about it.  You may have dreamt it? #Nightmares"
@@ -455,6 +437,11 @@
     "created_by": "clover",
     "text": "Have you seen? The pigs have moved into the farmhouse. Wasn't there something about that? Can anyone remember? #DodgyMemory"
  },{
+    "created_by": "muriel",
+    "text": "It's Thursday!",
+    "image": "murielTBT.jpg"
+ },{
+ 
     "created_by": "squealer",
     "text": "It is vital that pigs have somewhere quiet to plan.  And the farmhouse is nothing less than our Leader, Napoleon deserves. #NapoleonOurLeader #FarmhouseOK"
  },{
@@ -507,17 +494,11 @@
     "created_by": "squealer",
     "text": "@TheHens we need your eggs. We need 400 a week to pay for the food until summer. #KeepLaying"
  },{
-    "created_by": "the_hens",
-    "text": "No @Squealer. That's murder. We won't do that. Find another way. #OurEggs."
- },{
     "created_by": "napoleon",
     "text": "DO NOT feed the hens under any circumstances. They are refusing to work for the greater good. #EggsForAll #GiveUsYourEggs #NoFoodForYou"
  },{
     "created_by": "squealer",
     "text": "Snowball has been here at night.  Stay vigilant. #TraitorInOurMidst"
- },{
-    "created_by": "the_cows",
-    "text": "He milked us in our sleep. #Weird #AndGrateful"
  },{
     "created_by": "napoleon",
     "text": "He’s been everywhere. I’ve smelt him."
@@ -534,6 +515,11 @@
    "created_by": "boxer",
    "text": "Ah. If Comrade Napoleon says it, it must be right. #LongLiveNapoleon"
  },{
+    "created_by": "boxer",
+    "text": "I love these...",
+    "image": "spotlightonboxer.jpg"
+ },{
+ 
     "created_by": "squealer",
     "text": "Word of warning. Snowball's agents are among us... #StayVigilant"
  },{
@@ -555,17 +541,8 @@
     "created_by": "squealer",
     "text": "Beasts of England has been banned. The rebellion is over. The traitors were executed. We don't need the song anymore."
  },{
-    "created_by": "sheep",
-    "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
- },{
-   "created_by": "sheep",
-   "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
-  },{
-   "created_by": "sheep",
-   "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
- },{
-    "created_by": "minimus",
-    "text": "I wrote you all a song. \"Animal Farm, Animal Farm, Never through me shalt thou come to harm!\" Do you like the opening? #SongWriting #ImpressNapoleon"
+    "created_by": "clover",
+    "text": "It's ok. @Minimus has written us another song.  I wonder what it's like?" 
  },{
     "created_by": "clover",
     "text": "The sixth commandment says: \"No animal shall kill any other animal without cause.\" #DidItChange #ItCantHaveDone"
@@ -573,12 +550,12 @@
     "created_by": "benjamin",
     "text": "Why is Squealer always reading figures to us? I'd rather have more food. #StillHungry  #AndGrumpy"
  },{
-    "created_by": "minimus",
-    "text": "Do you like my poem @Napoleon? #LongLiveNapoleon #Inspiration",
+    "created_by": "muriel",
+    "text": "Minimus wrote a poem aswell",
     "image": "minimus.jpg"
  },{
-    "created_by": "minimus",
-    "text": "Yay! Napoleon said I could put it on the wall of the barn. Next to a pic by Squealer. #FamousPoet"
+    "created_by": "muriel",
+    "text": "Napoleon said Minimus could put it on the wall of the barn. Next to a painting by Squealer. #FamousPoet"
  },{
     "created_by": "pilkington",
     "text": "Getting some great timber from Manor Farm #WontCallItAnimalFarm"
@@ -634,24 +611,22 @@
     "created_by": "boxer",
     "text": "Thanks @Clover for you know what! I think it's getting better. #Friends #Healing"
  },{
+    "created_by": "clover",
+    "text": "I miss my mum",
+    "image": "cloverTBT.jpg"
+ },{
     "created_by": "muriel",
     "text": "Rations again? Wish I was a dog or a pig"
  },{
     "created_by": "squealer",
     "text": "Congratulations @Napoleon on your 31 kids! #LongLiveNapoleon #LotsAndLotsOfPigs"
  },{
-    "created_by": "the_hens",
+    "created_by": "benjamin",
     "text": "How come the pigs are getting beer every day? #WhatAboutUs?"
  },{
     "created_by": "napoleon",
     "text": "Once a week we shall hold a Spontaneous Demonstration.  Feel free to write me poems and we will celebrate everything. #LongLiveMe"
   },{
-    "created_by": "sheep",
-   "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
-  },{
-    "created_by": "sheep",
-   "text": "4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad. 4 legs good. 2 legs bad."
- },{
  
    "created_by": "napoleon",
    "text": "I am now President. Thanks to all who voted for me. It's an honour. #PresidentNapoleon #LongLiveNapoleon #NapoleonRocks"
@@ -718,18 +693,13 @@
  },{
     "created_by": "squealer",
     "text": "All the sheep must come with me in the morning to the other end of the farm for a special task. #Sheep #FollowMe"
- },{
-    "created_by": "the_sheep",
-    "text": "We've got a secret mission! #SheepRock"
+
  },{
     "created_by": "clover",
     "text": "I couldn't believe what I was seeing.  How is it possible they are walking on two legs? And Napoleon had a whip. What is happening? #WorldFallingApart #CantBelieveMyEyes"
  },{
     "created_by": "benjamin",
     "text": "I looked at Clover. We couldn't believe this was happening. The other animals were looking scared and confused. #What's happening?"
- },{
-    "created_by": "the_sheep",
-    "text": "Four legs good. Two legs better! Four legs good. Two legs better! Four legs good. Two legs better! Four legs good. Two legs better!"
  },{
     "created_by": "clover",
     "text": "Then we went to the commandments and I asked Benjamin to check they were all there."
@@ -738,9 +708,12 @@
     "text": "It said ALL ANIMALS ARE EQUAL BUT SOME ANIMALS ARE MORE EQUAL THAN OTHERS. Nothing suprised us from then. #WorldUpsideDown #CrazyTimes"
  },{
     "created_by": "benjamin",
+    "image": "comms.gif"
+ },{
+    "created_by": "benjamin",
     "text": "The newspapers, the clothes, the pipes and the whips. #ResignedToItAll"
  },{
-    "created_by": "the_cows",
+    "created_by": "clover",
     "text": "Why are there farmers in the house with the pigs? #Confused"
  },{
     "created_by": "pilkington",
@@ -751,7 +724,9 @@
     "image":"newflag.jpg"
  },{ 
     "created_by": "benjamin",
-    "text": "We all looked through the window and couldn't tell who was a pig and who was a man..."
+    "text": "We all looked through the window and couldn't tell who was a pig and who was a man...",
+    "image": "manorpig.gif"
+ 
  },{
     "created_by": "squealer",
     "image":"pigsrelationship.jpg"
