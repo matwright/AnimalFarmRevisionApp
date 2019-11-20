@@ -343,7 +343,10 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
   void _createThemes(List<MyTheme> themes) {
     themes.addAll([
 
-    MyTheme(  name: 'light'),
+    MyTheme(
+        name: 'light',
+      backgroundColor:  Colors.grey
+    ),
       MyTheme(
         name: 'blue',
         brightness: Brightness.dark,
