@@ -1318,6 +1318,157 @@
 		"question": "Who tastes all Napoleon's food to make sure it isn't poisoned?",
 		"correct_answer": "Pinkeye",
 		"incorrect_answers": ["Squealer", "One of the dogs", "Curly"]
-	}		
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who did not understand Snowball's long words?",
+		"correct_answer": "The birds",
+		"incorrect_answers": ["The rats", "The sheep", "The cows"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who was killed in the Battle of the Cowshed?",
+		"correct_answer": "A sheep",
+		"incorrect_answers": ["A stable boy", "A cow", "A bird"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Whose side is Moses on?",
+		"correct_answer": "Jones",
+		"incorrect_answers":["The animals", "His own", "Pilkington's"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Whose rise to power does Napoleon's mirror?",
+		"correct_answer": "Stalin",
+		"incorrect_answers": ["Trotsky", "Tsar Nicholas II", "Lenin"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who has doubts about animalism?",
+		"correct_answer": "Clover",
+		"incorrect_answers":["Benjamin", "Muriel", "Snowball"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who casts 'a very ugly look' at Boxer?",
+		"correct_answer": "Squealer",
+		"incorrect_answers": ["Napoleon", "Mollie", "The cat"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Why does Napoleon gallop around the yard in a bowler hat?",
+		"correct_answer": "He was drunk",
+		"incorrect_answers": ["He was trying to catch Snowball", "He was showing how silly animals looked with clothes on","He didn't realise he had the hat on"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which part of the farm was supposed to be put aside for animals when they retired?",
+		"correct_answer": "A corner of the pasture",
+		"incorrect_answers": ["The spinney", "The paddock", "By the drinking pool"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which two animals read the final single commandment?",
+		"correct_answer": "Benjamin and Clover",
+		"incorrect_answers": ["Benjamin and Muriel", "Clover and Squealer", "Benjamin and Boxer"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does Whymper do as a job?",
+		"correct_answer": "Solicitor",
+		"incorrect_answers": ["Accountant", "Estate Manager", "Animal Trainer"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "How many hens were executed?",
+		"correct_answer": "3",
+		"incorrect_answers": ["4", "5", "2"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "WHich animals were the first to be executed?",
+		"correct_answer": "4 pigs",
+		"incorrect_answers": ["3 hens", "5 pigeons", "2 sheep"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which two animals are not convinced about life without Jones?",
+		"correct_answer": "Moses and Mollie",
+		"incorrect_answers": ["Mollie and Muriel", "Moses and Benjamin", "Muriel and Moses"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does Snowball say about the 7 commandments?",
+		"correct_answer": "They are an unalterable law",
+		"incorrect_answers": ["Everyone must learn to read them", "Everyone must learn to write them", "Everyone must recite them every morning and evening"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who executes the animals?",
+		"correct_answer": "The dogs",
+		"incorrect_answers": ["Napoleon", "Squealer", "The cows"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What was the first rumour spread about Snowball after he escaped?",
+		"correct_answer": "He went to Pinchfield, Frederick's farm",
+		"incorrect_answers": ["He went to Foxwood, Pilkington's farm", "He went and found Mollie", "he died"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who does Frederick represent?",
+		"correct_answer": "Hitler",
+		"incorrect_answers": ["Churchill", "Stalin", "Tsar Nicholas II"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who does Pilkington represent?",
+		"correct_answer": "Churchill",
+		"incorrect_answers": ["Hitler", "Stalin", "Lenin"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who attacks Boxer?",
+		"correct_answer": "The Dogs",
+		"incorrect_answers": ["Napoleon", "Moses", "The Pigs"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What is the location of the Battle of the Cowshed?",
+		"correct_answer": "The yard",
+		"incorrect_answers": ["The cowshed", "The barn", "The paddock"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What does Boxer do when he is attacked?",
+		"correct_answer": "Kicks the dog and pins him to the ground",
+		"incorrect_answers": ["Turns and runs", "Gets badly injured", "He doesn't get attacked"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "How many hens die during their rebellion?",
+		"correct_answer": "9",
+		"incorrect_answers": ["6", "3", "8"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who is described as having a wise and benevolent appearance",
+		"correct_answer": "Old Major",
+		"incorrect_answers": ["Boxer", "Snowball", "Benjamin"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "How does Napoleon investigate Snowball sneaking into the farm at night?",
+		"correct_answer": "He tours the farm with his dogs finding Snowball's scent everywhere.",
+		"incorrect_answers": ["He interviews all the animals", "He leaves a trap", "He sends some of the pigs to stay awake all night"]
+	},{
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who is admired and loved by the animals?",
+		"correct_answer": "Boxer",
+		"incorrect_answers": ["Clover", "Snowball", "Mollie"]
+	}
 		
-]
+	]
+		
