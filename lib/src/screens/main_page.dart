@@ -25,6 +25,7 @@ class MainPage extends StatelessWidget {
     final appState = AppStateProvider.of<AppState>(context);
     final hash = sha1.convert(utf8.encode("1")).toString();
     final pattern = Triangles.fromHash(hash);
+
     void _showDialog() {
       // flutter defined function
       showDialog(
@@ -90,7 +91,7 @@ class MainPage extends StatelessWidget {
                   background: Theme.of(context).backgroundColor),
                    child: new BackdropFilter(
                       filter: new prefix0.ImageFilter.blur(
-                          sigmaX: 1.0, sigmaY: 1.0),
+                          sigmaX: 5.0, sigmaY: 0.0),
 
                       child: Container(
                 padding: const EdgeInsets.only(bottom: 10.0),
@@ -173,18 +174,18 @@ class MainPage extends StatelessWidget {
                             showTwoGlows: true,
                             repeatPauseDuration: Duration(milliseconds: 100),
                             child: Material(
-                                elevation: 10.0,
+                                elevation: 25.0,
 
                                 shape: CircleBorder(),
                                 color: (character != null
-                                    ? character.color.withOpacity(0.4)
-                                    : Colors.blueGrey.withOpacity(0.4)),
+                                    ? character.color.withOpacity(0.2)
+                                    : Colors.blueGrey.withOpacity(0.2)),
                                 child: FlatButton(
                                   onPressed: () =>
                                       Navigator.pushNamed(context, "/avatar"),
                                   child: CircleAvatar(
                                     backgroundColor: (character != null
-                                        ? character.color.withOpacity(0.5)
+                                        ? character.color.withOpacity(0.2)
                                         : Colors.blueGrey),
                                     backgroundImage: AssetImage(
                                         'assets/images/avatar/' +

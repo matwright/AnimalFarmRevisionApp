@@ -1,11 +1,16 @@
+import 'dart:convert';
 import 'dart:ui' as prefix0;
 
+import 'package:animal_farm/main.dart' as prefix1;
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/award.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
+import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
 
 import 'package:frideos/frideos.dart';
+import 'package:geopattern_flutter/geopattern_flutter.dart';
+import 'package:geopattern_flutter/patterns/triangles.dart';
 
 import '../models/appstate.dart';
 import '../models/category.dart';
@@ -14,7 +19,8 @@ class AwardsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
-
+    final hash = sha1.convert(utf8.encode("1")).toString();
+    final pattern = Triangles.fromHash(hash);
     appState.loadAwards();
 
       return Scaffold(
@@ -32,7 +38,21 @@ class AwardsPage extends StatelessWidget {
     body: FadeInWidget(
 
       duration: 20,
-      child: Container(
+        child: Container(
+
+
+
+        child: CustomPaint(
+        size: Size(MediaQuery.of(context).size.width,
+          MediaQuery.of(context).size.height),
+    painter: FullPainter(
+    pattern: pattern,
+    background: Theme.of(context).backgroundColor),
+    child: new BackdropFilter(
+    filter: new prefix0.ImageFilter.blur(
+    sigmaX: 5.0, sigmaY: 0.0),
+
+    child: Container(
 
           margin: const EdgeInsets.symmetric(vertical: 10.0),
         padding: const EdgeInsets.symmetric(horizontal: 10.0),
@@ -64,7 +84,7 @@ return  GridView.count(
               child:
    CircleAvatar(
 
-              backgroundColor:Theme.of(context).scaffoldBackgroundColor,
+              backgroundColor:Colors.white.withOpacity(0),
               backgroundImage: (award!=null?AssetImage('assets/images/badge/'+award.image):AssetImage('assets/images/badge/medal.png')),
 
 
@@ -78,8 +98,8 @@ return  GridView.count(
     })
 
     )
-    )
-      );
+    )  )
+      )));
     }
 
 }

@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:frideos/frideos.dart';
+import 'package:geopattern_flutter/patterns/triangles.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'src/models/appstate.dart';
