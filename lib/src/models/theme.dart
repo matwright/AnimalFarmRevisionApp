@@ -13,7 +13,8 @@ class MyTheme {
         this.dividerColor,
         this.buttonColor,
         this.secondaryHeaderColor,
-        this.cardColor
+        this.cardColor,
+        this.canvasColor
       });
 
   String name;
@@ -28,6 +29,7 @@ class MyTheme {
   Color buttonColor;
   Color secondaryHeaderColor;
   Color cardColor;
+  Color canvasColor;
 
 
 }

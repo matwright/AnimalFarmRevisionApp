@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:animal_farm/src/models/models.dart';
 import 'package:animal_farm/src/screens/avatar_page.dart';
 import 'package:animal_farm/src/screens/bio_page.dart';
@@ -11,11 +13,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:frideos/frideos.dart';
+import 'package:geopattern_flutter/patterns/triangles.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'src/models/appstate.dart';
 import 'src/models/theme.dart';
-
+import 'package:crypto/crypto.dart';
 
 void main()async {
 
@@ -26,6 +29,7 @@ class App extends StatelessWidget  {
   final appState = AppState();
   @override
   Widget build(BuildContext context) {
+    final hash = sha1.convert(utf8.encode("flutter")).toString();
     //listen to OS level life cycle changes
     SystemChannels.lifecycle.setMessageHandler(( msg){
       debugPrint('SystemChannels> $msg');
@@ -34,6 +38,8 @@ class App extends StatelessWidget  {
       }
       return;
     });
+
+
     return AppStateProvider<AppState>(
       appState: appState,
       child: MaterialPage(),
@@ -57,6 +63,7 @@ class MaterialPage extends StatelessWidget {
     return ValueBuilder<MyTheme>(
         streamed: theme,
         builder: (context, snapshot) {
+
           return MaterialApp(
 
               title: 'Animal Farm GCSE Revision App',
@@ -93,6 +100,7 @@ class MaterialPage extends StatelessWidget {
       dividerColor: appTheme.dividerColor,
       buttonColor: appTheme.buttonColor,
       secondaryHeaderColor: appTheme.secondaryHeaderColor,
+      canvasColor: appTheme.canvasColor,
 
     );
   }

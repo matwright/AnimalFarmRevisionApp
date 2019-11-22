@@ -1,11 +1,16 @@
+import 'dart:convert';
 import 'dart:ui' as prefix0;
 
+import 'package:animal_farm/main.dart' as prefix1;
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/award.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
+import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
 
 import 'package:frideos/frideos.dart';
+import 'package:geopattern_flutter/geopattern_flutter.dart';
+import 'package:geopattern_flutter/patterns/triangles.dart';
 
 import '../models/appstate.dart';
 import '../models/category.dart';
@@ -14,7 +19,8 @@ class AwardsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
-
+    final hash = sha1.convert(utf8.encode("1")).toString();
+    final pattern = Triangles.fromHash(hash);
     appState.loadAwards();
 
       return Scaffold(
@@ -32,10 +38,24 @@ class AwardsPage extends StatelessWidget {
     body: FadeInWidget(
 
       duration: 20,
-      child: Container(
+        child: Container(
 
-          margin: const EdgeInsets.symmetric(vertical: 20.0),
-        padding: const EdgeInsets.symmetric(horizontal: 36.0),
+
+
+        child: CustomPaint(
+        size: Size(MediaQuery.of(context).size.width,
+          MediaQuery.of(context).size.height),
+    painter: FullPainter(
+    pattern: pattern,
+    background: Theme.of(context).backgroundColor),
+    child: new BackdropFilter(
+    filter: new prefix0.ImageFilter.blur(
+    sigmaX: 5.0, sigmaY: 0.0),
+
+    child: Container(
+
+          margin: const EdgeInsets.symmetric(vertical: 10.0),
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
         child: ValueBuilder<List<Award>>(
           streamed: appState.awardsStream,
           noDataChild: const CircularProgressIndicator(),
@@ -45,7 +65,7 @@ class AwardsPage extends StatelessWidget {
 return  GridView.count(
   // Create a grid with 2 columns. If you change the scrollDirection to
   // horizontal, this produces 2 rows.
-  crossAxisCount: 3,
+  crossAxisCount: 2,
   // Generate 100 widgets that display their index in the List.
   children:  List.generate(15, (index)
   {
@@ -62,28 +82,15 @@ return  GridView.count(
             GestureDetector(
               onTap:  () {if(award!=null){appState.awardInfo(award,context);}},
               child:
-        AvatarGlow(
-          startDelay: Duration(milliseconds: 1000),
-          glowColor: Colors.white,
-          endRadius: 100.0,
-          duration: Duration(milliseconds: 2000),
-          repeat: true,
-          showTwoGlows: true,
-          repeatPauseDuration: Duration(milliseconds: 100),
-          child: Material(
+   CircleAvatar(
 
-            elevation: 8.0,
-            shape: CircleBorder(),
-            color: Colors.black26,
-            child: CircleAvatar(
+              backgroundColor:Colors.white.withOpacity(0),
+              backgroundImage: (award!=null?AssetImage('assets/images/badge/'+award.image):AssetImage('assets/images/badge/medal.png')),
 
-              backgroundColor: Colors.black26,
-              backgroundImage: (award!=null?AssetImage('assets/images/badge/'+award.image):null),
-              radius: 80.0,
 
             ),
           ),
-        )));
+        );
   }),
 
 );
@@ -91,8 +98,8 @@ return  GridView.count(
     })
 
     )
-    )
-      );
+    )  )
+      )));
     }
 
 }

@@ -44,7 +44,7 @@
     "created_by": "benjamin",
     "text": "@Boxer.  He's ok.  Good for his age. #NotAsOldAsMe"
  },{
-   "created_by": "jones",
+   "created_by": "farmer_jones",
    "text": "I'm sure I heard a fox last night. Vermin. I fired out the window. That would've got rid. #ScaredyFox"
  },{
    "created_by": "snowball",
@@ -59,7 +59,7 @@
  },{
    "created_by": "moses",
    "text": "Don't worry everyone.  Remember Sugarcandy Mountain? That's where Old Major is.  He will be happy there. #RIPOldMajor #Utopia",
-   "image": "sugarcandy.jpg"
+   "image": "sugercandy.jpg"
  },{
    "created_by": "squealer",
    "text": "Announcement: Mondays, Wednesdays and Fridays in the barn. Animalism 101.  Inspired by Old Major.  Pls ReTrot #SeeYouThere #Beginners #Animalism",
@@ -73,7 +73,7 @@
  },{
    "created_by": "mollie",
    "text": "Can someone explain the problem with wearing ribbons please?  I don't get it.  I need my ribbons. #What's Left?",
-   "image": "ribbon.jpg"
+   "image": "ribbon.png"
  },{
    "created_by": "snowball",
    "text": "Like I said @Mollie, they are a badge of slavery. #freedom #rebellion"
@@ -88,8 +88,13 @@
    "created_by": "benjamin",
    "text": "Where's Jones? I'm starving. #NoFood."
  },{
+
    "created_by": "clover",
    "text": "Wonder if anyone could ram the door.  We MUST eat soon. #SoHungry #NomNom"
+
+   "created_by": "benjamin",
+   "text": "Ok. Hang on everyone.  I'm going to ram the door.  We MUST eat soon. #SoHungry #NomNom"
+
  },{
    "created_by": "benjamin",
    "text": "Oh look. There goes Moses. With the humans. Surprise surprise. #Traitor #Spy"
@@ -205,6 +210,7 @@
    "text": "When will there be something worth reading around here? #StillGrumpy"
  },{
    "created_by": "boxer",
+  "text": "ABCD",
    "image": "abcd.jpg"
  },{
    "created_by": "snowball",
@@ -236,10 +242,12 @@
    "created_by": "squealer",
    "text": "Milk and apples proven to help pigs’ brains. Science: Milk + apples for pigs = No. More. Jones. #Animalism #Rebellion #LongLiveAnimalFarm"
  },{
+
    "created_by": "jones",
+
    "text": "Good-for-nothing animals. #ItsMyFarm"
  },{
-   "created_by": "jones",
+   "created_by": "farmer_jones",
    "text": "I can't believe what they've done to me #SeriouslyItsMyFarm"
  },{
    "created_by": "pilkington",
