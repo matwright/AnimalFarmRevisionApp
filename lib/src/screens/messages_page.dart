@@ -2,7 +2,7 @@ import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:animal_farm/src/widgets/message_widget.dart';
-import 'file:///G:/FlutterProjects/animal_farm/assets/images/data.dart';
+import '../../util/data.dart';
 import 'package:flutter/material.dart';
 import 'package:frideos/frideos.dart';
 

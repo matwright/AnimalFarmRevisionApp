@@ -178,7 +178,7 @@ List<Map<String, dynamic>> characters = [
     "bio":
     "Moses the raven is jones’ pet. The animals don’t like him as he lies & does no work. Moses tells stories about Sugarcandy Mountain, which he describes as a paradise where the animals go after they die. The pigs decide it’s useful to have a raven convincing the oppressed labourers that paradise is waiting for them if they keep working hard enough. Moses represents the Russian Orthodox Church.",
     "strap_line":
-    "…on the other side of that dark cloud…lies Sugarcandy Mountain",
+    "On the other side of that dark cloud, lies Sugarcandy Mountain",
     "color": Color(0xFF616161),
     "text_color": Color(0xffeeeeee)
   },

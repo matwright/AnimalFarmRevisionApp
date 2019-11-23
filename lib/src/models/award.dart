@@ -1,4 +1,4 @@
-import 'file:///G:/FlutterProjects/animal_farm/assets/images/data.dart';
+import '../../util/data.dart';
 
 class Award {
   Award({this.id, this.name, this.image, this.achievement, this.description});
