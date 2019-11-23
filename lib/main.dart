@@ -1,6 +1,4 @@
-import 'dart:convert';
 
-import 'package:animal_farm/src/models/models.dart';
 import 'package:animal_farm/src/screens/avatar_page.dart';
 import 'package:animal_farm/src/screens/bio_page.dart';
 import 'package:animal_farm/src/screens/main_page.dart';
@@ -13,12 +11,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:frideos/frideos.dart';
-import 'package:geopattern_flutter/patterns/triangles.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'src/models/appstate.dart';
 import 'src/models/theme.dart';
-import 'package:crypto/crypto.dart';
 
 void main()async {
 
@@ -29,7 +25,7 @@ class App extends StatelessWidget  {
   final appState = AppState();
   @override
   Widget build(BuildContext context) {
-    final hash = sha1.convert(utf8.encode("flutter")).toString();
+
     //listen to OS level life cycle changes
     SystemChannels.lifecycle.setMessageHandler(( msg){
       debugPrint('SystemChannels> $msg');
@@ -68,16 +64,16 @@ class MaterialPage extends StatelessWidget {
 
               title: 'Animal Farm GCSE Revision App',
               theme: _buildThemeData(snapshot.data),
-              home: MainPage(),
+              home: MainPage(backgroundColor:Colors.deepOrange),
           routes: {
             // When navigating to the "/" route, build the FirstScreen widget.
-            '/award': (context) => AwardPage(),
+            '/award': (context) => AwardPage(backgroundColor:Colors.indigoAccent),
             '/awards': (context) => AwardsPage(),
             '/trivia': (context) => TriviaPage(),
             '/summary': (context) => SummaryPage(),
-            '/avatar': (context) => AvatarPage(),
+            '/avatar': (context) => AvatarPage(backgroundColor:Colors.indigo),
             '/bio': (context) => BioPage(),
-            '/messages': (context) => MessagesPage(),
+            '/messages': (context) => MessagesPage(backgroundColor:Colors.deepPurple),
           //  main,awards,messages, trivia, summary, stats, avatar,bio
         });
         });

@@ -20,6 +20,7 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.12.0
+  slimy_card: ^1.0.1
   geopattern_flutter: ^0.1.1
   crypto: ^2.1.3
   frideos: ^0.6.0

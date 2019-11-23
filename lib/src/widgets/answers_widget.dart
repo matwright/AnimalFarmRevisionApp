@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
 import 'package:frideos/frideos.dart';
 
-import '../styles.dart';
 import '../blocs/trivia_bloc.dart';
 import '../models/models.dart';
 import '../models/question.dart';
+import '../styles.dart';
 
 const questionLeadings = ['A', 'B', 'C', 'D'];
 const boxHeight = 72.0;
@@ -150,10 +149,10 @@ class _AnswersWidgetState extends State<AnswersWidget>
                     ),
                     boxShadow: [
                       BoxShadow(
-                          color:
-                              (colorAnimation.status == AnimationStatus.forward)
-                                  ? colorAnimation.value
-                                  :  Theme.of(context).primaryColor.withOpacity(0.5),
+                          color: (colorAnimation.status ==
+                                  AnimationStatus.forward)
+                              ? colorAnimation.value
+                              : Theme.of(context).primaryColor.withOpacity(0.5),
                           blurRadius:
                               (colorAnimation.status == AnimationStatus.forward)
                                   ? 19.0

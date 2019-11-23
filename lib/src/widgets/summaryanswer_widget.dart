@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../styles.dart';
 import '../models/question.dart';
+import '../styles.dart';
 
 class SummaryAnswers extends StatelessWidget {
   const SummaryAnswers({Key key, this.index, this.question}) : super(key: key);

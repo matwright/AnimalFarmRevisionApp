@@ -87,11 +87,11 @@
  },{
    "created_by": "benjamin",
    "text": "Where's Jones? I'm starving. #NoFood."
- },{
-
-   "created_by": "clover",
-   "text": "Wonder if anyone could ram the door.  We MUST eat soon. #SoHungry #NomNom"
-
+ },
+  {
+    "created_by": "clover",
+    "text": "Wonder if anyone could ram the door.  We MUST eat soon. #SoHungry #NomNom"
+  },{
    "created_by": "benjamin",
    "text": "Ok. Hang on everyone.  I'm going to ram the door.  We MUST eat soon. #SoHungry #NomNom"
 
@@ -243,8 +243,7 @@
    "text": "Milk and apples proven to help pigs’ brains. Science: Milk + apples for pigs = No. More. Jones. #Animalism #Rebellion #LongLiveAnimalFarm"
  },{
 
-   "created_by": "jones",
-
+   "created_by": "farmer_jones",
    "text": "Good-for-nothing animals. #ItsMyFarm"
  },{
    "created_by": "farmer_jones",
