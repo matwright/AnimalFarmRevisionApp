@@ -97,7 +97,7 @@ class _MessageState extends State<MessageWidget> {
                                     fontFamily: "Raleway",
                                     fontSize: 20,
                                     color: widget.character.textColor)))
-                        : Text('')),
+                        : Container()),
                 (widget.img == null
                     ? Visibility(
                         child: Divider(),

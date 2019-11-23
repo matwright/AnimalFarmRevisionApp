@@ -2,7 +2,7 @@ import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:animal_farm/src/widgets/message_widget.dart';
-import 'package:animal_farm/util/data.dart';
+import 'file:///G:/FlutterProjects/animal_farm/assets/images/data.dart';
 import 'package:flutter/material.dart';
 import 'package:frideos/frideos.dart';
 
@@ -54,7 +54,7 @@ class MessagesPage extends StatelessWidget {
                                       : null,
                                   name: character['name'],
                                   character: Character.fromObject(character),
-                                  text: message.text,
+                                  text: message.text??'',
                                   rune: message.rune,
                                   avatar: 'assets/images/avatar/' +
                                       character['avatar'],
