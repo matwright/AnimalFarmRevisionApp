@@ -1,5 +1,7 @@
 import 'package:animal_farm/src/models/character.dart';
+import 'package:animal_farm/src/models/location.dart';
 import 'package:animal_farm/src/models/message.dart';
+import 'package:animal_farm/src/widgets/avatar_dialog_widget.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:animal_farm/src/widgets/message_widget.dart';
 import '../../util/data.dart';
@@ -19,6 +21,9 @@ class MessagesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
     appState.loadMessages();
+
+
+
 
     return Scaffold(
         bottomNavigationBar: BottomNavWidget(selectedIndex: 3),
@@ -48,18 +53,22 @@ class MessagesPage extends StatelessWidget {
                                   (character) =>
                                       character["id"] == message.createdBy,
                                   orElse: () => null);
+                              Map location = locations.singleWhere(
+                                      (location) =>
+                                      location["id"] == message.location,
+                                  orElse: () => null);
                               return MessageWidget(
                                   img: message.image != null
                                       ? 'assets/images/post/' + message.image
                                       : null,
                                   name: character['name'],
                                   character: Character.fromObject(character),
+
                                   text: message.text??'',
                                   rune: message.rune,
                                   avatar: 'assets/images/avatar/' +
                                       character['avatar'],
-                                  location:
-                                      message.location ?? DEFAULT_LOCATION,
+                                  location:Location.fromObject(location),
                                   appState: AppState());
                             },
                           ));

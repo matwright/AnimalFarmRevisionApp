@@ -172,10 +172,7 @@ class MainPage extends StatelessWidget {
                                             : character.id) +
                                         '.png'),
                                 maxRadius: 150.00,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: <Widget>[],
-                                ),
+
                               ),
                             )),
                       ),
