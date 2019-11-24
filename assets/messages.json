@@ -1,743 +1,972 @@
 [{
 
   "created_by": "mollie",
-  "text": "Who moved my sugar? #GiveItBackNow #NotFunny"
+  "text": "Who moved my sugar? #GiveItBackNow #NotFunny",
+  "location": "store_shed"
 },{
   "created_by": "old_major",
   "text": "Barn Meeting Tuesday after Jones' rounds.  Please ReTrot. #CommunityMeeting #IHadADream",
   "image": "barnmeet.jpg",
+  "location": "barn",
   "rune": "pig_nose"
  },{
    "created_by": "mollie",
-   "text": "@OldMajor.  Will there be snacks? #sugar"
+   "text": "@OldMajor.  Will there be snacks? #sugar",
+   "location": "yard"
  },{
    "created_by": "old_major",
-   "text": "Meeting Preview: \"All animals are comrades. #Teaser"
+   "text": "Meeting Preview: \"All animals are comrades. #Teaser",
+   "location": "barn"
  },{
    "created_by": "boxer",
-   "text": "@Benjamin. Do you know what a comrade is? #WhatWouldBenjaminSay?"
+   "text": "@Benjamin. Do you know what a comrade is? #WhatWouldBenjaminSay?",
+   "location": "small_paddock"
  },{
    "created_by": "old_major",
-   "text": "Meeting Preview: \"Get your singing voice ready. #Teaser"
+   "text": "Meeting Preview: \"Get your singing voice ready. #Teaser",
+   "location": "barn"
  },{
    "created_by": "clover",
-   "text":"The birds can sing. Think I may need to mime!"
+   "text":"The birds can sing. Think I may need to mime!",
+   "location": "small_paddock"
  },{
     "created_by": "old_major",
-    "text": "Meeting Preview: \"Man is the only creature that consumes without producing #Teaser #DontBeLate"
+    "text": "Meeting Preview: \"Man is the only creature that consumes without producing\" #Teaser #DontBeLate",
+    "location": "barn"
  },{
     "created_by": "boxer",
-    "text": "Well done Rats, so glad you're now comrades. #PartOfTheTeam"
+    "text": "Well done rats, so glad you're now comrades. #PartOfTheTeam",
+    "location": "barn"
  },{
     "created_by": "boxer",
-    "text": "Amazing meeting. Thanks @OldMajor. I love \"Beasts of England"
+    "text": "Amazing meeting. Thanks @OldMajor. I love \"Beasts of England",
+    "location": "barn"
  },{
     "created_by": "mollie",
-    "text": "Did you hear me singing? Do you like my voice? #HorseXFactor"
+    "text": "Did you hear me singing? Do you like my voice? #HorseXFactor",
+    "location": "yard"
  },{
     "created_by": "clover",
-    "text" : "Thank you @OldMajor for an inspiring meeting. #LongLiveOM #AllAnimalsAreEqual"
+    "text" : "Thank you @OldMajor for an inspiring meeting. #LongLiveOM #AllAnimalsAreEqual",
+    "location": "barn"
  },{
     "created_by": "boxer",
-    "text": "What did you think @Benjamin?  He's inspiring isn't he? #LongLiveOM #BeastsOfEngland"
+    "text": "What did you think @Benjamin?  He's inspiring isn't he? #LongLiveOM #BeastsOfEngland",
+    "location": "small_paddock"
  },{
     "created_by": "benjamin",
-    "text": "@Boxer.  He's ok.  Good for his age. #NotAsOldAsMe"
+    "text": "@Boxer.  He's ok.  Good for his age. #NotAsOldAsMe",
+    "location": "small_paddock"
  },{
    "created_by": "farmer_jones",
-   "text": "I'm sure I heard a fox last night. Vermin. I fired out the window. That would've got rid. #ScaredyFox"
+   "text": "I'm sure I heard a fox last night. Vermin. I fired out the window. That would've got rid. #ScaredyFox",
+   "location": "farmhouse"
  },{
    "created_by": "snowball",
-   "text": "We will miss you Old Major. You were an inspiration. #RIPOldMajor"
+   "text": "We will miss you Old Major. You were an inspiration. #RIPOldMajor",
+   "location": "barn"
  },{
    "created_by": "mollie",
-   "text": "I'll miss him so much.  What will I do? I feel terrible.  I'll wear a black ribbon. #NeedSugar #RIPOldMajor"
+   "text": "I'll miss him so much. What will I do? I feel terrible. I'll wear a black ribbon. #NeedSugar #RIPOldMajor",
+   "location": "small_paddock"
  },{
    "created_by": "snowball",
-   "text": "Announcement: Old Major's funeral.  Weds 2pm in the orchard.  Bring anything you may want to say.  Please ReTrot. #RIPOldMajor",
+   "text": "Announcement: Old Major's funeral. Weds 2pm in the orchard. Bring anything you may want to say. Please ReTrot. #RIPOldMajor",
+   "location": "barn",
    "image": "ripOM.jpg"
  },{
    "created_by": "moses",
-   "text": "Don't worry everyone.  Remember Sugarcandy Mountain? That's where Old Major is.  He will be happy there. #RIPOldMajor #Utopia",
+   "text": "Don't worry everyone. Remember Sugarcandy Mountain? That's where Old Major is. He will be happy there. #RIPOldMajor #Utopia",
+   "location": "farmhouse_garden",
    "image": "sugercandy.jpg"
  },{
    "created_by": "squealer",
-   "text": "Announcement: Mondays, Wednesdays and Fridays in the barn. Animalism 101.  Inspired by Old Major.  Pls ReTrot #SeeYouThere #Beginners #Animalism",
+   "text": "Announcement: Mondays, Wednesdays and Fridays in the barn. Animalism 101. Inspired by Old Major. Pls ReTrot #SeeYouThere #Beginners #Animalism",
+   "location":"yard",
    "image": "animalism101.jpg"
  },{
    "created_by": "muriel",
-   "text": "Thanks for tonight's class @Snowball @Squealer.  Can we discuss more about how it will be better in the future than now?"
+   "text": "Thanks for tonight's class @Snowball @Squealer.  Can we discuss more about how it will be better in the future than now?",
+   "location": "barn"
  },{
    "created_by": "mollie",
-   "text": "I don't understand why there will be no sugar. #WhyNoSugar?"
+   "text": "I don't understand why there will be no sugar. #WhyNoSugar?",
+   "location": "yard"
  },{
    "created_by": "mollie",
-   "text": "Can someone explain the problem with wearing ribbons please?  I don't get it.  I need my ribbons. #What's Left?",
+   "text": "Can someone explain the problem with wearing ribbons please? I don't get it. I need my ribbons. #What's Left?",
+   "location": "yard",
    "image": "ribbon.png"
  },{
    "created_by": "snowball",
-   "text": "Like I said @Mollie, they are a badge of slavery. #freedom #rebellion"
+   "text": "Like I said @Mollie, they are a badge of slavery. #freedom #rebellion",
+   "location": "yard"
  },{
    "created_by": "benjamin",
-   "text": "Bored. Bored. Bored. Bored. #EyeRoll"
+   "text": "Bored. Bored. Bored. Bored. #EyeRoll",
+   "location": "orchard"
  },{
    "created_by": "clover",
    "text": "Just for fun!  What is your Animal Farm name?  Ask Muriel to read it to you if you need help. Reply with your new name! #JustForFun #WhatsYourName #DistractionTactic",
+   "location": "small_paddock",
    "image": "newname.jpg"
  },{
    "created_by": "benjamin",
-   "text": "Where's Jones? I'm starving. #NoFood."
- },
-  {
-    "created_by": "clover",
-    "text": "Wonder if anyone could ram the door.  We MUST eat soon. #SoHungry #NomNom"
-  },{
-   "created_by": "benjamin",
-   "text": "Ok. Hang on everyone.  I'm going to ram the door.  We MUST eat soon. #SoHungry #NomNom"
+   "text": "Where's Jones? I'm starving. #NoFood",
+   "location": "store_shed"
+ },{
+   "created_by": "clover",
+   "text": "Wonder if anyone could ram the door. We MUST eat soon. #SoHungry #NomNom",
+   "location": "store_shed"
+ },{
+   "created_by": "clover",
+   "text": "Thanks cows. #SoHungry #NomNom",
+   "location": "store_shed"
 
  },{
    "created_by": "benjamin",
-   "text": "Oh look. There goes Moses. With the humans. Surprise surprise. #Traitor #Spy"
+   "text": "Oh look. There goes Moses. With the humans. Surprise surprise. #Traitor #Spy",
+   "location": "farmhouse_garden"
  },{
    "created_by": "boxer",
    "text": "Bye straw hat. You've been good to me, but no clothes allowed",
+   "location": "barn",
    "image": "strawhat.png"
  },{
    "created_by": "mollie",
-   "text": "Noooooooo.  Not my ribbons. @Squealer please? #Broken"
+   "text": "Noooooooo.  Not my ribbons. @Squealer please? #Broken",
+   "location": "small_paddock"
  },{
    "created_by": "napoleon",
-   "text": "No more Jones! Come to the storeroom for extra food. #ByeByeJones #Loadsafood"
+   "text": "No more Jones! Come to the storeroom for extra food. #ByeByeJones #Loadsafood",
+   "location": "store_shed"
  },{
    "created_by": "snowball",
-   "text": "8am tomorrow. Recce of the farm. OUR farm. Pls ReTrot. #WeWon #Rebellion #LoadsOfRoom"
+   "text": "8am tomorrow. Recce of the farm. OUR farm. Pls ReTrot. #WeWon #Rebellion #LoadsOfRoom",
+   "location": "barn"
  },{
    "created_by": "benjamin",
    "text": "Boxer made me do this",
+   "location": "orchard",
    "image": "spotlightonbenjamin.jpg"
  },{
-
    "created_by": "napoleon",
-   "text": "As agreed.  The farmhouse is now a museum.  Not a place to live."
+   "text": "As agreed.  The farmhouse is now a museum.  Not a place to live.",
+   "location": "farmhouse_garden"
  },{
    "created_by": "snowball",
    "text": "Animal Farm not Manor Farm. #LongLiveAnimalFarm",
+   "location": "yard",
    "image": "gate.png"
  },{
    "created_by": "snowball",
+   "text": "#LongLiveAnimalFarm",
+   "location": "yard",
    "image": "farmname.gif"
  },{
    "created_by": "snowball",
-   "text": "You seen the latest? Pls ReTrot #7Commandments",
+   "text": "You seen the latest? Pls ReTrot. #7Commandments",
+   "location": "barn",
    "image": "7comm.jpg"
  },{
    "created_by": "snowball",
-   "text": "Which is your favourite commandment?  Answer in the comments. #LoveTheSeven #TheWayForward"
+   "text": "Which is your favourite commandment?  Answer in the comments. #LoveTheSeven #TheWayForward",
+   "location": "barn"
  },{
    "created_by": "napoleon",
    "text": "Nice work on the harvest, comrades. #WotNoMilk #NothingToSeeHere",
+   "location": "cowshed",
    "image": "milk.jpg"
  },{
    "created_by": "squealer",
-   "text": "Come and collect your new animal friendly tools. #Accessibility #EqualOppsTools"
+   "text": "Come and collect your new animal friendly tools. #Accessibility #EqualOppsTools",
+   "location": "store_shed"
  },{
    "created_by": "squealer",
-   "text": "So the pigs have got things to work out, so we aren't able to work with you. #WithYouInSpirit"
+   "text": "So the pigs have got things to work out, so we aren't able to work with you. #WithYouInSpirit",
+   "location": "yard"
  },{
    "created_by": "boxer",
-   "text": "Wow! Have you seen how much harvest we managed?  I've never seen such a huge harvest. #WellDoneComrades #WhatATeam"
+   "text": "Wow! Have you seen how much harvest we managed? I've never seen such a huge harvest. #WellDoneComrades #WhatATeam",
+   "location": "small_paddock"
  },{
    "created_by": "snowball",
-   "text": "A big shout out to the hens and ducks for making sure there was no wastage. #TheVeryLastStalk"
+   "text": "A big shout out to the hens and ducks for making sure there was no wastage. #TheVeryLastStalk",
+   "location": "hen_house"
  },{
    "created_by": "snowball",
-   "text": "Look how cute I was",
+   "text": "Look how cute I was.#TBT",
+   "location": "barn",
    "image": "SnowballTBT.jpg"
  },{
    "created_by": "muriel",
-   "text": "@Boxer, you are working like 3 horses.How do you do it? #SoStrong #MyHero"
+   "text": "@Boxer, you are working like 3 horses. How do you do it? #SoStrong #MyHero",
+   "location": "small_paddock"
  },{
    "created_by": "boxer",
-   "text": "I will work harder"
+   "text": "I will work harder",
+   "location": "small_paddock"
  },{
    "created_by": "benjamin",
-   "text": "Thanks for all your concern (not). None of you has ever seen a dead donkey #cryptic"
+   "text": "Thanks for all your concern (not). None of you has ever seen a dead donkey #cryptic",
+   "location": "orchard"
  },{
    "created_by": "mollie",
+   "location": "barn",
    "text": "Soz I had to leave work early today, had a huge stone in my hoof. You may have seen me limping back? #Ouch #EnormousSharpStone #ReallyNeedSugar"
  },{
    "created_by": "snowball",
    "text": "From next Sunday afternoon, reading lessons. Open to all. #ReadThoseCommandments",
+   "location": "barn",
    "image": "reading.jpg"
  },{
     "created_by": "napoleon",
     "text": "Napoleon was here!",
+    "location": "barn",
     "image": "marx.gif"
  },{
     "created_by": "clover",
-    "text": "Loving no work Sundays. Thanks to the pigs. #LongLiveAnimalFarm"
+    "text": "Loving no work Sundays. Thanks to the pigs. #LongLiveAnimalFarm",
+    "location": "orchard"
  },{
     "created_by": "snowball",
     "text": "Our new flag. Pls ReTrot. #Animalism #HoofAndHorn",
+    "location": "farmhouse_garden",
     "image": "flag.jpg"
  },{
     "created_by": "snowball",
     "text": "Remember the flag raising ceremony this Sunday. Pls ReTrot. #AnimalFarm #Animalism #LoveAFlag",
+    "location": "farmhouse_garden",
     "image": "flag.jpg"
  },{
     "created_by": "muriel",
-    "text":"Thanks to the pigs for all the resolutions.  That's why you're in charge and we follow. #WhatWouldThePigsDo"
+    "text":"Thanks to the pigs for all the resolutions. That's why you're in charge and we follow. #WhatWouldThePigsDo",
+    "location": "barn"
  },{
    "created_by": "snowball",
-   "text": "Announcement: New animal committees. Join up list on the barn wall. Ask a friend to write your name if you can't."
+   "text": "Announcement: New animal committees. Join up list on the barn wall. Ask a friend to write your name if you can't.",
+   "location": "barn"
  },{
    "created_by": "snowball",
-   "text": "Egg Production Committee. Clean Tails League. Wild Comrades' Re-education Committee. Whiter Wool Movement. Pls ReTrot #Committees #SignUp"
+   "location": "barn",
+   "text": "Egg Production Committee. Clean Tails League. Wild Comrades' Re-education Committee. Whiter Wool Movement. Pls ReTrot. #Committees #SignUp"
  },{
    "created_by": "snowball",
-   "text": "Erm @Cat. The Wild Comrades' Re-education Committed isn't really for you.  Please stop scaring the sparrows."
+   "text": "Erm @Cat. The Wild Comrades' Re-education Committee isn't really for you.  Please stop scaring the sparrows.",
+   "location": "barn"
  },{
    "created_by": "mollie",
+   "location": "small_paddock",
    "text": "Sorry everyone. Gonna be late for work again.  Will make it up to you. #Overslept #Teamwork."
  },{
    "created_by": "snowball",
+   "location": "barn",
    "text": "Post your reading and writing wins and we'll all ReTrot #BigAnimalRead"
  },{
    "created_by": "muriel",
-   "text": "If you want some reading practise. I'll be in the barn every evening after work, ready to help.  Everyone welcome. #Community"
+   "location": "barn",
+   "text": "If you want some reading practise. I'll be in the barn every evening after work, ready to help. Everyone welcome. #Community"
  },{
    "created_by": "benjamin",
+   "location": "barn",
    "text": "When will there be something worth reading around here? #StillGrumpy"
  },{
    "created_by": "boxer",
-  "text": "ABCD",
+   "text": "ABCD",
+   "location": "farmhouse_garden",
    "image": "abcd.jpg"
  },{
    "created_by": "snowball",
+   "location": "barn",
    "text": "Change of plan everyone. To make things easier, we've decided to reduce the 7 commandments to \"Four Legs Good. Two Legs Bad.\" Pls ReTrot. #JustOneToRemember #Animalism"
  },{
    "created_by":"muriel",
-   "text": "What about the birds @Snowball? #BirdsAreComradesToo"
+   "text": "What about the birds @Snowball? #BirdsAreComradesToo",
+   "location": "farmhouse_garden"
  },{
    "created_by": "snowball",
-   "text": "Wings count."
+   "text": "Wings count.",
+   "location": "barn"
  },{
-   
    "created_by": "clover",
-   "text": "Thanks to the pigs for encouraging us in the field. #motiation"
+   "text": "Thanks to the pigs for encouraging us in the field. #motivation",
+   "location": "small_paddock"
  },{
    "created_by": "muriel",
    "text": "This was fun to do!",
+   "location": "yard",
    "image": "spotlightonmuriel.jpg"
  },{
    "created_by": "napoleon",
+   "location": "store_shed",
    "text": "Thanks for the puppies. #EducateThemYoung #SchoolLoft"
  },{ 
    "created_by": "squealer",
-   "text": "Thanks for the generous contribution of milk and apples to the pigs. #PigBrainWorkers #FarmSuccess"
+   "text": "Thanks for the generous contribution of milk and apples to the pigs. #PigBrainWorkers #FarmSuccess",
+   "location": "cowshed"
  },{
    "created_by": "benjamin",
+   "location": "cowshed",
    "text": "Great! #LoveApples #EvenMoreGrumpy"
  },{
    "created_by": "squealer",
+   "location": "orchard",
    "text": "Milk and apples proven to help pigs’ brains. Science: Milk + apples for pigs = No. More. Jones. #Animalism #Rebellion #LongLiveAnimalFarm"
  },{
 
    "created_by": "farmer_jones",
+   "location": "red_lion_inn",
    "text": "Good-for-nothing animals. #ItsMyFarm"
  },{
    "created_by": "farmer_jones",
+   "location": "red_lion_inn",
    "text": "I can't believe what they've done to me #SeriouslyItsMyFarm"
  },{
    "created_by": "pilkington",
+   "location": "red_lion_inn",
    "text": "Why don't you come fishing with me @Jones. Maybe a bit less beer will help?"
  },{
    "created_by": "frederick",
+   "location": "red_lion_inn",
    "text": "@Pilkington How can a decent farmer let this happen? #Rubbish Farmer"
  },{
    "created_by": "pilkington",
+   "location": "red_lion_inn",
    "text": "@Frederick I know.  But at least he's drunk enough to keep paying for the drinks #FreeBeerAllRound"
  },{
    "created_by": "frederick",
+   "location": "red_lion_inn",
    "text": "I've heard the animals at Manor Farm have turned to cannibalism. #LowerFormOfLife"
  },{
    "created_by": "snowball",
+   "location": "yard",
    "text": "Great work by the pigeons. Beasts of England is being sung across all the farms #BiggerRebellion #Animalism #4LegsGood2LegsBad"
  },{
    "created_by": "mollie",
+   "location": "yard",
    "text": "Jones is back. With his men and other farmers. Jones is back. JONES IS BACK."
  },{
    "created_by": "snowball",
-   "text": "Right everyone. This is it. #WhatWouldCaesarDo"
+   "text": "Right everyone. This is it. #WhatWouldCaesarDo",
+   "location": "cowshed"
  },{
    "created_by": "boxer",
-   "text": "What have I done? I have no wish to take a life. #BigShoes #BrokenHeart"
+   "text": "What have I done? I have no wish to take a life. #BigShoes #BrokenHeart",
+   "location": "yard"
  },{
    "created_by": "snowball",
+   "location": "yard",
    "text": "War is war. The only good human is a dead one. #QuoteOfTheDay"
  },{
    "created_by": "snowball",
-   "text": "Thank you to Harriet Sheep for sacrificing her life. We plant this hawthorn bush to remember her. #RIPHarrietSheep"
+   "text": "Thank you to Harriet Sheep for sacrificing her life. We plant this hawthorn bush to remember her. #RIPHarrietSheep",
+   "location": "orchard"
  },{
    "created_by": "snowball",
-   "text": "All animals must be ready to die for Animal Farm if need be. #Sacrifice #Heroes #LongLiveAnimalFarm"
+   "text": "All animals must be ready to die for Animal Farm if need be. #Sacrifice #Heroes #LongLiveAnimalFarm",
+   "location": "barn"
  },{
    "created_by": "boxer",
+   "location": "farmhouse_garden",
    "text": "Thank you so much for my 'Animal Hero First Class' medal. I am so happy. Aren't we lucky @Snowball? #Proud #MustWorkHarder"
  },{
    "created_by": "squealer",
-   "text": "To Harriet the Sheep 'Animal Hero, Second Class' #Posthumously #DieForTheCause"
+   "text": "To Harriet the Sheep 'Animal Hero, Second Class' #Posthumously #DieForTheCause",
+   "location": "orchard"
  },{
    "created_by": "clover",
-   "text": "What shall we call this battle? #Commemmorate #NamesAreImportant"
+   "text": "What shall we call this battle? #Commemorate #NamesAreImportant",
+   "location": "cowshed"
  },{
    "created_by": "squealer",
-   "text": "It's agreed then. The Battle of the Cowshed. #NameThatBattle"
+   "text": "It's agreed then. The Battle of the Cowshed. #NameThatBattle",
+   "location": "cowshed"
  },{
    "created_by": "snowball",
+   "location": "farmhouse_garden",
+   "text": "Let's commemorate the Battle of the Cowshed and the Rebellion",
    "image": "commemoration.jpg"
  },{
    "created_by": "clover",
-   "text": "Has any seen Mollie? #AbsentAgain"
+   "text": "Has any seen Mollie? #AbsentAgain",
+   "location": "small_paddock"
  },{
    "created_by": "clover",
+   "location": "small_paddock",
    "text":" @Mollie I saw you over at the fence allowing one of Pilkington’s men to stroke your nose. Why would you do that?"
  },{
    "created_by": "mollie",
-   "text":"I didn't.  Honestly. Please don't say anything."
-   
+   "location": "small_paddock",
+   "text":"I didn't. Honestly. Please don't say anything."
  },{
    "created_by": "clover",
-   "text":" MOLLIE'S GONE. Has anyone see her? #MyFriend"
+   "text":" MOLLIE'S GONE. Has anyone see her? #MyFriend",
+   "location": "barn"
  },{
    "created_by": "mollie",
+   "location": "orchard",
    "text": "Laters Everyone! #HereComesTheSugar #NosePetting #PrettyRibbons"
  },{
    "created_by": "benjamin",
-   "text": "I heard the pigeons saw her. In Willingdon. With ribbons. And being stroked. #MollieTraitor #NotToBementionedAgain"
+   "location": "farmhouse_garden",
+   "text": "I heard the pigeons saw her. In Willingdon. With ribbons. And being stroked. #MollieTraitor #NotToBeMentionedAgain"
  },{
    "created_by": "snowball",
-  "text": "#spotlightonsnowball",
-  "image": "spotlightonsnowball.jpg",
+
+   "text": "It's my turn",
+   "location": "barn",
+   "image": "spotlightonsnowball"
 
  },{  
    "created_by": "napoleon",
+   "location": "barn",
    "text": "Snowball is wasting his time on complicated schemes and plans. They won't work. Don't waste your time with him. #IAmTopPig #WhoNeedsPlans"
  },{
    "created_by": "snowball",
+   "location": "barn",
    "text": "I've got it! A windmill. It will generate electricity. Warm stalls. Lights. Tools. #YouKowItMakesSense."
  },{
    "created_by": "snowball",
+   "location": "barn",
    "text": "#JonesLibrary",
    "image": "books.jpg"
  },{
    "created_by": "snowball",
+   "location": "windmill",
    "text": "Do you want to build a windmill? #Frozen3 #WarmWinter #NoOlafHere"
  },{
    "created_by": "napoleon",
+   "location": "barn",
    "text": "The windmill won't work. It's a crazy idea. #SnowballLostIt"
  },{
    "created_by": "snowball",
+   "location": "store_shed",
    "text": "It will. Feel free to come and see my plans in the shed. It will give us a 3 day week. #4DaysOff #Animalism #WorkingTogether"
  },{
    "created_by": "napoleon",
+   "location": "barn",
    "text": "We need to increase food production, not have crazy plans.  It'll never work, and we'll all die of starvation. #GrowUpSnowball"
  },{
    "created_by": "squealer",
+   "location": "barn",
    "text": "#VoteWell",
    "image": "placards.jpg"
  },{
    "created_by": "benjamin",
+   "location": "barn",
    "text": "What's the point? Windmill or no windmill, life will go on as always. Badly. #StillGrumpy"
  },{
    "created_by": "napoleon",
+   "location": "farmhouse_garden",
    "text": "We need more guns and stuff. We need to defend ourselves.#AngryJones #WordHasSpread"
  },{
    "created_by": "snowball",
+   "location": "farmhouse_garden",
    "text": "Let's send out the pigeons. They can stir up rebellion with the animals on the other farms. #Rebellion #TheMoreTheMerrier #SayNoToGuns"
  },{
    "created_by": "snowball",
+   "location": "barn",
    "text": "See you in the barn on Sunday to discuss the windmill plans. Pls ReTrot.#WindmillsForever #NapoleonKnowsNothing"
  },{
    "created_by": "boxer",
+   "location": "barn",
    "text": "Napoleon speaks sense.  So does Snowball. #Confused. #WWBD"
  },{
    "created_by": "boxer",
+   "location": "barn",
    "text": "@Benjamin what do you think? #WWBD"
  },{
    "created_by": "benjamin",
+   "location": "barn",
    "text": "Neither #BoredNow"
  },{
    "created_by":"benjamin",
-   "text": "Whoah. Snowball run! #RunForYourLife"
+   "location": "orchard",
+   "text": "Whoah. SNOWBALL RUN! #RunForYourLife"
  },{
    "created_by":"muriel",
+   "location": "yard",
    "text": "What just happened? Where is Snowball? Who are those dogs? #Confused."
  },{
    "created_by": "napoleon",
+   "location": "barn",
    "text": "No more Sunday meetings to discuss farm business. The pigs will discuss and report back our decisions. But we will still meet to sing Beasts of England."
  },{
-    
    "created_by": "squealer",
-   "text": "Loyalty and obedience are the way forward and the only way to stop Jones returning.  Surely comrades you do not want Jones back? #FakeNews #PigsKnowBest."
+   "location": "barn",
+   "text": "Loyalty and obedience are the way forward and the only way to stop Jones returning. Surely comrades you do not want Jones back? #FakeNews #PigsKnowBest."
  },{
    "created_by": "boxer",
+   "location": "barn",
    "text": "If Comrade Napoleon says it, it must be right. #NapoleonAlwaysRight"
  },{
    "created_by": "clover",
+   "location": "farmhouse_garden",
    "text": "Why has Old Major's skull been dug up? #LetHimRIP"
  },{
    "created_by": "benjamin",
-   "text": "Another order. Great. We must file past it every Sunday before getting our orders for the week. #DoImissJones?"
+   "location": "farmhouse_garden",
+   "text": "Another order. Great. We must file past it every Sunday before getting our orders for the week. #DoIMissJones?"
  },{
    "created_by": "boxer",
+   "location": "small_paddock",
    "text": "For my best comrade, Benjamin",
    "image": "benjaminTBT"
  },{
    "created_by": "napoleon",
+   "location": "windmill",
    "text": "The windmill will be built. It will be hard work and rations may be reduced. The build will take two years. The pigs have planned it all. #PigsRule #WindmillWasMyIdea"
  },{
    "created_by": "squealer",
-   "text": "The windmill was Napoleon's idea and Snowball sole his plan. #FakeNews #TheyFellForIt"
+   "location": "windmill",
+   "text": "The windmill was Napoleon's idea and Snowball stole his plan. #FakeNews #TheyFellForIt"
  },{
    "created_by": "benjamin",
+   "location": "windmill",
    "text": "Oh for goodness sake. Make your mind up. #Eyeroll #Sigh #Bored"
  },{
    "created_by": "napoleon",
-   "text": "As you are all doing so well, we are increasing your hours to a 60 hour week. This is voluntary. However if you don't work you will get hald rations. #ChoiceIsYours #PigsRule"
+   "location": "windmill",
+   "text": "As you are all doing so well, we are increasing your hours to a 60 hour week. This is voluntary. However if you don't work you will get half rations. #ChoiceIsYours #PigsRule"
  },{
    "created_by": "boxer",
+   "location": "windmill",
    "text": "I will work harder. Napoleon is always right."
  },{
    "created_by": "boxer",
+   "location": "small_paddock",
    "text": "Thanks to @Cockerel for waking me up so I can get to work early. #AlarmClock #IWillWorkHarder"
  },{
    "created_by": "clover",
+   "location": "windmill",
    "text": "Please be careful @Boxer. Slow down a bit. I'm worried about you"
  },{
     "created_by": "benjamin",
+    "location": "windmill",
     "text": "What she said. #BFF"
  },{
     "created_by": "clover",
+    "location": "yard",
     "text": "We need some iron for our shoes. Anyone moved it? #Can'tFindTheIron"
  },{
     "created_by": "squealer",
+    "location": "barn",
     "text": "Napoleon has a new policy to share later. #ListenToNapoleon"
  },{
     "created_by": "napoleon",
+    "location": "barn",
     "text": "We are starting to trade with neighbouring farms, just to get the materials we need. #SellThatHay"
  },{
     "created_by": "napoleon",
+    "location": "hen_house",
     "text": "May need to sell some eggs at the market. @TheHens you get to contribute to the windmill build in your own special way #EggsForSale"
  },{
     "created_by": "squealer",
+    "location": "barn",
     "text": "For those of you wondering about money and trade, there was never anything said about it.  You may have dreamt it? #Nightmares"
  },{
     "created_by": "muriel",
+    "location": "yard",
     "text": "It must be Monday. There's Mr Whymper with Napoleon... #TradeWithHumans #GladItsNotMe"
  },{
-    "created_by": "pilkington",
+    "created_by": "pilkington", 
+    "location": "red_lion_inn",
     "text": "Have you seen this windmill plan? There's no way it will work. #StupidAnimals",
     "image": "windmill.jpg"
  },{
     "created_by": "frederick",
+    "location": "red_lion_inn",
     "text": "It will clearly fall down. I might send it to Jones for a laugh!"
  },{
     "created_by": "clover",
+    "location": "farmhouse",
     "text": "Have you seen? The pigs have moved into the farmhouse. Wasn't there something about that? Can anyone remember? #DodgyMemory"
  },{
     "created_by": "muriel",
+    "location":"barn",
     "text": "It's Thursday!",
     "image": "murielTBT.jpg"
  },{
  
     "created_by": "squealer",
+    "location":"farmhouse",
     "text": "It is vital that pigs have somewhere quiet to plan.  And the farmhouse is nothing less than our Leader, Napoleon deserves. #NapoleonOurLeader #FarmhouseOK"
  },{
     "created_by": "boxer",
+    "location": "yard",
     "text": "Napoleon is always right."
  },{
     "created_by": "clover",
+    "location": "barn",
     "text": "@Muriel what is the fourth commandment? Is it about not sleeping in a bed? #7Commandments #NumberFour"
  },{
     "created_by": "muriel",
+    "location": "barn",
     "text": "No animal shall sleep in a bed with sheets. #HasThisChanged?"
  },{
-    "created_by": "squealer",
-    "text": "It's always said that. A bed is just a bed. We don't use sheets. Obviously."
+     "created_by": "squealer",
+     "location": "barn",
+     "text": "It's always said that. A bed is just a bed. We don't use sheets. Obviously."
  },{
     "created_by": "boxer",
+    "location": "windmill",
     "text": "Enjoyed working by moonlight tonight. I will work harder. #NapoleonIsAlwaysRight"
  },{
     "created_by": "benjamin",
+    "location": "windmill",
     "text": "Hurray! A windmill. #EyeRoll"
  },{
     "created_by": "napoleon",
     "text": "Do you know who has destroyed our windmill comrades? Snowball. This is his doing.",
+    "location": "windmill",
     "image": "snowballwanted.jpg"
  },{
     "created_by": "benjamin",
+    "location": "windmill",
     "text": "It was very stormy last night. Look at the tree over there, blown down. #JustSayin"
  },{
     "created_by": "napoleon",
+    "location": "windmill",
     "text": "We start the rebuild today #LongLiveTheWindmill #LongLiveAnimalFarm"
  },{
     "created_by": "frederick",
+    "location": "red_lion_inn",
     "text": "Did you hear about the windmill falling down? I told you the plans were rubbish. The walls were too thin.#YouNeedABiggerWall"
  },{
     "created_by": "boxer",
+    "location": "windmill",
     "text": "I will work harder. #ItsSnowing"
  },{
     "created_by": "muriel",
+    "location": "barn",
     "text": "Did anyone find any food today? Really feeling the hunger now. #MouldyPotatoes"
  },{
     "created_by": "pilkington",
+    "location": "red_lion_inn",
     "text": "I heard the animals were dying and eating each other. Ha ha ha!"
  },{
     "created_by": "napoleon",
+    "location": "barn",
     "text": "Whymper believed we have loads of food. Well done everyone. It worked. #BinsFullOfSand"
  },{
     "created_by": "benjamin",
+    "location": "orchard",
     "text": "But when will we be getting the food? #Hungry #Grumpier"
  },{
     "created_by": "squealer",
+    "location": "hen_house",
     "text": "@TheHens we need your eggs. We need 400 a week to pay for the food until summer. #KeepLaying"
  },{
     "created_by": "napoleon",
+    "location": "hen_house",
     "text": "DO NOT feed the hens under any circumstances. They are refusing to work for the greater good. #EggsForAll #GiveUsYourEggs #NoFoodForYou"
  },{
     "created_by": "squealer",
+    "location": "yard",
     "text": "Snowball has been here at night.  Stay vigilant. #TraitorInOurMidst"
  },{
     "created_by": "napoleon",
+    "location": "barn",
     "text": "He’s been everywhere. I’ve smelt him."
  },{
     "created_by": "squealer",
+    "location": "farmhouse_garden",
     "text": "Comrades! Snowball was in league with Jones from the start. He was Jones’ secret agent. #Traitor #HowCouldHe #TheresEvidence"
  },{
     "created_by": "boxer",
+    "location": "farmhouse_garden",
     "text": "But… but… but he was wounded #SnowballIsInnocentProbably"
  },{
     "created_by": "squealer",
+    "location": "barn",
     "text": "Our Leader, Comrade Napoleon has stated that Snowball was in league with Jones from long before the Battle of the Cowshed. #BelieveIt"
  },{
    "created_by": "boxer",
+   "location": "barn",
    "text": "Ah. If Comrade Napoleon says it, it must be right. #LongLiveNapoleon"
  },{
     "created_by": "boxer",
+    "location": "barn",
     "text": "I love these...",
     "image": "spotlightonboxer.jpg"
  },{
- 
     "created_by": "squealer",
+    "location": "barn",
     "text": "Word of warning. Snowball's agents are among us... #StayVigilant"
  },{
     "created_by": "clover",
-    "text": "Look Napoleon's wearing his medals. He's Animal Hero, First Class AND Animal Hero, Second Class. #SoBrave"
+    "location": "farmhouse_garden",
+    "text": "Look! Napoleon's wearing his medals. He's Animal Hero, First Class AND Animal Hero, Second Class. #SoBrave"
  },{
     "created_by": "benjamin",
+    "location": "yard",
     "text": "Napoleon's dogs are looking vicious today #StayAway #LookAtThoseTeeth"
  },{
     "created_by": "boxer",
+    "location": "yard",
     "text": "I don't understand how this could happen. There have been no animals killed since Jones? Maybe it's our fault. I must work harder. An hour extra each day. #GetUpEarly"
  },{
     "created_by": "clover",
+   "location": "yard",
     "text": "Let's sing. #BeastsOfEngland"
  },{
     "created_by": "benjamin",
+   "location": "yard",
     "text": "Here comes Squealer to join in. #EyeRoll #SingItSquealer"
  },{
     "created_by": "squealer",
+    "location": "yard",
     "text": "Beasts of England has been banned. The rebellion is over. The traitors were executed. We don't need the song anymore."
  },{
     "created_by": "clover",
-    "text": "It's ok. @Minimus has written us another song.  I wonder what it's like?" 
+    "location": "yard",
+    "text": "It's ok. @Minimus has written us another song. I wonder what it's like?" 
  },{
     "created_by": "clover",
+    "location": "barn",
     "text": "The sixth commandment says: \"No animal shall kill any other animal without cause.\" #DidItChange #ItCantHaveDone"
  },{
     "created_by": "benjamin",
-    "text": "Why is Squealer always reading figures to us? I'd rather have more food. #StillHungry  #AndGrumpy"
+    "location": "barn",
+    "text": "Why is Squealer always reading figures to us? I'd rather have more food. #StillHungry #AndGrumpy"
  },{
     "created_by": "muriel",
-    "text": "Minimus wrote a poem aswell",
+    "text": "Minimus wrote a poem aswell", 
+    "location": "barn", 
     "image": "minimus.jpg"
  },{
     "created_by": "muriel",
+    "location": "barn",
     "text": "Napoleon said Minimus could put it on the wall of the barn. Next to a painting by Squealer. #FamousPoet"
  },{
     "created_by": "pilkington",
+    "location": "red_lion_inn",
     "text": "Getting some great timber from Manor Farm #WontCallItAnimalFarm"
  },{
     "created_by": "squealer",
+    "location": "barn",
     "text": "Stay vigilant. Frederick thinks he can take Animal Farm. #OurFarm #LongLiveAnimalFarm"
  },{
     "created_by": "napoleon",
     "text": "DEATH TO FREDERICK #EnemyOfAnimalFarm",
+    "location": "barn",
     "image": "deathtofred.jpg"
  },{
     "created_by": "boxer",
+    "location": "windmill",
     "text": "We did it! We have a windmill! #LongLiveNapoleon"
  },{
     "created_by": "napoleon",
+    "location": "windmill",
     "text": "Congratulations everyone. Welcome to Napoleon Mill. #MyWindmill"
  },{
     "created_by": "squealer",
+    "location": "yard",
     "text": "Meeting in the barn. Announcement from Comrade Napoleon. Don't be late."
  },{
     "created_by": "napoleon",
+    "location": "barn",
     "text": "We sold the timber to Frederick. So, DEATH TO PILKINGTON.",
     "image": "deathtopilk.jpg"
  },{
     "created_by": "frederick",
+    "location": "red_lion_inn",
     "text": "@Pilkington Ha! Got the timber. At a great price. Wait til you hear. #HowMuch? #WantThatFarm"
  },{
     "created_by": "napoleon",
+    "location": "barn",
     "text": "DEATH TO FREDERICK. He stole from us. The money wasn't real. He may carry out an attack now. #DeathToFrederick",
     "image": "deathtofred2.jpg"
  },{
     "created_by": "pilkington",
+    "location": "red_lion_inn",
     "text": "Sent a note to Napoleon saying, \"Serves you right.\" Bet he's sorry. #ShouldHaveSoldToMe"
  },{
     "created_by": "benjamin",
+    "location": "windmill",
     "text": "I could see they were making a hole for blasting powder. And then there was no more windmill. Again. #BoredNow #LetsBuildARollercoaster"
  },{
     "created_by": "muriel",
+    "location": "windmill",
     "text": "I have never felt so angry as when they blew up our beautiful windmill. Two years it took us. We attacked in anger. Not the best thing to do. They deserved it. #OurWindmillGone"
  },{
     "created_by": "boxer",
+    "location": "windmill",
     "text": "My leg hurts. Too many pellets inside. Can I rebuild the windmill? I'm eleven years old. #GettingTired #BrokenHeart"
  },{
     "created_by": "napoleon",
+    "location": "windmill",
     "text": "We can rebuild the windmill. We won! The men were chased off. Congratulations. Celebrations beginining in the barn. Extra food for all. #AndThenWeStartAgain."
  },{
     "created_by": "muriel",
+    "location": "barn",
     "text": "Number 5. No animal shall drink alcohol to excess. Did it always say this? #FuzzyMemory"
  },{
     "created_by": "boxer",
+    "location": "windmill",
     "text": "I will work harder. Napoleon is always right. #Rebuild #Injured"
  },{
     "created_by": "boxer",
+    "location": "barn",
     "text": "Thanks @Clover for you know what! I think it's getting better. #Friends #Healing"
  },{
     "created_by": "clover",
+    "location": "barn",
     "text": "I miss my mum",
     "image": "cloverTBT.jpg"
  },{
     "created_by": "muriel",
+    "location": "yard",
     "text": "Rations again? Wish I was a dog or a pig"
  },{
     "created_by": "squealer",
+    "location": "farmhouse",
     "text": "Congratulations @Napoleon on your 31 kids! #LongLiveNapoleon #LotsAndLotsOfPigs"
  },{
     "created_by": "benjamin",
+    "location": "farmhouse_garden",
     "text": "How come the pigs are getting beer every day? #WhatAboutUs?"
  },{
     "created_by": "napoleon",
+    "location": "barn",
     "text": "Once a week we shall hold a Spontaneous Demonstration.  Feel free to write me poems and we will celebrate everything. #LongLiveMe"
   },{
- 
    "created_by": "napoleon",
+   "location": "barn", 
    "text": "I am now President. Thanks to all who voted for me. It's an honour. #PresidentNapoleon #LongLiveNapoleon #NapoleonRocks"
  },{
     "created_by": "squealer",
+    "location": "barn",
     "text": "Congratulations President Napoleon! #AnimalFarmRepublic"
  },{
     "created_by": "moses",
+    "location": "yard",
     "text": "I'm back! #DidYouMissMe?"
  },{
     "created_by": "boxer",
-    "text": "I must work harder #BitTired"
+    "location": "windmill",
+    "text": "I must work harder. #BitTired"
  },{
     "created_by": "clover",
-    "text": "Really worried about Boxer @Benjamin. He's not getting any younger. #OverWork #TakeItEasier"
+    "location": "windmill",
+    "text": "Really worried about Boxer @Benjamin. He's not getting any younger. #OverWork #TakeItEasy"
  },{
     "created_by": "benjamin",
+    "location": "windmill",
     "text": "@Clover. He won't listen. He is determined. #BFF #Worried"
  },{
     "created_by": "muriel",
-    "text": "Boxer has fallen. QUICK EVERYONE> #HeroBoxer"
+    "location": "windmill",
+    "text": "Boxer has fallen. QUICK EVERYONE. #HeroBoxer"
  },{
     "created_by": "clover",
+    "location": "windmill",
     "text": "@Benjamin we'll stay here with Boxer. For as long as it takes. #PoorBoxer #StayStrong"
  },{
-    "created_by": "squealer",
+    "created_by": "squealer", 
+    "location": "windmill",
     "text": "Comrade Napoleon is saddened that Boxer is hurt and is arranging for him to be treated at the hospital. It's the best place for him to get better. #Glue #Cash"
  },{
     "created_by": "boxer",
+    "location": "yard",
     "text": "Thank you to my two BFFs @Benjamin and @Clover for staying by my side during this enforced rest time. Hopefully I will be retiring soon and will spend much time with them. #ReallyTiredNow"
  },{
     "created_by": "benjamin",
-    "text": "They took him away. The idiots thought it was to the hospital and I tols them it was to the knacker's. I can read. We shouted at Boxer and he tried to kick his way out but was too late. My heart is broken. #BFF #RIPBoxer"
+    "location": "small_paddock",
+    "text": "They took him away. The idiots thought it was to the hospital and I told them it was to the knacker's. I can read. We shouted at Boxer and he tried to kick his way out but was too late. My heart is broken. #BFF #RIPBoxer"
  },{
     "created_by": "squealer",
+    "location": "barn",
     "text": "I was with Boxer in hosiptal as he died. It was a peaceful death. His last words were: Long live Animal Farm! Long live Comrade Napoleon! Napolean is always right!"
  },{
     "created_by": "squealer",
+    "location": "barn",
     "text": "The van belonged to the vet. He hadn't painted over the previous owner's name #WickedRumour #WoolOverEyes"
  },{
     "created_by": "napoleon",
+    "location": "barn",
     "text": "At Sunday's meeting we will give time to Boxer's memory."
  },{
     "created_by": "clover",
+    "location": "barn",
     "text": "There were some nice things said but I don't understand why we didn't have Boxer back to bury him. #MissMyFriend #HeartBroken"
  },{
     "created_by": "benjamin",
+    "location": "farmhouse_garden",
     "text": "I wonder where the pigs got the money from to buy the whisky. #Angry #PoorBoxer #MissMyFriend"
  },{
     "created_by": "squealer",
-    "text": "Comrade Napoleon says excellent work on the second windmill everyone #WorkHarder"
+    "location": "windmill",
+    "text": "Comrade Napoleon says excellent work on the second windmill everyone. #WorkHarder"
  },{
     "created_by": "benjamin",
+    "location": "small_paddock",
     "text": "Hey #Clover I dreamt of Boxer the other night. #Sad #Grumpy"
  },{
     "created_by": "clover",
-    "text": "@Benjamin, I still miss him #MyHeart"
+    "location": "small_paddock",
+    "text": "@Benjamin, I still miss him. #MyHeart"
  },{
     "created_by": "napoleon",
+    "location": "barn",
     "text": "The truest happiness lays in working hard and living frugally #InspiringYou #LongLiveMe"
  },{
     "created_by": "squealer",
+    "location": "barn",
     "text": "Never forget we are the only farm in the whole country run by animals. #LongLiveAnimalFarm"
  },{
     "created_by": "squealer",
+    "location": "yard",
     "text": "All the sheep must come with me in the morning to the other end of the farm for a special task. #Sheep #FollowMe"
 
  },{
     "created_by": "clover",
+    "location": "farmhouse",
     "text": "I couldn't believe what I was seeing.  How is it possible they are walking on two legs? And Napoleon had a whip. What is happening? #WorldFallingApart #CantBelieveMyEyes"
  },{
     "created_by": "benjamin",
+    "location": "farmhouse",
     "text": "I looked at Clover. We couldn't believe this was happening. The other animals were looking scared and confused. #What's happening?"
  },{
     "created_by": "clover",
+    "location": "barn",
     "text": "Then we went to the commandments and I asked Benjamin to check they were all there."
  },{
     "created_by": "benjamin",
+    "location": "barn",
     "text": "It said ALL ANIMALS ARE EQUAL BUT SOME ANIMALS ARE MORE EQUAL THAN OTHERS. Nothing suprised us from then. #WorldUpsideDown #CrazyTimes"
  },{
     "created_by": "benjamin",
+    "location": "barn",
+    "text": "How could we believe them?",
     "image": "comms.gif"
  },{
     "created_by": "benjamin",
+    "location": "farmhouse",
     "text": "The newspapers, the clothes, the pipes and the whips. #ResignedToItAll"
  },{
     "created_by": "clover",
+    "location": "farmhouse",
     "text": "Why are there farmers in the house with the pigs? #Confused"
  },{
-    "created_by": "pilkington",
+    "created_by": "pilkington", 
+    "location": "farmhouse",
     "text": "Having a wonderful time at Animal Farm. My toast - Here's to the prosperity of Animal Farm. #ThanksForHavingUs"
  },{
     "created_by": "napoleon",
+    "location": "farmhouse",
     "text": "My toast - We will no longer use the name comrade, the boar's skull has been buried, we have a new flag - plain green, and from now on the farm will be know as The Manor Farm. To the prosperity of The Manor Farm. #WonderfulTimesAhead",
     "image":"newflag.jpg"
  },{ 
     "created_by": "benjamin",
+    "location": "yard",
     "text": "We all looked through the window and couldn't tell who was a pig and who was a man...",
     "image": "manorpig.gif"
  
  },{
     "created_by": "squealer",
+    "location": "farmhouse",
+    "text": "#pigsrule",
     "image":"pigsrelationship.jpg"
  
  }
