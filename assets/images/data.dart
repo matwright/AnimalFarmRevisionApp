@@ -1,6 +1,4 @@
-import 'dart:math';
 
-import 'package:animal_farm/src/models/character.dart';
 import 'package:flutter/material.dart';
 
 enum awardTrigger {
@@ -20,6 +18,107 @@ enum awardTrigger {
   twoHundredCorrectAnswers
 
 }
+
+List<Map<String, dynamic>> locations = [
+{
+"id": "orchard",
+"name": "The Orchard",
+"image": "orchard.png",
+"strap_line": "The orchard is where Old Major is buried and from where the pigs take the apples for themselves."
+},
+
+  {
+    "id": "orchard",
+    "name": "The Orchard",
+    "image": "orchard.png",
+    "strap_line": "The orchard is where Old Major is buried and from where the pigs take the apples for themselves."
+  },
+
+  {
+    "id": "small_paddock",
+    "name": "The Small Paddock",
+    "image": "small_paddock.png",
+    "strap_line": "The small paddock, which was originally set aside for the animals’ retirement, in the end was planted with barley for the pigs."
+  },
+
+  {
+    "id": "farmhouse_garden",
+    "name": "The Farmhouse Garden",
+    "image": "farmhouse_garden.png",
+    "strap_line": "The farmhouse garden is where the flag is raised, the gun is fired on special days, and where the animals file passed old major’s skull."
+  },
+
+  {
+    "id": "yard",
+    "name": "The Yard",
+    "image": "yard.png",
+    "strap_line": "The farmhouse and other buildings all arranged around the yard. The yard is the location of the Battle of the Cowshed"
+  },
+
+  {
+    "id": "cowshed",
+    "name": "The Cowshed",
+    "image": "cowshed.png",
+    "strap_line": "The cowshed is where the animals hide at the beginning of the Battle of the Cowshed, hence the name of the battle."
+  },
+
+  {
+    "id": "hen_house",
+    "name": "Hen House",
+    "image": "orchard.png",
+    "strap_line": "The hen house is where the hens’ protest takes place. They refuse to give 400 eggs a week to be sold at market"
+  },
+
+  {
+    "id": "windmill",
+    "name": "The Windmill",
+    "image": "windmill.png",
+    "strap_line": "The windmill represents industry and technology. It shows how hard the animals work, having to adapt human equipment to their own needs and having to build the windmill on top of their other tasks."
+  },
+
+  {
+    "id": "store_shed",
+    "name": "The Store Shed",
+    "image": "store_shed.png",
+    "strap_line": "The cows break down the door of the store shed when the animals haven’t been fed for two days."
+  },
+
+  {
+    "id": "foxwood_farm",
+    "name": "Foxwood Farm",
+    "image": "foxwood_farm.png",
+    "strap_line": "Foxwood Farm is one of the neighbouring farms. It’s run by Pilkington and represents the British Empire. It’s large, old-fashioned and in a bad condition due to neglect."
+  },
+
+  {
+    "id": "pinchfield_farm",
+    "name": "Pinchfield Farm",
+    "image": "pinchfield_farm.png",
+    "strap_line": "Pinchfield Farm one of the neighbouring farms is run by Frederick and represents Germany. Pinchfield is small and well-run."
+  },
+
+
+  {
+    "id": "barn",
+    "name": "The Barn",
+    "image": "barn.png",
+    "strap_line": "The barn represents the animals’ ideal world where animals are not controlled by man. It is where Old Major made his speech."
+  },
+
+  {
+    "id": "farmhouse",
+    "name": "The Farmhouse",
+    "image": "farmhouse.png",
+    "strap_line": "The farmhouse represents how the ruling class lived in luxury. It shows the gulf between the animals lives and that of Jones. It also shows the power relationship between the pigs and the other animals."
+  },
+
+  {
+    "id": "red_lion",
+    "name": "The Red Lion Inn",
+    "image": "pinchfield_farm.png",
+    "strap_line": "The red lion inn is where Jones stays when he is driven out of Animal farm. The farmers meet here regularly to discuss Animal Farm."
+  },
+];
 List<Map<String, dynamic>> characters = [
   {
     "id": "napoleon",
@@ -68,7 +167,7 @@ List<Map<String, dynamic>> characters = [
     "bio":
     "Squealer uses propaganda to glorify Napoleon & blame Snowball. He is persuasive, manipulative & deceitful.Squealer controls the animals with lies through his clever use of language. He rewrites history & turns the animals against Snowball. Squealer represents the use of communist propaganda in Russia.",
     "strap_line":
-    "No one believes more firmly than Comrade Napoleon that all animals are equal.",
+    "All animals are equal.",
     "color": Color(0xFFFFC107),
     "text_color": Color(0xff333333)
   },
@@ -93,47 +192,7 @@ List<Map<String, dynamic>> characters = [
     "color": Color(0xFFF9A825),
     "text_color": Color(0xff333333)
   },
-  {
-    "id": "sheep",
-    "name": "Sheep",
-    "avatar": "sheep.png",
-    "bio":
-    "Sheep",
-    "strap_line": "baaaah",
-    "color": Color(0xFFF9A825),
-    "text_color": Color(0xff333333)
-  },
-  {
-    "id": "cow",
-    "name": "Cow",
-    "avatar": "cow.png",
-    "bio":
-    "Cow",
-    "strap_line": "Moooo.",
-    "color": Color(0xFFF9A825),
-    "text_color": Color(0xff333333)
-  },
-  {
-    "id": "rats",
-    "name": "Rats",
-    "avatar": "rats.png",
-    "bio":
-    "Rats",
-    "strap_line": "Hello",
-    "color": Color(0xFFF9A825),
-    "text_color": Color(0xff333333)
-  },
 
-  {
-    "id": "birds",
-    "name": "Birds",
-    "avatar": "birds.png",
-    "bio":
-    "birds",
-    "strap_line": "Tweet",
-    "color": Color(0xFFF9A825),
-    "text_color": Color(0xff333333)
-  },
 
   {
     "id": "benjamin",

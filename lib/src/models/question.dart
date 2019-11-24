@@ -21,6 +21,7 @@ class QuestionModel {
 
 class Question {
   Question({this.question, this.answers, this.correctAnswerIndex});
+
   factory Question.fromQuestionModel(QuestionModel model) {
     final List<String> answers = []
       ..add(model.correctAnswer)

@@ -122,6 +122,7 @@
    "created_by": "clover",
    "text": "Thanks cows. #SoHungry #NomNom",
    "location": "store_shed"
+
  },{
    "created_by": "benjamin",
    "text": "Oh look. There goes Moses. With the humans. Surprise surprise. #Traitor #Spy",
@@ -312,6 +313,7 @@
    "location": "orchard",
    "text": "Milk and apples proven to help pigs’ brains. Science: Milk + apples for pigs = No. More. Jones. #Animalism #Rebellion #LongLiveAnimalFarm"
  },{
+
    "created_by": "farmer_jones",
    "location": "red_lion_inn",
    "text": "Good-for-nothing animals. #ItsMyFarm"
@@ -410,9 +412,11 @@
    "text": "I heard the pigeons saw her. In Willingdon. With ribbons. And being stroked. #MollieTraitor #NotToBeMentionedAgain"
  },{
    "created_by": "snowball",
+
    "text": "It's my turn",
    "location": "barn",
    "image": "spotlightonsnowball"
+
  },{  
    "created_by": "napoleon",
    "location": "barn",

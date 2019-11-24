@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:frideos/frideos.dart';
 
 import '../models/models.dart';
@@ -38,7 +37,7 @@ class CountdownWidgetState extends State<CountdownWidget>
         setState(() {
           // Animate the countdown bar from green to red
           final value = (animation.value ~/ 2).toInt();
-          color = Color.fromRGBO(255 - value, value > 255 ? 255 : value,1, 1);
+          color = Color.fromRGBO(255 - value, value > 255 ? 255 : value, 1, 1);
         });
 
         // Stop the animation if an anwser is chosen

@@ -7,18 +7,16 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/models.dart';
 import '../models/question.dart';
 
-
 const refreshTime = 100;
 
 class TriviaBloc {
   TriviaBloc({this.countdownStream, this.questions, this.tabController}) {
-
-    stats.value= TriviaStats();
+    stats.value = TriviaStats();
 
     // Getting the questions from the API
     questions.onChange((data) {
       if (data.isNotEmpty) {
-        index=0;
+        index = 0;
         data.shuffle();
         final questions = data;
         print("_startTrivia 22 trivia bloc");
@@ -46,13 +44,11 @@ class TriviaBloc {
   String chosenAnswer;
 
   final stats = StreamedValue<TriviaStats>();
+
   // TIMER, COUNTDOWN
   final StreamedTransformed<String, String> countdownStream;
   int countdown; // Milliseconds
   Timer timer;
-
-
-
 
   void _startTrivia(List<Question> data) {
     index = 0;
@@ -82,7 +78,6 @@ class TriviaBloc {
   }
 
   void playTrivia() {
-
     timer = Timer.periodic(Duration(milliseconds: refreshTime), (Timer t) {
       currentTime.value = refreshTime * t.tick;
 
@@ -95,8 +90,7 @@ class TriviaBloc {
     });
   }
 
-
-  void _endTrivia() async{
+  void _endTrivia() async {
     print("endTrivia");
 
     // RESET
@@ -110,19 +104,16 @@ class TriviaBloc {
     triviaState.value.isAnswerChosen = false;
     // Show the summary page after 1.5s
 
-
     // Clear the last question so that it doesn't appear
     // in the next game
     currentQuestion.value = null;
     triviaState.value.isTriviaEnd = true;
     //set total correct answers in the prefs
-    SharedPreferences prefs= await SharedPreferences.getInstance();
-    int currentCorrectAnswers=prefs.getInt('correctAnwers')??0;
-    prefs.setInt('currentCorrectAnswers', currentCorrectAnswers+stats.value.corrects.length);
-    Timer(Duration(milliseconds: 1), () {
-
-
-    });
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int currentCorrectAnswers = prefs.getInt('correctAnwers') ?? 0;
+    prefs.setInt('currentCorrectAnswers',
+        currentCorrectAnswers + stats.value.corrects.length);
+    Timer(Duration(milliseconds: 1), () {});
   }
 
   void notAnswered(Question question) {
@@ -149,7 +140,6 @@ class TriviaBloc {
     index++;
 
     if (index < questions.length) {
-
       triviaState.value.questionIndex++;
       currentQuestion.value = questions.value[index];
       playTrivia();

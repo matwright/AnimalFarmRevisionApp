@@ -7,8 +7,12 @@ import '../models/question.dart';
 
 abstract class AppAPI {
   Future<bool> getCharacters(StreamedList<Character> characters);
-  Future<bool> getMessages(StreamedList<Message> messages, StreamedValue numMessages,int totalMessage);
+
+  Future<bool> getMessages(StreamedList<Message> messages,
+      StreamedValue numMessages, int totalMessage);
+
   Future<bool> getCategories(StreamedList<Category> categories);
+
   Future<bool> getQuestions(
       {StreamedList<Question> questions,
       int number,

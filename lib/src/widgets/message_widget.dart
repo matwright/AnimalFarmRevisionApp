@@ -1,13 +1,9 @@
-import 'dart:ui' as prefix0;
-
 import 'package:animal_farm/src/models/appstate.dart';
 import 'package:animal_farm/src/models/character.dart';
-import 'package:animal_farm/src/widgets/empty_widget.dart';
 import 'package:bubble/bubble.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:frideos/frideos.dart';
 
 class MessageWidget extends StatefulWidget {
   final String avatar;
@@ -37,10 +33,10 @@ class MessageWidget extends StatefulWidget {
 
 class _MessageState extends State<MessageWidget> {
   bool _isImageShown = false;
+
   @override
   Widget build(BuildContext context) {
-    final appState = AppStateProvider.of(context);
-    Size size = MediaQuery.of(context).size;
+
     Runes rune;
     if (widget.rune != null) {
 //http://www.unicode.org/emoji/charts/full-emoji-list.html
@@ -62,169 +58,152 @@ class _MessageState extends State<MessageWidget> {
       rune = new Runes(runeValue);
     }
 
-return Column(children: <Widget>[
+    return Container(
+        child: Column(children: <Widget>[
+      Row(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
+        InkWell(
+            onTap: () =>
+                widget.appState.characterBio(widget.character, context),
+            child: CircleAvatar(
+              radius: 30,
+              backgroundColor: widget.character.color,
+              backgroundImage: AssetImage(
+                "${widget.avatar}",
+              ),
+            )),
+        Expanded(
+            child: Column(children: <Widget>[
+          Bubble(
+              margin: BubbleEdges.fromLTRB(5, 30, 0, 0),
+              color: widget.character.color,
+              stick: false,
+              shadowColor: Colors.black,
+              nip: BubbleNip.leftTop,
+              nipWidth: 10,
+              child: Column(children: <Widget>[
+                ListTile(
+                    isThreeLine: false,
+                    dense: true,
+                    contentPadding: EdgeInsets.only(bottom: 0),
+                    subtitle: widget.text != null
+                        ? new Container(
+                            child: Text(
+                                widget.text +
+                                    ' ' +
+                                    (rune != null
+                                        ? (new String.fromCharCodes(rune))
+                                        : ""),
+                                style: TextStyle(
+                                    fontFamily: "Raleway",
+                                    fontSize: 20,
+                                    color: widget.character.textColor)))
+                        : Container()),
+                (widget.img == null
+                    ? Visibility(
+                        child: Divider(),
+                        visible: false,
+                      )
+                    : new Flex(
+                        direction: Axis.vertical,
+                        children: <Widget>[
+                          !_isImageShown
+                              ? Center(
+                                  child: GestureDetector(
+                                    onTap: () => setState(
+                                        () => _isImageShown = !_isImageShown),
+                                    child: Stack(children: <Widget>[
+                                      Opacity(
+                                          opacity: 0.4,
+                                          child: Padding(
+                                              padding: EdgeInsets.fromLTRB(
+                                                  0, 20, 0, 0),
+                                              child: new Image.asset(
+                                                widget.img,
+                                                height: 100,
+                                                width: MediaQuery.of(context)
+                                                    .size
+                                                    .width,
+                                                fit: BoxFit.fitWidth,
+                                              ))),
+                                      Padding(
+                                          padding:
+                                              EdgeInsets.fromLTRB(0, 25, 10, 0),
+                                          child: Align(
+                                              alignment: Alignment.topRight,
+                                              child: Icon(Icons
+                                                  .photo_size_select_actual)))
+                                    ]),
+                                  ),
+                                )
+                              : SizedBox(),
+                          _isImageShown
+                              ? Center(
+                                  child: GestureDetector(
+                                      onTap: () => setState(
+                                          () => _isImageShown = !_isImageShown),
+                                      child: Stack(children: <Widget>[
+                                        Padding(
+                                            padding: EdgeInsets.fromLTRB(
+                                                0, 20, 0, 0),
+                                            child: new Image.asset(
+                                              widget.img,
+                                              width: MediaQuery.of(context)
+                                                  .size
+                                                  .width,
+                                              fit: BoxFit.cover,
+                                            )),
+                                        Padding(
+                                            padding: EdgeInsets.fromLTRB(
+                                                0, 25, 10, 0),
+                                            child: Align(
+                                                alignment: Alignment.topRight,
+                                                child: Icon(Icons
+                                                    .photo_size_select_large)))
+                                      ])),
+                                )
+                              : SizedBox(),
+                        ],
+                      ))
+              ])),
+          Container(
+              margin: EdgeInsets.only(top: 20),
+              child: Wrap(spacing: 8.0, // gap between adjacent chips,
 
-  Row(
-  crossAxisAlignment  : CrossAxisAlignment.start,
-
-  children: <Widget>[
-
-
-    InkWell(
-
-        onTap: () =>
-            widget.appState.characterBio(widget.character, context),
-        child: CircleAvatar(
-
-          radius: 30,
-          backgroundColor: widget.character.color,
-          backgroundImage: AssetImage(
-            "${widget.avatar}",
-          ),
-        )),
-        Expanded(child:
-    Column(children: <Widget>[
-
-Bubble(
-  margin: BubbleEdges.fromLTRB(5,30,0,0),
-
-  color: widget.character.color,
-
-    stick: false,
-    nip: BubbleNip.leftTop,
-    nipWidth: 10,
-
-    child: Column(
-    children: <Widget>[
-    ListTile(
-
-    isThreeLine: false,
-    dense: false,
-
-    contentPadding: EdgeInsets.only(bottom: 0),
-    subtitle: widget.text != null
-    ? new Container(
-
-
-    child: Text(
-    widget.text +
-    ' ' +
-    (rune != null
-    ? (new String.fromCharCodes(rune))
-        : ""),
-    style: TextStyle(color: widget.character.textColor)))
-        : Text('')),
-    (widget.img == null
-    ? Visibility(
-    child: Divider(),
-    visible: false,
-    )
-        : new Flex(
-    direction: Axis.vertical,
-    children: <Widget>[
-    !_isImageShown
-    ? Center(
-    child: GestureDetector(
-    onTap: () => setState(
-    () => _isImageShown = !_isImageShown),
-    child: Stack(children: <Widget>[
-    Opacity(
-
-    opacity: 0.3,
-    child: Padding(
-    padding:
-    EdgeInsets.fromLTRB(0, 20, 0, 0),
-    child: new Image.asset(
-
-    widget.img,
-    height: 170,
-    width:
-    MediaQuery.of(context).size.width,
-    fit: BoxFit.fitWidth,
-    ))),
-    Padding(
-    padding: EdgeInsets.fromLTRB(0, 25, 10, 0),
-    child: Align(
-    alignment: Alignment.topRight,
-    child: Icon(
-    Icons.photo_size_select_actual)))
-    ]),
-    ),
-    )
-        : SizedBox(),
-    _isImageShown
-    ? Center(
-    child: GestureDetector(
-    onTap: () => setState(
-    () => _isImageShown = !_isImageShown),
-    child: Stack(children: <Widget>[
-    Padding(
-    padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
-    child: new Image.asset(
-    widget.img,
-    fit: BoxFit.cover,
-    )),
-    Padding(
-    padding:
-    EdgeInsets.fromLTRB(0, 25, 10, 0),
-    child: Align(
-    alignment: Alignment.topRight,
-    child: Icon(
-    Icons.photo_size_select_large)))
-    ])),
-    )
-        : SizedBox(),
-    ],
-    ))
-
-
-    ]
-    )
-    ),
-      Container(
-
-          margin: EdgeInsets.only(top:20),
-          child:    Wrap(
-
-              spacing: 8.0, // gap between adjacent chips,
-
-              children: <Widget>[
-                Chip(
-                  backgroundColor: Theme.of(context).primaryColor,
-
-                  label: Text(widget.text.length.toString(),
-                      style: TextStyle(color: Colors.white70)),
-                  avatar: Icon(Icons.insert_emoticon, color: Colors.white70),
-                ),
-                Chip(
-
-                  backgroundColor: Theme.of(context).canvasColor,
-                  label: Text(widget.character.name,
-                      style: TextStyle(color: Colors.white70)),
-                  avatar: Icon(Icons.account_circle, color: Colors.white70),
-                ),
-                Chip(
-
-                  backgroundColor: Colors.blueGrey,
-                  label: Text(widget.location,
-                      style: TextStyle(color: Colors.white70)),
-                  avatar: Icon(Icons.location_on, color: Colors.white70),
-                )
-              ])
-      )
-]
-    )
-
-        ),
-
-    ]
-),
-
-
-
-
-    ]);
-
-
+                  children: <Widget>[
+                    Chip(
+                      backgroundColor: Theme.of(context).primaryColor,
+                      label: Text(widget.text.length.toString(),
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontFamily: "Raleway",
+                            fontSize: 16,
+                          )),
+                      avatar:
+                          Icon(Icons.insert_emoticon, color: Colors.white70),
+                    ),
+                    Chip(
+                      backgroundColor: Colors.green,
+                      label: Text(widget.character.name,
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontFamily: "Raleway",
+                            fontSize: 16,
+                          )),
+                      avatar: Icon(Icons.account_circle, color: Colors.white70),
+                    ),
+                    Chip(
+                      backgroundColor: Colors.blueGrey,
+                      label: Text(widget.location,
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontFamily: "Raleway",
+                            fontSize: 16,
+                          )),
+                      avatar: Icon(Icons.location_on, color: Colors.white70),
+                    )
+                  ]))
+        ])),
+      ]),
+    ]));
   }
 }

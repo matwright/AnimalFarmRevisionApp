@@ -1,16 +1,14 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:animal_farm/src/blocs/nav_bloc.dart';
+import 'package:animal_farm/src/models/award.dart';
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
-import 'package:animal_farm/src/models/award.dart';
-import 'package:animal_farm/util/data.dart';
+import 'file:///G:/FlutterProjects/animal_farm/assets/images/data.dart';
 import 'package:clock/clock.dart';
 import 'package:flutter/foundation.dart' as prefix0;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
 import 'package:frideos/frideos.dart';
 import 'package:frideos_core/frideos_core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -342,20 +340,19 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
 
   void _createThemes(List<MyTheme> themes) {
     themes.addAll([
-
-    MyTheme(
+      MyTheme(
         name: 'light',
-      backgroundColor:  Colors.grey
-    ),
+        scaffoldBackgroundColor: const Color(0xff111740),
+      ),
       MyTheme(
         name: 'blue',
         brightness: Brightness.dark,
         backgroundColor: const Color(0xff111740),
         scaffoldBackgroundColor: const Color(0xff111740),
-        primaryColor:  Colors.blue,
+        primaryColor: Colors.blue,
         primaryColorBrightness: Brightness.dark,
         accentColor: Colors.blue[300],
-        bottomAppBarColor:const Color(0xff283593),
+        bottomAppBarColor: const Color(0xff283593),
         dividerColor: const Color(0xfffaf333),
         buttonColor: const Color(0xffd63737),
         secondaryHeaderColor: const Color(0xffd63737),
@@ -364,7 +361,7 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
       ),
       MyTheme(
         name: 'dark',
-        brightness:  ThemeData.dark().brightness,
+        brightness: ThemeData.dark().brightness,
         backgroundColor: ThemeData.dark().backgroundColor,
         scaffoldBackgroundColor: ThemeData.dark().scaffoldBackgroundColor,
         primaryColor: ThemeData.dark().scaffoldBackgroundColor,
@@ -373,7 +370,7 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
         bottomAppBarColor: ThemeData.dark().bottomAppBarColor,
         dividerColor: ThemeData.dark().dividerColor,
         buttonColor: ThemeData.dark().buttonColor,
-        secondaryHeaderColor:ThemeData.dark().secondaryHeaderColor,
+        secondaryHeaderColor: ThemeData.dark().secondaryHeaderColor,
         cardColor: ThemeData.dark().cardColor,
         canvasColor: ThemeData.dark().backgroundColor,
       ),
@@ -437,47 +434,57 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
       triggered = true;
     }
 
-    if (!currentAwards.contains(prefix0.describeEnum(awardTrigger.sundayQuizz)) &&
-        DateTime.now().day==0) {
+    if (!currentAwards
+            .contains(prefix0.describeEnum(awardTrigger.sundayQuizz)) &&
+        DateTime.now().day == 0) {
       addAward(awardTrigger.sundayQuizz);
       triggered = true;
     }
 
-
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    int currentCorrectAnswers=prefs.getInt('correctAnwers')??0;
+    int currentCorrectAnswers = prefs.getInt('correctAnwers') ?? 0;
 
-    if (currentCorrectAnswers>=5 && !currentAwards.contains(prefix0.describeEnum(awardTrigger.fiveCorrectAnswers))) {
+    if (currentCorrectAnswers >= 5 &&
+        !currentAwards
+            .contains(prefix0.describeEnum(awardTrigger.fiveCorrectAnswers))) {
       addAward(awardTrigger.fiveCorrectAnswers);
       triggered = true;
     }
 
-    if (currentCorrectAnswers>=10 && !currentAwards.contains(prefix0.describeEnum(awardTrigger.tenCorrectAnswers))) {
+    if (currentCorrectAnswers >= 10 &&
+        !currentAwards
+            .contains(prefix0.describeEnum(awardTrigger.tenCorrectAnswers))) {
       addAward(awardTrigger.tenCorrectAnswers);
       triggered = true;
     }
 
-    if (currentCorrectAnswers>=20 && !currentAwards.contains(prefix0.describeEnum(awardTrigger.twentyCorrectAnswers))) {
+    if (currentCorrectAnswers >= 20 &&
+        !currentAwards.contains(
+            prefix0.describeEnum(awardTrigger.twentyCorrectAnswers))) {
       addAward(awardTrigger.twentyCorrectAnswers);
       triggered = true;
     }
 
-    if (currentCorrectAnswers>=50 && !currentAwards.contains(prefix0.describeEnum(awardTrigger.fiftyCorrectAnswers))) {
+    if (currentCorrectAnswers >= 50 &&
+        !currentAwards
+            .contains(prefix0.describeEnum(awardTrigger.fiftyCorrectAnswers))) {
       addAward(awardTrigger.fiftyCorrectAnswers);
       triggered = true;
     }
 
-    if (currentCorrectAnswers>=100 && !currentAwards.contains(prefix0.describeEnum(awardTrigger.hundredCorrectAnswers))) {
+    if (currentCorrectAnswers >= 100 &&
+        !currentAwards.contains(
+            prefix0.describeEnum(awardTrigger.hundredCorrectAnswers))) {
       addAward(awardTrigger.hundredCorrectAnswers);
       triggered = true;
     }
 
-    if (currentCorrectAnswers>=200 && !currentAwards.contains(prefix0.describeEnum(awardTrigger.twoHundredCorrectAnswers))) {
+    if (currentCorrectAnswers >= 200 &&
+        !currentAwards.contains(
+            prefix0.describeEnum(awardTrigger.twoHundredCorrectAnswers))) {
       addAward(awardTrigger.twoHundredCorrectAnswers);
       triggered = true;
     }
-
-
 
     if (triggered) {
       _loadUnseenAwards();

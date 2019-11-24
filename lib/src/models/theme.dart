@@ -9,13 +9,12 @@ class MyTheme {
       this.primaryColor,
       this.primaryColorBrightness,
       this.accentColor,
-        this.bottomAppBarColor,
-        this.dividerColor,
-        this.buttonColor,
-        this.secondaryHeaderColor,
-        this.cardColor,
-        this.canvasColor
-      });
+      this.bottomAppBarColor,
+      this.dividerColor,
+      this.buttonColor,
+      this.secondaryHeaderColor,
+      this.cardColor,
+      this.canvasColor});
 
   String name;
   Brightness brightness;
@@ -30,6 +29,4 @@ class MyTheme {
   Color secondaryHeaderColor;
   Color cardColor;
   Color canvasColor;
-
-
 }
