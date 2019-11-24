@@ -15,7 +15,11 @@ class BioPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final appState = AppStateProvider.of<AppState>(context);
+
+
+
     return Scaffold(
         bottomNavigationBar: BottomNavWidget(selectedIndex: 0),
         appBar: AppBar(
@@ -25,6 +29,7 @@ class BioPage extends StatelessWidget {
           ),
           title: Text('Choose Your Character'),
         ),
+
         backgroundColor: backgroundColor,
         // drawer: DrawerWidget(),
         body: FadeInWidget(
@@ -41,7 +46,7 @@ class BioPage extends StatelessWidget {
                       }
 
                       return Container(
-                          color: character.textColor,
+
                           height: double.maxFinite,
                           padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
                           child: Stack(
@@ -115,7 +120,7 @@ class TopCard extends StatelessWidget {
                   '"' + character.strapLine + '"',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 24.0,
+                    fontSize: 21.0,
                     color: character.textColor,
                     fontFamily: "PermanentMarker",
                     letterSpacing: 1.5,

@@ -14,13 +14,14 @@ class QuestionWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(14.0),
       alignment: Alignment.center,
-      height: 18 * 4.0,
+      height: 21 * 5.0,
       child: Text(
         '${bloc.triviaState.value.questionIndex} - ${question.question}',
         textAlign: TextAlign.center,
         style: const TextStyle(
-          fontSize: 18.0,
-          fontWeight: FontWeight.w500,
+          fontSize: 21.0,
+          fontFamily: "Raleway",
+          fontWeight: FontWeight.bold,
         ),
       ),
     );
