@@ -3,6 +3,7 @@ import 'dart:ui' as prefix0;
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/theme.dart';
 import 'package:animal_farm/src/screens/instructions_page.dart';
+import 'package:animal_farm/src/screens/progress_page.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:animal_farm/src/widgets/rounded_button_widget.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -172,10 +173,7 @@ class MainPage extends StatelessWidget {
                                             : character.id) +
                                         '.png'),
                                 maxRadius: 150.00,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: <Widget>[],
-                                ),
+
                               ),
                             )),
                       ),
@@ -240,12 +238,27 @@ class DrawerWidget extends StatelessWidget {
                   title: const Text('Instructions'),
                   onTap: () {
                     Navigator.pop(context);
-                    Navigator.push(
+                    Navigator.pushNamed(
                       context,
-                      MaterialPageRoute(builder: (context) => SettingsPage()),
+                      'settings',
                     );
-                  },
-                ),
+                  }),
+                  ListTile(
+                    leading: Icon(
+                      Icons.timelapse,
+                      color: Theme.of(context).primaryColor.withOpacity(0.5),
+                      size: 32,
+                    ),
+                    title: const Text('Your Progress'),
+                    onTap: () {
+
+                      Navigator.pushNamed(
+                        context,
+                        '/progress'
+                      );
+                    },
+                  ),
+
                 ListTile(
                     title: const Text('Colour Theme'),
                     leading: Icon(

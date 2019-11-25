@@ -9,6 +9,9 @@ import '../models/appstate.dart';
 import '../models/trivia_stats.dart';
 
 class SummaryPage extends StatelessWidget {
+
+  SummaryPage({this.backgroundColor});
+  final backgroundColor;
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
@@ -23,7 +26,7 @@ class SummaryPage extends StatelessWidget {
                 title: Text('Revision Summary'),
               ),
               drawer: DrawerWidget(),
-              // drawer: DrawerWidget(),
+             backgroundColor: backgroundColor,
               body: FadeInWidget(
                 duration: 100,
                 child: Container(

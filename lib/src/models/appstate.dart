@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:animal_farm/src/models/award.dart';
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
-import 'file:///G:/FlutterProjects/animal_farm/assets/images/data.dart';
+import '../../util/data.dart';
 import 'package:clock/clock.dart';
 import 'package:flutter/foundation.dart' as prefix0;
 import 'package:flutter/material.dart';

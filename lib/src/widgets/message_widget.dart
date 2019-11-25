@@ -1,5 +1,7 @@
 import 'package:animal_farm/src/models/appstate.dart';
 import 'package:animal_farm/src/models/character.dart';
+import 'package:animal_farm/src/models/location.dart';
+import 'package:animal_farm/src/widgets/avatar_dialog_widget.dart';
 import 'package:bubble/bubble.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +10,7 @@ import 'package:flutter/painting.dart';
 class MessageWidget extends StatefulWidget {
   final String avatar;
   final String name;
-  final String location;
+  final Location location;
   final String img;
   final String text;
   final String rune;
@@ -57,6 +59,8 @@ class _MessageState extends State<MessageWidget> {
 
       rune = new Runes(runeValue);
     }
+
+
 
     return Container(
         child: Column(children: <Widget>[
@@ -167,7 +171,7 @@ class _MessageState extends State<MessageWidget> {
               ])),
           Container(
               margin: EdgeInsets.only(top: 20),
-              child: Wrap(spacing: 8.0, // gap between adjacent chips,
+              child: Wrap(spacing: 5.0, // gap between adjacent chips,
 
                   children: <Widget>[
                     Chip(
@@ -176,7 +180,7 @@ class _MessageState extends State<MessageWidget> {
                           style: TextStyle(
                             color: Colors.white70,
                             fontFamily: "Raleway",
-                            fontSize: 16,
+                            fontSize: 14,
                           )),
                       avatar:
                           Icon(Icons.insert_emoticon, color: Colors.white70),
@@ -187,20 +191,35 @@ class _MessageState extends State<MessageWidget> {
                           style: TextStyle(
                             color: Colors.white70,
                             fontFamily: "Raleway",
-                            fontSize: 16,
+                            fontSize: 14,
                           )),
                       avatar: Icon(Icons.account_circle, color: Colors.white70),
                     ),
-                    Chip(
-                      backgroundColor: Colors.blueGrey,
-                      label: Text(widget.location,
-                          style: TextStyle(
-                            color: Colors.white70,
-                            fontFamily: "Raleway",
-                            fontSize: 16,
-                          )),
-                      avatar: Icon(Icons.location_on, color: Colors.white70),
+                    GestureDetector(
+                      onTap:()=>
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) => CustomDialog(
+                          title: widget.location.name,
+                          description:
+                          widget.location.strapLine,
+                          buttonText: "Oink",
+                        ),
+                      ),
+                      child:
+                      Chip(
+
+                        backgroundColor: Colors.blueGrey,
+                        label: Text(widget.location.name,
+                            style: TextStyle(
+                              color: Colors.white70,
+                              fontFamily: "Raleway",
+                              fontSize: 14,
+                            )),
+                        avatar: Icon(Icons.location_on, color: Colors.white70),
+                      )
                     )
+
                   ]))
         ])),
       ]),

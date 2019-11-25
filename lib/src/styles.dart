@@ -30,10 +30,10 @@ const questionCircleAvatarBackground = Color(0xff22273a);
 const questionCircleAvatarRadius = 14.0;
 
 const answersLeadingStyle =
-    TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w700);
+    TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w700, fontFamily: "Raleway");
 
 const answersStyle =
-    TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w500);
+    TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w500 , fontFamily: "Raleway",);
 
 //
 // ** Summary page **

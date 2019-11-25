@@ -4,7 +4,7 @@ import 'dart:convert' as convert;
 
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
-import 'file:///G:/FlutterProjects/animal_farm/assets/images/data.dart' as prefix0;
+import '../../util/data.dart' as prefix0;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:frideos/frideos.dart';
 import 'package:frideos_core/frideos_core.dart';
