@@ -66,7 +66,7 @@ class _BottomNavState extends State<BottomNavWidget> {
                           title: Text('Home')),
                       BottomNavigationBarItem(
                           backgroundColor:Theme.of(context).primaryColor ,
-                          icon: Icon(Icons.school), title: Text('Quizz')),
+                          icon: Icon(Icons.school), title: Text('Quiz')),
                       BottomNavigationBarItem(
                           backgroundColor:Theme.of(context).primaryColor ,
                           title: Text('Awards'),
