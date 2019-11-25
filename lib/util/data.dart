@@ -20,12 +20,6 @@ enum awardTrigger {
 }
 
 List<Map<String, dynamic>> locations = [
-{
-"id": "orchard",
-"name": "The Orchard",
-"image": "orchard.png",
-"strap_line": "The orchard is where Old Major is buried and from where the pigs take the apples for themselves."
-},
 
   {
     "id": "orchard",
@@ -36,14 +30,14 @@ List<Map<String, dynamic>> locations = [
 
   {
     "id": "small_paddock",
-    "name": "The Small Paddock",
+    "name": "Small Paddock",
     "image": "small_paddock.png",
     "strap_line": "The small paddock, which was originally set aside for the animals’ retirement, in the end was planted with barley for the pigs."
   },
 
   {
     "id": "farmhouse_garden",
-    "name": "The Farmhouse Garden",
+    "name": "The Garden",
     "image": "farmhouse_garden.png",
     "strap_line": "The farmhouse garden is where the flag is raised, the gun is fired on special days, and where the animals file passed old major’s skull."
   },
@@ -113,8 +107,8 @@ List<Map<String, dynamic>> locations = [
   },
 
   {
-    "id": "red_lion",
-    "name": "The Red Lion Inn",
+    "id": "red_lion_inn",
+    "name": "Red Lion Inn",
     "image": "pinchfield_farm.png",
     "strap_line": "The red lion inn is where Jones stays when he is driven out of Animal farm. The farmers meet here regularly to discuss Animal Farm."
   },
@@ -147,7 +141,7 @@ List<Map<String, dynamic>> characters = [
     "bio":
     "Boxer is a cart-horse - the hardest working animal on the farm. He is incredibly strong & brave. Boxer believes any problem can be solved by working harder. He is not very bright & is easily manipulated by the pigs. He trusts them to make all his decisions. Boxer is best friends with Benjamin. Boxer represents the peasant workers.",
     "strap_line": "Napoleon is always right!",
-    "color": Color(0x99795548),
+    "color": Colors.brown,
     "text_color": Color(0xffeeeeee)
   },
   {
@@ -222,7 +216,7 @@ List<Map<String, dynamic>> characters = [
     "bio":
     "Mollie is vain, lazy & cowardly. She hides during the Battle of the Cowshed & has no interest in the rebellion. She likes ribbons & sugar, however these are banned in Animalism. Mollie represents the upper-class Russians.",
     "strap_line": "Will there still be sugar after the Rebellion?",
-    "color": Color(0xFFFF59D),
+    "color": Colors.deepPurpleAccent,
     "text_color": Color(0xffeeeeee)
   },
   {
@@ -242,7 +236,7 @@ List<Map<String, dynamic>> characters = [
     "bio":
     "Pilkington owns Foxwood, a neighbouring farm that is shabby & neglected. He prefers pursuing his hobbies than looking after his farm. Pilkington eventually becomes Napoleon’s ally. Pilkington represents the capitalist west.",
     "strap_line":
-    "Gentlemen, I give you a toast: To the prosperity of Animal Farm!",
+    "A toast! To the prosperity of Animal Farm!",
     "color": Color(0xFF66BB6A),
     "text_color": Color(0xffeeeeee)
   },

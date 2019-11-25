@@ -344,21 +344,7 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
         name: 'light',
         scaffoldBackgroundColor: const Color(0xff111740),
       ),
-      MyTheme(
-        name: 'blue',
-        brightness: Brightness.dark,
-        backgroundColor: const Color(0xff111740),
-        scaffoldBackgroundColor: const Color(0xff111740),
-        primaryColor: Colors.blue,
-        primaryColorBrightness: Brightness.dark,
-        accentColor: Colors.blue[300],
-        bottomAppBarColor: const Color(0xff283593),
-        dividerColor: const Color(0xfffaf333),
-        buttonColor: const Color(0xffd63737),
-        secondaryHeaderColor: const Color(0xffd63737),
-        cardColor: const Color(0xff283593),
-        canvasColor: const Color(0xff111740),
-      ),
+
       MyTheme(
         name: 'dark',
         brightness: ThemeData.dark().brightness,
@@ -373,6 +359,7 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
         secondaryHeaderColor: ThemeData.dark().secondaryHeaderColor,
         cardColor: ThemeData.dark().cardColor,
         canvasColor: ThemeData.dark().backgroundColor,
+
       ),
     ]);
   }

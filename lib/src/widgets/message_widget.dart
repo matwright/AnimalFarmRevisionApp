@@ -186,7 +186,7 @@ class _MessageState extends State<MessageWidget> {
                           Icon(Icons.insert_emoticon, color: Colors.white70),
                     ),
                     Chip(
-                      backgroundColor: Colors.green,
+                      backgroundColor: Colors.pink,
                       label: Text(widget.character.name,
                           style: TextStyle(
                             color: Colors.white70,
@@ -209,7 +209,7 @@ class _MessageState extends State<MessageWidget> {
                       child:
                       Chip(
 
-                        backgroundColor: Colors.blueGrey,
+                        backgroundColor: Colors.green,
                         label: Text(widget.location.name,
                             style: TextStyle(
                               color: Colors.white70,

@@ -3,12 +3,12 @@ import 'package:frideos/frideos.dart';
 
 import '../models/appstate.dart';
 
-class SettingsPage extends StatefulWidget {
+class InstructionsPage extends StatefulWidget {
   @override
-  _SettingsPageState createState() => _SettingsPageState();
+  _InstructionsPageState createState() => _InstructionsPageState();
 }
 
-class _SettingsPageState extends State<SettingsPage> {
+class _InstructionsPageState extends State<InstructionsPage> {
   final countdownController = TextEditingController();
   final amountController = TextEditingController();
 
@@ -42,12 +42,20 @@ class _SettingsPageState extends State<SettingsPage> {
                   child: new Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      new Text('Pick A Character',
+                      new Text('Welcome to your Animal Farm revision app.',
+                          style: Theme.of(context).textTheme.headline),
+                      new Container(
+                        margin: const EdgeInsets.only(top: 25.0),
+                      child:
+                      new Text('Pick A Character'
+                          ,
                           style: Theme.of(context).textTheme.subhead),
+                      ),
+
                       new Container(
                         margin: const EdgeInsets.only(top: 5.0),
                         child: new Text(
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
+                            'Start by choosing an character to represent who you\'d like to play as. Have a look through and read each character\'s brief biography (which may give some clues to later questions) and choose who you want to help you with your revision.'),
                       ),
                     ],
                   ),
@@ -63,12 +71,12 @@ class _SettingsPageState extends State<SettingsPage> {
                   child: new Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      new Text('Take A Quiz',
+                      new Text('Quiz & Awards',
                           style: Theme.of(context).textTheme.subhead),
                       new Container(
                         margin: const EdgeInsets.only(top: 5.0),
                         child: new Text(
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
+                            'Once you have chosen a character, you will achieve your first award! There are 15 awards to achieve which you will receive for different things, such as answering a certain number of questions correctly or your time spent using the app'),
                       ),
                     ],
                   ),
@@ -84,13 +92,18 @@ class _SettingsPageState extends State<SettingsPage> {
                   child: new Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      new Text('Achieve Awards',
+                      new Text('Trotter Social',
                           style: Theme.of(context).textTheme.subhead),
                       new Container(
-                        margin: const EdgeInsets.only(top: 5.0),
+                        margin: const EdgeInsets.only(top: 5.0,bottom:20),
                         child: new Text(
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
+                            'Keep your eyes open for Animal Farm’s social media feed, Trotter, giving you additional hints into the characters and the story.'),
                       ),
+                      new Text('Happy Revision !',
+
+
+                          style: TextStyle(fontFamily: "PermanentMarker",fontSize: 32),),
+
                     ],
                   ),
                 ))

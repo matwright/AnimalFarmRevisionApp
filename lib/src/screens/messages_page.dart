@@ -28,7 +28,10 @@ class MessagesPage extends StatelessWidget {
     return Scaffold(
         bottomNavigationBar: BottomNavWidget(selectedIndex: 3),
         appBar:
-            AppBar(leading: Icon(Icons.chat), title: Text('Trotter Newsfeed')),
+            AppBar(   leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () => Navigator.pop(context, false),
+            ), title: Text('Trotter Newsfeed')),
         backgroundColor: backgroundColor,
         body: FadeInWidget(
             duration: 20,

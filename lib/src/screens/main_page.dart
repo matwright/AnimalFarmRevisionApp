@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:ui' as prefix0;
 
 import 'package:animal_farm/src/models/character.dart';
@@ -6,11 +7,13 @@ import 'package:animal_farm/src/screens/instructions_page.dart';
 import 'package:animal_farm/src/screens/progress_page.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:animal_farm/src/widgets/rounded_button_widget.dart';
+import 'package:animal_farm/src/widgets/wave_widget.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:frideos/frideos.dart';
+import 'package:simple_animations/simple_animations.dart';
 
 import '../models/appstate.dart';
 
@@ -68,6 +71,12 @@ class MainPage extends StatelessWidget {
         },
       );
     }
+    onBottom(Widget child) => Positioned.fill(
+      child: Align(
+        alignment: Alignment.bottomCenter,
+        child: child,
+      ),
+    );
 
     return Scaffold(
         appBar: AppBar(
@@ -79,7 +88,7 @@ class MainPage extends StatelessWidget {
         body: FadeInWidget(
           duration: 20,
           child: Container(
-            padding: const EdgeInsets.only(bottom: 10.0),
+
             child: ValueBuilder(
               streamed: appState.currentCharacter,
               noDataChild: const CircularProgressIndicator(),
@@ -100,8 +109,24 @@ class MainPage extends StatelessWidget {
 
                   Prefs.savePref('messageShown', true);
                 }
-                return Column(
-                  children: <Widget>[
+                return  Stack(
+                        children: <Widget>[
+                          Positioned.fill(child: AnimatedBackground()),
+
+                          onBottom(AnimatedWave(
+                            height: 180,
+                            speed: 0.1,
+                          )),
+                          onBottom(AnimatedWave(
+                            height: 120,
+                            speed:0.2,
+                            offset: pi,
+                          )),
+                          onBottom(AnimatedWave(
+                            height: 220,
+                            speed: 0.3,
+                            offset: pi / 2,
+                          )),
                     Container(
                       margin: EdgeInsets.only(top: 0),
                       child: new Container(
@@ -111,11 +136,15 @@ class MainPage extends StatelessWidget {
                         child: new Center(
                           child: new Column(
                             children: <Widget>[
+
+
                               Container(
                                 padding: const EdgeInsets.only(top: 0.0),
                                 child: Text(
                                   'Hey, ' + character.name,
+
                                   style: TextStyle(
+                                    color: Colors.brown.shade900,
                                     fontSize: 36.0,
                                     fontFamily: 'PermanentMarker',
                                     letterSpacing: 2.0,
@@ -124,8 +153,10 @@ class MainPage extends StatelessWidget {
                                 ),
                               ),
                               Center(
-                                child: TypewriterAnimatedTextKit(
+                                child: FadeAnimatedTextKit(
                                     text: greetings,
+                                    duration:Duration(seconds: 60),
+                                    isRepeatingAnimation: true,
                                     textStyle: TextStyle(
                                       fontSize: 18.0,
                                       fontFamily: 'SpecialElite',
@@ -140,46 +171,67 @@ class MainPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Expanded(
-                        child: Container(
-                            child: Center(
-                      child: AvatarGlow(
-                        startDelay: Duration(milliseconds: 1000),
-                        glowColor: (character != null
-                            ? character.color
-                            : Colors.blueGrey),
-                        endRadius: 175.00,
-                        duration: Duration(milliseconds: 2000),
-                        repeat: true,
-                        showTwoGlows: true,
-                        repeatPauseDuration: Duration(milliseconds: 100),
-                        child: Material(
-                            elevation: 25.0,
-                            shape: CircleBorder(),
-                            color: (character != null
-                                ? character.color.withOpacity(0.4)
-                                : Colors.blueGrey.withOpacity(0.4)),
-                            child: FlatButton(
-                              onPressed: () =>
-                                  Navigator.pushNamed(context, "/avatar"),
-                              child: CircleAvatar(
-                                backgroundColor: (character != null
-                                    ? character.color.withOpacity(0.2)
-                                    : Colors.blueGrey),
-                                backgroundImage: AssetImage(
-                                    'assets/images/avatar/' +
-                                        (character == null
-                                            ? 'noavatar'
-                                            : character.id) +
-                                        '.png'),
-                                maxRadius: 150.00,
+                           Center(
+                                    child: AvatarGlow(
+                                      startDelay: Duration(milliseconds: 1000),
+                                      glowColor: (character != null
+                                          ? character.color
+                                          : Colors.blueGrey),
+                                      endRadius: 175.00,
+                                      duration: Duration(milliseconds: 2000),
+                                      repeat: true,
+                                      showTwoGlows: true,
+                                      repeatPauseDuration: Duration(milliseconds: 100),
+                                      child: Material(
+                                          elevation: 25.0,
+                                          shape: CircleBorder(),
+                                          color: (character != null
+                                              ? character.color.withOpacity(0.9)
+                                              : Colors.blueGrey.withOpacity(0.9)),
+                                          child: FlatButton(
+                                            onPressed: () =>
+                                                Navigator.pushNamed(context, "/avatar"),
+                                            child: CircleAvatar(
+                                              backgroundColor: (character != null
+                                                  ? character.color.withOpacity(0.9)
+                                                  : Colors.blueGrey),
+                                              backgroundImage: AssetImage(
+                                                  'assets/images/avatar/' +
+                                                      (character == null
+                                                          ? 'noavatar'
+                                                          : character.id) +
+                                                      '.png'),
+                                              maxRadius: 150.00,
 
-                              ),
-                            )),
-                      ),
-                    ))),
-                    RoundedButtonWidget(
-                        route: "trivia", buttonText: "Let's Revise!"),
+                                            ),
+                                          )),
+                                    ),
+                                  ),
+
+
+
+                      Align(
+                        alignment: Alignment.bottomCenter,
+
+                        child:
+                            Padding(
+                              padding: EdgeInsets.only(bottom: 25),
+                child:
+                RoundedButtonWidget(
+
+                    height:60,
+                    width:300,
+                    route: "trivia",
+
+                    buttonText: "Let's Revise Animal Farm!")
+                )
+                    ,
+                )
+
+
+
+
+
                   ],
                 );
               },
@@ -214,17 +266,53 @@ class DrawerWidget extends StatelessWidget {
               padding: EdgeInsets.zero,
               children: <Widget>[
                 DrawerHeader(
-                  child: Center(
-                    child: const Text(
-                      'Animal Farm',
-                      style: TextStyle(
-                        fontSize: 36.0,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white,
-                        letterSpacing: 4.0,
+
+                  child:
+                      Align(
+                        alignment: Alignment.center,
+                child:   Wrap(
+                  children: <Widget>[
+                    Center(
+
+                      child:
+
+                      const Text(
+                        'Animal Farm',
+                        style: TextStyle(
+                          fontFamily: "PermanentMarker",
+                          fontSize: 28.0,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white,
+                          letterSpacing: 4.0,
+                        ),
+
                       ),
+
+
                     ),
-                  ),
+                    Center(
+
+                      child:
+
+                      const Text(
+                        'GCSE Revision',
+                        style: TextStyle(
+                          fontFamily: "Raleway",
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white,
+                          letterSpacing: 4.0,
+                        ),
+
+                      ),
+
+
+                    )
+                  ],
+                ),
+            )
+
+                ,
                   decoration: BoxDecoration(
                     color: Theme.of(context).primaryColor,
                   ),
@@ -232,7 +320,7 @@ class DrawerWidget extends StatelessWidget {
                 ListTile(
                   leading: Icon(
                     Icons.info,
-                    color: Theme.of(context).primaryColor.withOpacity(0.5),
+
                     size: 32,
                   ),
                   title: const Text('Instructions'),
@@ -240,13 +328,13 @@ class DrawerWidget extends StatelessWidget {
                     Navigator.pop(context);
                     Navigator.pushNamed(
                       context,
-                      'settings',
+                      '/instructions',
                     );
                   }),
                   ListTile(
                     leading: Icon(
                       Icons.timelapse,
-                      color: Theme.of(context).primaryColor.withOpacity(0.5),
+
                       size: 32,
                     ),
                     title: const Text('Your Progress'),
@@ -263,7 +351,7 @@ class DrawerWidget extends StatelessWidget {
                     title: const Text('Colour Theme'),
                     leading: Icon(
                       Icons.color_lens,
-                      color: Theme.of(context).primaryColor.withOpacity(0.5),
+
                       size: 32,
                     )),
                 Row(
@@ -285,14 +373,10 @@ class DrawerWidget extends StatelessWidget {
                   ],
                 ),
                 AboutListTile(
-                  applicationIcon: Image(
-                      image: AssetImage('assets/images/trotter.png'),
-                      width: 64),
+                  applicationIcon: Icon(Icons.info_outline) ,
                   applicationName: "Animal Farm",
                   applicationVersion: "1.0.0.beta",
-                  icon: Image(
-                      image: AssetImage('assets/images/trotter.png'),
-                      width: 32),
+                  icon: Icon(Icons.info_outline,size: 32,),
                   applicationLegalese: "More equal than the others",
                 )
               ],

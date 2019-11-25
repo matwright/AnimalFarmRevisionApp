@@ -55,11 +55,13 @@ class BioPage extends StatelessWidget {
                                 color: character.color,
                                 width: MediaQuery.of(context).size.width,
                                 topCardHeight: 325,
+
                                 bottomCardHeight:
                                     MediaQuery.of(context).size.height - 615,
                                 borderRadius: 15,
                                 topCardWidget: TopCard(),
                                 bottomCardWidget: BottomCard(),
+
                                 slimeEnabled: true,
                               ),
                               Positioned(
