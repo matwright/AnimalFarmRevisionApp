@@ -2,19 +2,20 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RoundedButtonWidget extends StatelessWidget {
-  const RoundedButtonWidget({this.buttonText, this.route});
+  const RoundedButtonWidget({this.buttonText, this.route, this.width, this.height});
 
   final String route;
   final String buttonText;
-
+  final double width;
+  final double height;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Container(
         alignment: Alignment.center,
         constraints: BoxConstraints.tightForFinite(),
-        height: 60,
-        width: 150,
+        height: height,
+        width: width,
         margin: EdgeInsets.only(bottom: 10),
         decoration: BoxDecoration(
             color: Theme.of(context).buttonColor,
@@ -23,7 +24,7 @@ class RoundedButtonWidget extends StatelessWidget {
             ),
             boxShadow: [
               BoxShadow(
-                  color: Theme.of(context).primaryColor,
+                  color: Colors.brown.shade900,
                   blurRadius: 10.0,
                   spreadRadius: 2),
             ]),

@@ -3,6 +3,8 @@ import 'dart:ui' as prefix0;
 import 'package:animal_farm/src/models/award.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:bubble/bubble.dart';
+import 'package:flare_flutter/flare_actor.dart';
+import 'package:flare_flutter/flare_controls.dart';
 import 'package:flutter/material.dart';
 import 'package:frideos/frideos.dart';
 
@@ -13,6 +15,7 @@ class AwardPage extends StatelessWidget {
   AwardPage({this.backgroundColor});
 
   final Color backgroundColor;
+  final FlareControls _controls = FlareControls();
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
@@ -41,9 +44,7 @@ class AwardPage extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
+
                           Container(
                             padding: EdgeInsets.fromLTRB(20, 10, 20, 20),
                             child: Center(
@@ -58,7 +59,8 @@ class AwardPage extends StatelessWidget {
                               ),
                             )),
                           ),
-                          Container(
+
+                         Container(
                             padding: EdgeInsets.all(10),
                             height: 300,
                             width: 300,
@@ -78,7 +80,27 @@ class AwardPage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Container(
+
+              /*
+                          Expanded(
+
+                            child:
+GestureDetector(
+  onTap:()=>_controls.play("success"),
+  child: FlareActor("assets/images/badge/badgeOne.flr",
+      alignment:Alignment.center,
+      fit:BoxFit.contain,
+      controller: _controls,
+      animation: "Untitled",
+      color: Colors.lime,
+      isPaused:false
+  ) ,
+)
+                   ,
+                          )
+                */
+
+              Container(
                             padding: EdgeInsets.fromLTRB(20, 0, 20, 20),
                             child: Center(
                                 child: Text(
@@ -118,8 +140,7 @@ class AwardPage extends StatelessWidget {
                                             ))))),
                           )
                         ],
-                      )
-                    ],
+
                   ),
                 ),
               ));

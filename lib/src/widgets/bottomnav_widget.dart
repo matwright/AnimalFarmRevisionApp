@@ -55,19 +55,20 @@ class _BottomNavState extends State<BottomNavWidget> {
               streamed: appState.awardsUnseenStream,
               builder: (context, snapshotUnseenAwards) {
                 return BottomNavigationBar(
-                    selectedItemColor: Theme.of(context).primaryColor,
-                    backgroundColor: Theme.of(context).bottomAppBarColor,
+
                     currentIndex: widget.selectedIndex,
-                    unselectedItemColor:
-                        Theme.of(context).primaryColor.withOpacity(0.4),
+                    backgroundColor:Theme.of(context).primaryColor ,
                     onTap: _onItemTapped,
                     items: <BottomNavigationBarItem>[
                       BottomNavigationBarItem(
+                          backgroundColor:Theme.of(context).primaryColor ,
                           icon: Icon(Icons.account_circle),
                           title: Text('Home')),
                       BottomNavigationBarItem(
-                          icon: Icon(Icons.school), title: Text('Quizz')),
+                          backgroundColor:Theme.of(context).primaryColor ,
+                          icon: Icon(Icons.school), title: Text('Quiz')),
                       BottomNavigationBarItem(
+                          backgroundColor:Theme.of(context).primaryColor ,
                           title: Text('Awards'),
                           icon: new Stack(children: <Widget>[
                             new Icon(Icons.card_giftcard),
@@ -101,6 +102,7 @@ class _BottomNavState extends State<BottomNavWidget> {
                                     : new Container()))
                           ])),
                       BottomNavigationBarItem(
+                          backgroundColor:Theme.of(context).primaryColor ,
                           title: Text('Social'),
                           icon: new Stack(children: <Widget>[
                             new Icon(Icons.message),

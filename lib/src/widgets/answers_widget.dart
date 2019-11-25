@@ -125,7 +125,7 @@ class _AnswersWidgetState extends State<AnswersWidget>
 
       return Positioned(
         width: MediaQuery.of(context).size.width - 46.0,
-        height: 54.0,
+        height: 81.0,
         // If the answer isn't the chosen one to the top parameter
         // is passed the value of the animation, while for the chosen
         // answer it is passed a fixed position.

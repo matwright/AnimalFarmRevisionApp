@@ -44,32 +44,7 @@ class SummaryPage extends StatelessWidget {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: <Widget>[
-                              Container(
-                                padding: const EdgeInsets.only(bottom: 10.0),
-                                child: const Text(
-                                  'Animal Farm',
-                                  style: TextStyle(
-                                    fontSize: 16.0,
-                                    fontWeight: FontWeight.w700,
-                                    fontFamily: 'Raleway',
-                                    letterSpacing: 3.0,
-                                    shadows: [],
-                                  ),
-                                ),
-                              ),
-                              Container(
-                                padding: const EdgeInsets.only(bottom: 50.0),
-                                child: const Text(
-                                  'GCSE Revision App',
-                                  style: TextStyle(
-                                    fontSize: 14.0,
-                                    fontWeight: FontWeight.w700,
-                                    fontFamily: 'Raleway',
-                                    letterSpacing: 3.0,
-                                    shadows: [],
-                                  ),
-                                ),
-                              ),
+
                               Container(
                                 padding: const EdgeInsets.only(bottom: 10.0),
                                 child: Text(
@@ -77,9 +52,9 @@ class SummaryPage extends StatelessWidget {
                                       ? (stats.corrects.length > 3
                                           ? 'Formidable!'
                                           : 'Bravo!')
-                                      : 'Oh dear, ' + character.name + '!'),
+                                      : 'Hey, ' + character.name + '!'),
                                   style: TextStyle(
-                                    fontSize: 24.0,
+                                    fontSize: 32.0,
                                     fontWeight: FontWeight.w700,
                                     fontFamily: 'Raleway',
                                     letterSpacing: 2.0,
@@ -88,10 +63,10 @@ class SummaryPage extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                padding: const EdgeInsets.only(bottom: 50.0),
+                                padding: const EdgeInsets.fromLTRB(10,0,10, 50.0),
                                 child: Text(
                                   (stats.corrects.length == 0
-                                      ? "You didn't answer any questions correctly!"
+                                      ? "You didn't answer any questions correctly.\n But, don't worry. Just take another quiz!"
                                       : "You answered " +
                                           stats.corrects.length.toString() +
                                           ' question' +
@@ -103,7 +78,7 @@ class SummaryPage extends StatelessWidget {
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.w700,
                                     fontFamily: 'Raleway',
-                                    letterSpacing: 2.0,
+                                    letterSpacing: 1.5,
                                     shadows: [],
                                   ),
                                 ),
@@ -153,7 +128,7 @@ class SummaryPage extends StatelessWidget {
                             child: Container(
                               alignment: Alignment.center,
                               height: 60,
-                              width: 260,
+                              width: 300,
                               decoration: BoxDecoration(
                                   color: Theme.of(context).primaryColor,
                                   borderRadius: const BorderRadius.all(
@@ -166,7 +141,7 @@ class SummaryPage extends StatelessWidget {
                                         spreadRadius: 2.5),
                                   ]),
                               child: const Text(
-                                "Let's Some More Revision!",
+                                "Let's do Some More Revision!",
                                 style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   fontSize: 20.0,
