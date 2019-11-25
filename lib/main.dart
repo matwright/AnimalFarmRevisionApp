@@ -5,6 +5,7 @@ import 'package:animal_farm/src/screens/main_page.dart';
 import 'package:animal_farm/src/screens/messages_page.dart';
 import 'package:animal_farm/src/screens/award_page.dart';
 import 'package:animal_farm/src/screens/awards_page.dart';
+import 'package:animal_farm/src/screens/progress_page.dart';
 import 'package:animal_farm/src/screens/summary_page.dart';
 import 'package:animal_farm/src/screens/trivia_page.dart';
 import 'package:flutter/material.dart';
@@ -68,6 +69,7 @@ class MaterialPage extends StatelessWidget {
           routes: {
             // When navigating to the "/" route, build the FirstScreen widget.
             '/award': (context) => AwardPage(backgroundColor:Colors.indigoAccent),
+            '/progress': (context) => ProgressPage(backgroundColor:Colors.white),
             '/awards': (context) => AwardsPage(backgroundColor:Colors.indigoAccent),
             '/trivia': (context) => TriviaPage(backgroundColor:Colors.amber),
             '/summary': (context) => SummaryPage(backgroundColor:Colors.amber),
