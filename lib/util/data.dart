@@ -172,7 +172,7 @@ List<Map<String, dynamic>> characters = [
     "bio":
     "Moses the raven is jones’ pet. The animals don’t like him as he lies & does no work. Moses tells stories about Sugarcandy Mountain, which he describes as a paradise where the animals go after they die. The pigs decide it’s useful to have a raven convincing the oppressed labourers that paradise is waiting for them if they keep working hard enough. Moses represents the Russian Orthodox Church.",
     "strap_line":
-    "On the other side of that dark cloud, lies Sugarcandy Mountain",
+    "Oooh Sugarcandy Mountain",
     "color": Color(0xFF616161),
     "text_color": Color(0xffeeeeee)
   },
@@ -257,7 +257,7 @@ List<Map<String, dynamic>> awardsData = [
     //When the student opens the app
     "id": awardTrigger.startApp,
     "achievement": "Began Study",
-    "image": "startApp.png",
+    "image": "startApp",
     "name": "George Orwell Award.",
     "description":
     "George Orwell wrote Animal Farm because he felt he needed to say something about the political climate in which he was living. This award recognises desire to learn."
@@ -265,7 +265,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.characterSelected,
-    "image": "characterSelected.png",
+    "image": "characterSelected",
     "name": "Mollie Award",
     "achievement": "Character Selected",
     "description": "Mollie is a vain and shallow horse, obsessed with how she looks. This award recognises those who take time to choose how they look."
@@ -274,7 +274,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.firstHour,
-    "image": "firstHour.png",
+    "image": "firstHour",
     "name": "Boxer Award",
     "achievement": "1 Hour's Work",
     "description": "Boxer is a loyal supporter of the revolution and the hardest worker on the farm. This award recognises hard work."
@@ -282,7 +282,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.fiveCorrectAnswers,
-    "image": "fiveCorrectAnswers.png",
+    "image": "fiveCorrectAnswers",
     "name": "Expulsion of Jones Award",
     "achievement": "5 Correct Answers",
     "description": "The animals drive Jones off the farm after he forgot to feed them as he was drunk. This award recognises ambition."
@@ -291,7 +291,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.tenCorrectAnswers,
-    "image": "tenCorrectAnswers.png",
+    "image": "tenCorrectAnswers",
     "name": "Animalism Award",
     "achievement": "10 Correct Answers",
     "description": "The pigs create Animalism from Old Major's speech. It represents communism. This award recognises progress."
@@ -300,7 +300,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.twentyCorrectAnswers,
-    "image": "twentyCorrectAnswers.png",
+    "image": "twentyCorrectAnswers",
     "name": "Russian Revolution Award",
     "achievement": "20 Correct Answers",
     "description": "Animal Farm is an allegory for the Russian Revolution. This award recognises uprising through knowledge."
@@ -308,7 +308,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.fiftyCorrectAnswers,
-    "image": "fiftyCorrectAnswers.png",
+    "image": "fiftyCorrectAnswers",
     "name": "Animal Farm Award",
     "achievement": "50 Correct Answers",
     "description": "Manor Farm is renamed Animal Farm after the revolution. This award recognises transformation."
@@ -316,7 +316,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.sevenDays,
-    "image": "sevenDays.png",
+    "image": "sevenDays",
     "name": "Seven Commandments Award",
     "achievement": "7 days of revision",
     "description": "Snowball, Napoleon and Squealer turned Old Major's ideas into the seven commandments. This award recognises commitment."
@@ -325,7 +325,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.tenOutOfTen,
-    "image": "tenOutOfTen.png",
+    "image": "tenOutOfTen",
     "name": "Milk and Apples Award",
     "achievement": "answered 10/10 correctly",
     "description": "The pigs take the milk and apples because they are the most intelligent and the milk and apples helps with their intelligence. This award recognises intelligence."
@@ -334,7 +334,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.firstQuizz,
-    "image": "firstQuizz.png",
+    "image": "firstQuizz",
     "name": "Battle of the Cowshed Award",
     "achievement": "completed a quiz",
     "description": "The humans, led by Mr Jones, attempted to take the farm back by force. The animals were waiting for them and chased them out. This award recognises forsight."
@@ -343,7 +343,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.threeDays,
-    "image": "threeDays.png",
+    "image": "threeDays",
     "name": "Windmill Award",
     "achievement": "3 days of revision",
     "description": "Snowball designed the windmill because he believed it would increase productivity, ultimately leading to a three-day week. This award recognises productivity."
@@ -351,7 +351,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.sundayQuizz,
-    "image": "sundayQuizz.png",
+    "image": "sundayQuizz",
     "name": "Work Increased Award",
     "achievement": "revising on a Sunday",
     "description": "Napoleon introduces work on Sunday afternoons. He says it’s voluntary but rations are halved if they refuse. This award recognises increased work."
@@ -359,7 +359,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.hundredCorrectAnswers,
-    "image": "hundredCorrectAnswers.png",
+    "image": "hundredCorrectAnswers",
     "name": "Hens Rebel Award",
     "achievement": "100 correct answers",
     "description": "Napoleon demanded the hens gave up all their eggs. The Hens rebelled by laying the eggs from the rafters so they all smashed on the floor. This award recognises audacity."
@@ -368,7 +368,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.hundredCorrectAnswers,
-    "image": "hundredFiftyCorrectAnswers.png",
+    "image": "hundredFiftyCorrectAnswers",
     "name": "Father of all Animals",
     "achievement": "150 correct answers",
     "description": "Father of all Animals is one of the names the pigs invented for Napoleon. This award recognises mastery."
@@ -377,7 +377,7 @@ List<Map<String, dynamic>> awardsData = [
   {
 
     "id": awardTrigger.twoHundredCorrectAnswers,
-    "image": "twoHundredCorrectAnswers.png",
+    "image": "twoHundredCorrectAnswers",
     "name": "Animal Hero, First Class",
     "achievement": "200 correct answers",
     "description": "Snowball and Boxer receive this medal for their efforts in the Battle of the Cowshed. This award recognises effort & success!"

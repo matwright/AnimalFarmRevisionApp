@@ -64,14 +64,27 @@ class CurvePainter extends CustomPainter {
   }
 }
 
+// ignore: must_be_immutable
 class AnimatedBackground extends StatelessWidget {
+
+   ColorTween color1;
+   ColorTween color2;
+
+  AnimatedBackground({this.color1, this.color2});
   @override
   Widget build(BuildContext context) {
+    if(null==color1){
+    color1= ColorTween(begin: Colors.lightBlueAccent.withOpacity(0.2), end: Colors.lightBlueAccent);
+    }
+
+    if(null==color2){
+   color2= ColorTween(begin: Colors.green.withOpacity(0.5), end: Colors.greenAccent);
+    }
     final tween = MultiTrackTween([
       Track("color1").add(Duration(seconds: 3),
-          ColorTween(begin: Colors.lightBlueAccent.withOpacity(0.2), end: Colors.lightBlueAccent)),
+         color1),
       Track("color2").add(Duration(seconds: 3),
-          ColorTween(begin: Colors.green.withOpacity(0.5), end: Colors.greenAccent))
+          color2)
     ]);
 
     return ControlledAnimation(

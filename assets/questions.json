@@ -481,7 +481,7 @@
 		"difficulty": "medium",
 		"question": "What do the horses do?",
 		"correct_answer": "Pull the machinery.",
-		"incoreect_answers": ["Adapt the tools", "Gather up stalks", "Turn and gather the hay"]
+		"incorrect_answers": ["Adapt the tools", "Gather up stalks", "Turn and gather the hay"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1232,7 +1232,7 @@
 		"difficulty": "medium",
 		"question": "What is the retiremnte age for sheep?",
 		"correct_answer": "7",
-		"incorrect_answer": ["10", "8", "9"]
+		"incorrect_answers": ["10", "8", "9"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",

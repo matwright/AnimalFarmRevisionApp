@@ -6,6 +6,7 @@ import 'package:bubble/bubble.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:frideos/frideos.dart';
 
 class MessageWidget extends StatefulWidget {
   final String avatar;
@@ -38,7 +39,7 @@ class _MessageState extends State<MessageWidget> {
 
   @override
   Widget build(BuildContext context) {
-
+    final Size size=MediaQuery.of(context).size;
     Runes rune;
     if (widget.rune != null) {
 //http://www.unicode.org/emoji/charts/full-emoji-list.html
@@ -60,7 +61,7 @@ class _MessageState extends State<MessageWidget> {
       rune = new Runes(runeValue);
     }
 
-
+    final appState = AppStateProvider.of<AppState>(context);
 
     return Container(
         child: Column(children: <Widget>[
@@ -99,7 +100,7 @@ class _MessageState extends State<MessageWidget> {
                                         : ""),
                                 style: TextStyle(
                                     fontFamily: "Raleway",
-                                    fontSize: 20,
+                                    fontSize: (size.width>600?40:20),
                                     color: widget.character.textColor)))
                         : Container()),
                 (widget.img == null
@@ -175,7 +176,7 @@ class _MessageState extends State<MessageWidget> {
 
                   children: <Widget>[
                     Chip(
-                      backgroundColor: Theme.of(context).primaryColor,
+                      backgroundColor: Colors.indigo,
                       label: Text(widget.text.length.toString(),
                           style: TextStyle(
                             color: Colors.white70,
@@ -185,6 +186,11 @@ class _MessageState extends State<MessageWidget> {
                       avatar:
                           Icon(Icons.insert_emoticon, color: Colors.white70),
                     ),
+              GestureDetector(
+                  onTap:()=> appState.characterBio(
+                      widget.character,
+                      context),
+                child:
                     Chip(
                       backgroundColor: Colors.pink,
                       label: Text(widget.character.name,
@@ -194,7 +200,7 @@ class _MessageState extends State<MessageWidget> {
                             fontSize: 14,
                           )),
                       avatar: Icon(Icons.account_circle, color: Colors.white70),
-                    ),
+                    )),
                     GestureDetector(
                       onTap:()=>
                       showDialog(
@@ -204,6 +210,7 @@ class _MessageState extends State<MessageWidget> {
                           description:
                           widget.location.strapLine,
                           buttonText: "Oink",
+                          image:widget.location.image
                         ),
                       ),
                       child:

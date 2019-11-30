@@ -2,10 +2,8 @@
 <!-- Modify this file to customize your launch splash screen -->
 
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item>
-        <bitmap
-            android:gravity="bottom|center_horizontal"
-            android:scaleGravity=""
-            android:src="@drawable/splash"
-            android:tileMode="disabled" /> </item> </layer-list>
+        <bitmap android:src="@drawable/splash" />
+    </item>
+
+ </layer-list>

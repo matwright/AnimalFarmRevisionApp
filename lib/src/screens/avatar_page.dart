@@ -49,42 +49,56 @@ class AvatarPage extends StatelessWidget {
                                 addRepaintBoundaries: true,
                                 children:
                                     List.generate(characters.length, (index) {
-                                  return Card(
-                                    color: (characters[index].color ??
-                                        Colors.blueGrey)
-                                      ,
-                                      margin: EdgeInsets.all( 10),
-//   appState.chooseCharacter(characters[index].id);
-                                      shape: StadiumBorder(),
-                                      child: ListTile(
-contentPadding: EdgeInsets.all(5),
-                                          leading: CircleAvatar(
+                            return GestureDetector(
+                            onTap:()=> appState.characterBio(
+                            characters[index],
+                            context),
+                            child:
+                            Card(
 
-                                            backgroundColor:
-                                                (characters[index].color ??
-                                                    Colors.blueGrey),
-                                            backgroundImage: AssetImage(
-                                                'assets/images/avatar/' +
-                                                    characters[index].id +
-                                                    '.png'),
-                                          ),
-                                          title: Text(characters[index].name,
-                                          style: TextStyle(color: (characters[index].textColor ??
-                                              Colors.white),fontFamily: "Raleway",fontWeight: FontWeight.bold,fontSize: 21),
-                                          ),
-                                          subtitle:
-                                              Text(characters[index].strapLine,style:
-                                                  TextStyle(color: (characters[index].textColor ??
-                                                      Colors.white),fontFamily: "Raleway",fontSize: 16)
-                                              ),
-                                          isThreeLine: false,
-                                          trailing: IconButton(
-                                              onPressed: () =>
-                                                  appState.characterBio(
-                                                      characters[index],
-                                                      context),
-                                              icon: Icon(Icons.more_vert))));
-                                }),
+                            color: (characters[index].color ??
+                            Colors.blueGrey)
+                            ,
+                            margin: EdgeInsets.all( 10),
+//   appState.chooseCharacter(characters[index].id);
+                            shape: StadiumBorder(),
+                            child: ListTile(
+                            contentPadding: EdgeInsets.all(5),
+                            leading: CircleAvatar(
+
+                            backgroundColor:
+                            (characters[index].color ??
+                            Colors.blueGrey),
+                            backgroundImage: AssetImage(
+                            'assets/images/avatar/' +
+                            characters[index].id +
+                            '.png'),
+                            ),
+                            title: Text(characters[index].name,
+                            style: TextStyle(color: (characters[index].textColor ??
+                            Colors.white),fontFamily: "Raleway",fontWeight: FontWeight.bold,fontSize: 21),
+                            ),
+                            subtitle:
+                            Text(characters[index].strapLine,style:
+                            TextStyle(color: (characters[index].textColor ??
+                            Colors.white),fontFamily: "Raleway",fontSize: 16)
+                            ),
+                            isThreeLine: false,
+                            trailing: IconButton(
+                            onPressed: () =>
+                            appState.characterBio(
+                            characters[index],
+                            context),
+                            icon: Icon(Icons.more_vert)
+                            )
+                            )
+                            )
+                            );
+
+
+
+                                }
+                                ),
                               ))
                             ]);
                           }))));
