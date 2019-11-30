@@ -1,9 +1,11 @@
+import 'dart:math';
+
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/location.dart';
 import 'package:animal_farm/src/models/message.dart';
-import 'package:animal_farm/src/widgets/avatar_dialog_widget.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:animal_farm/src/widgets/message_widget.dart';
+import 'package:animal_farm/src/widgets/wave_widget.dart';
 import '../../util/data.dart';
 import 'package:flutter/material.dart';
 import 'package:frideos/frideos.dart';
@@ -36,16 +38,45 @@ class MessagesPage extends StatelessWidget {
         body: FadeInWidget(
             duration: 20,
             child: Container(
-                margin: const EdgeInsets.symmetric(vertical: 20.0),
-                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+
                 child: ValueBuilder<List<Message>>(
                     streamed: appState.messagesStream,
                     noDataChild: const CircularProgressIndicator(),
                     builder: (context, snapshot) {
+                      onBottom(Widget child) => Positioned.fill(
+                        child: Align(
+                          alignment: Alignment.bottomCenter,
+                          child: child,
+                        ),
+                      );
                       return Scaffold(
                           backgroundColor: backgroundColor,
-                          body: ListView.separated(
-                            padding: EdgeInsets.symmetric(vertical: 0),
+
+                          body:
+
+                          Stack(
+                              children: <Widget>[
+                                Positioned.fill(child: AnimatedBackground(
+                          color1: ColorTween(begin: Colors.black12.withOpacity(0.2), end: Colors.black12),
+                          color2:ColorTween(begin: Colors.black26.withOpacity(0.2), end: Colors.black26),
+                                )),
+                      onBottom(AnimatedWave(
+                      height: 200,
+                      speed: 0.2,
+                      offset: pi / 2,
+                      )
+                      )
+                     ,
+                                onBottom(AnimatedWave(
+                                  height: 100,
+                                  speed: 0.1,
+                                  offset: pi / 2,
+                                )
+                                )
+                                ,
+
+                          ListView.separated(
+                            padding: EdgeInsets.all(10),
                             separatorBuilder: (context, index) {
                               return Padding(padding: EdgeInsets.all(10));
                             },
@@ -74,7 +105,9 @@ class MessagesPage extends StatelessWidget {
                                   location:Location.fromObject(location),
                                   appState: AppState());
                             },
-                          ));
+                          )
+                      ])
+                      );
                     }))));
   }
 }

@@ -3,8 +3,6 @@ import 'dart:ui' as prefix0;
 
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/theme.dart';
-import 'package:animal_farm/src/screens/instructions_page.dart';
-import 'package:animal_farm/src/screens/progress_page.dart';
 import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
 import 'package:animal_farm/src/widgets/rounded_button_widget.dart';
 import 'package:animal_farm/src/widgets/wave_widget.dart';
@@ -13,7 +11,6 @@ import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:frideos/frideos.dart';
-import 'package:simple_animations/simple_animations.dart';
 
 import '../models/appstate.dart';
 
@@ -35,7 +32,9 @@ class MainPage extends StatelessWidget {
         builder: (BuildContext context) {
           // return object of type Dialog
           return AlertDialog(
+
             shape: RoundedRectangleBorder(
+
                 borderRadius: new BorderRadius.all(new Radius.circular(20.0))),
             backgroundColor: Colors.blueGrey,
             title: new Text("Welcome Comrade!"),
@@ -61,7 +60,7 @@ class MainPage extends StatelessWidget {
             actions: <Widget>[
               // usually buttons at the bottom of the dialog
               new FlatButton(
-                child: new Text("okay, will do!"),
+                child: new Text("OinK, will do!"),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
@@ -80,6 +79,7 @@ class MainPage extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
+
           title: Text('Animal Farm GCSE Revision'),
         ),
         drawer: DrawerWidget(),
@@ -174,7 +174,7 @@ class MainPage extends StatelessWidget {
                            Center(
                                     child: AvatarGlow(
                                       startDelay: Duration(milliseconds: 1000),
-                                      glowColor: (character != null
+                                      glowColor: (character.color != null
                                           ? character.color
                                           : Colors.blueGrey),
                                       endRadius: 175.00,
@@ -185,14 +185,14 @@ class MainPage extends StatelessWidget {
                                       child: Material(
                                           elevation: 25.0,
                                           shape: CircleBorder(),
-                                          color: (character != null
+                                          color: (character.color != null
                                               ? character.color.withOpacity(0.9)
                                               : Colors.blueGrey.withOpacity(0.9)),
                                           child: FlatButton(
                                             onPressed: () =>
                                                 Navigator.pushNamed(context, "/avatar"),
                                             child: CircleAvatar(
-                                              backgroundColor: (character != null
+                                              backgroundColor: (character.color != null
                                                   ? character.color.withOpacity(0.9)
                                                   : Colors.blueGrey),
                                               backgroundImage: AssetImage(
@@ -262,6 +262,7 @@ class DrawerWidget extends StatelessWidget {
 
 
           return Drawer(
+
             child: ListView(
               padding: EdgeInsets.zero,
               children: <Widget>[
@@ -307,7 +308,8 @@ class DrawerWidget extends StatelessWidget {
                       ),
 
 
-                    )
+                    ),
+
                   ],
                 ),
             )
@@ -374,11 +376,39 @@ class DrawerWidget extends StatelessWidget {
                 ),
                 AboutListTile(
                   applicationIcon: Icon(Icons.info_outline) ,
-                  applicationName: "Animal Farm",
+                  applicationName: "This App",
                   applicationVersion: "1.0.0.beta",
                   icon: Icon(Icons.info_outline,size: 32,),
-                  applicationLegalese: "More equal than the others",
-                )
+                  applicationLegalese: "MA Creative App Development\n\nMatthew Wright\nAllegra Gee\nKurt Wunderlich\n\nhttps://www.falmouth.ac.uk\n\n",
+
+                  aboutBoxChildren: <Widget>[
+                    Align(
+                        alignment: Alignment.bottomCenter,
+                        child:
+                        Padding(
+
+                            padding:EdgeInsets.all(20),
+                            child:
+                            CircleAvatar(
+
+                                maxRadius: 50,
+                                minRadius: 25,
+                                backgroundColor:
+                                Colors.white.withOpacity(0),
+                                backgroundImage:
+                                AssetImage(
+                                    'assets/icon/falmouth.png')
+
+                            ))
+                    )
+
+                  ],
+                ),
+
+
+
+
+
               ],
             ),
           );

@@ -27,7 +27,7 @@ class AwardPage extends StatelessWidget {
 
 
           return Scaffold(
-              bottomNavigationBar: BottomNavWidget(selectedIndex: 0),
+              bottomNavigationBar: BottomNavWidget(selectedIndex: 2),
               appBar: AppBar(
                 leading: IconButton(
                   icon: Icon(Icons.arrow_back),
@@ -49,10 +49,11 @@ class AwardPage extends StatelessWidget {
                             padding: EdgeInsets.fromLTRB(20, 10, 20, 20),
                             child: Center(
                                 child: Text(
-                              'Achievement: ' + award.achievement + '!',
+                             award.achievement + '',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontFamily: "PermanentMarker",
+                                fontSize:24.0,
                                 fontWeight: FontWeight.bold,
                                 letterSpacing: 2.0,
                                 shadows: [],
@@ -64,20 +65,24 @@ class AwardPage extends StatelessWidget {
                             padding: EdgeInsets.all(10),
                             height: 300,
                             width: 300,
-                            child: CircleAvatar(
-                              backgroundColor:
-                                  Theme.of(context).scaffoldBackgroundColor,
-                              backgroundImage: AssetImage(
-                                  'assets/images/badge/' +
-                                      (award.image == null
-                                          ? 'noavatar.png'
-                                          : award.image)),
-                              minRadius: 100.0,
-                              maxRadius: double.maxFinite,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[],
-                              ),
+                            child:(award != null
+                                ?
+                            FlareActor('assets/images/badge/' +
+                                award.image+'.flr',
+                                alignment:Alignment.center,
+                                fit:BoxFit.contain,
+                                controller: _controls,
+                                animation: award.image,
+                                color: Colors.lime,
+                                isPaused:false
+                            )  :
+                            CircleAvatar(
+                                backgroundColor:
+                                Colors.white.withOpacity(0),
+                                backgroundImage:
+                                AssetImage(
+                                    'assets/images/badge/medal.png')
+                            )
                             ),
                           ),
 
@@ -107,7 +112,8 @@ GestureDetector(
                               '"' + award.name + '"',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontFamily: "Raleway",
+                                fontSize: 18.0,
                                 fontStyle: prefix0.FontStyle.italic,
                                 letterSpacing: 2.0,
                                 shadows: [],
@@ -135,6 +141,7 @@ GestureDetector(
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.8,
                                                 fontWeight: FontWeight.w300,
+                                                fontFamily: "Raleway",
                                                 shadows: [],
                                               ),
                                             ))))),

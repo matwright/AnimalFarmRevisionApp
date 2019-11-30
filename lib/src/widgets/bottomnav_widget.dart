@@ -1,7 +1,4 @@
 import 'package:animal_farm/src/models/appstate.dart';
-import 'package:animal_farm/src/screens/awards_page.dart';
-import 'package:animal_farm/src/screens/main_page.dart';
-import 'package:animal_farm/src/screens/messages_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:frideos/frideos.dart';

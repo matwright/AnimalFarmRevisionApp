@@ -2,7 +2,8 @@
 
   "created_by": "mollie",
   "text": "Who moved my sugar? #GiveItBackNow #NotFunny",
-  "location": "store_shed"
+  "location": "store_shed",
+  "rune": "eyes"
 },{
   "created_by": "old_major",
   "text": "Barn Meeting Tuesday after Jones' rounds.  Please ReTrot. #CommunityMeeting #IHadADream",
@@ -12,19 +13,30 @@
  },{
    "created_by": "mollie",
    "text": "@OldMajor.  Will there be snacks? #sugar",
-   "location": "yard"
- },{
+   "location": "yard",
+  "rune": "pink_ribbon"
+ },
+  {
+    "created_by": "napoleon",
+    "text": "Napoleon was here!",
+    "location": "barn",
+    "image": "marx.gif"
+  },
+  {
    "created_by": "old_major",
    "text": "Meeting Preview: \"All animals are comrades. #Teaser",
-   "location": "barn"
+   "location": "barn",
+    "rune": "raised_fist"
  },{
    "created_by": "boxer",
    "text": "@Benjamin. Do you know what a comrade is? #WhatWouldBenjaminSay?",
-   "location": "small_paddock"
+   "location": "small_paddock",
+  "rune": "pile_of_poo"
  },{
    "created_by": "old_major",
    "text": "Meeting Preview: \"Get your singing voice ready. #Teaser",
-   "location": "barn"
+   "location": "barn",
+  "rune": "pig_nose"
  },{
    "created_by": "clover",
    "text":"The birds can sing. Think I may need to mime!",
@@ -32,7 +44,8 @@
  },{
     "created_by": "old_major",
     "text": "Meeting Preview: \"Man is the only creature that consumes without producing\" #Teaser #DontBeLate",
-    "location": "barn"
+    "location": "barn",
+  "rune": "pig_nose"
  },{
     "created_by": "boxer",
     "text": "Well done rats, so glad you're now comrades. #PartOfTheTeam",
@@ -100,7 +113,8 @@
  },{
    "created_by": "snowball",
    "text": "Like I said @Mollie, they are a badge of slavery. #freedom #rebellion",
-   "location": "yard"
+   "location": "yard",
+  "rune": "pig_face"
  },{
    "created_by": "benjamin",
    "text": "Bored. Bored. Bored. Bored. #EyeRoll",
@@ -220,11 +234,6 @@
    "location": "barn",
    "image": "reading.jpg"
  },{
-    "created_by": "napoleon",
-    "text": "Napoleon was here!",
-    "location": "barn",
-    "image": "marx.gif"
- },{
     "created_by": "clover",
     "text": "Loving no work Sundays. Thanks to the pigs. #LongLiveAnimalFarm",
     "location": "orchard"
@@ -324,7 +333,9 @@
  },{
    "created_by": "pilkington",
    "location": "red_lion_inn",
-   "text": "Why don't you come fishing with me @Jones. Maybe a bit less beer will help?"
+   "text": "Why don't you come fishing with me @Jones. Maybe a bit less beer will help?",
+  "rune": "beer_mug"
+
  },{
    "created_by": "frederick",
    "location": "red_lion_inn",
@@ -511,7 +522,7 @@
    "created_by": "boxer",
    "location": "small_paddock",
    "text": "For my best comrade, Benjamin",
-   "image": "benjaminTBT"
+   "image": "benjaminTBT.jpg"
  },{
    "created_by": "napoleon",
    "location": "windmill",
@@ -825,7 +836,8 @@
  },{
     "created_by": "benjamin",
     "location": "farmhouse_garden",
-    "text": "How come the pigs are getting beer every day? #WhatAboutUs?"
+    "text": "How come the pigs are getting beer every day? #WhatAboutUs?",
+  "rune": "beer_mug"
  },{
     "created_by": "napoleon",
     "location": "barn",
@@ -837,7 +849,8 @@
  },{
     "created_by": "squealer",
     "location": "barn",
-    "text": "Congratulations President Napoleon! #AnimalFarmRepublic"
+    "text": "Congratulations President Napoleon! #AnimalFarmRepublic",
+  "rune": "cool"
  },{
     "created_by": "moses",
     "location": "yard",
@@ -845,7 +858,8 @@
  },{
     "created_by": "boxer",
     "location": "windmill",
-    "text": "I must work harder. #BitTired"
+    "text": "I must work harder. #BitTired",
+  "rune": "zzz"
  },{
     "created_by": "clover",
     "location": "windmill",
@@ -885,7 +899,8 @@
  },{
     "created_by": "napoleon",
     "location": "barn",
-    "text": "At Sunday's meeting we will give time to Boxer's memory."
+    "text": "At Sunday's meeting we will give time to Boxer's memory.",
+  "rune": "pig_nose"
  },{
     "created_by": "clover",
     "location": "barn",

@@ -87,7 +87,7 @@ class SummaryPage extends StatelessWidget {
                                 width: double.infinity,
                                 child: AvatarGlow(
                                   startDelay: Duration(milliseconds: 1000),
-                                  glowColor: (character != null
+                                  glowColor: (character.color != null
                                       ? character.color
                                       : Colors.blueGrey),
                                   endRadius: 120.0,
@@ -99,11 +99,11 @@ class SummaryPage extends StatelessWidget {
                                   child: Material(
                                     elevation: 8.0,
                                     shape: CircleBorder(),
-                                    color: (character != null
+                                    color: (character.color != null
                                         ? character.color
                                         : Colors.blueGrey),
                                     child: CircleAvatar(
-                                      backgroundColor: (character != null
+                                      backgroundColor: (character.color != null
                                           ? character.color
                                           : Colors.blueGrey),
                                       backgroundImage: AssetImage(

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class CustomDialog extends StatelessWidget {
   final String title, description, buttonText;
-  final Image image;
+  final String image;
 
   CustomDialog({
     @required this.title,
@@ -26,7 +26,7 @@ class CustomDialog extends StatelessWidget {
           ),
           margin: EdgeInsets.only(top: Consts.avatarRadius),
           decoration: new BoxDecoration(
-            color: Colors.red,
+     color: Theme.of(context).canvasColor,
             shape: BoxShape.rectangle,
             borderRadius: BorderRadius.circular(Consts.padding),
             boxShadow: [
@@ -43,6 +43,7 @@ class CustomDialog extends StatelessWidget {
               Text(
                 title,
                 style: TextStyle(
+
                   fontFamily: "Raleway",
                   fontSize: 24.0,
                   fontWeight: FontWeight.w700,
@@ -81,7 +82,7 @@ alignment: Alignment.topCenter,
 
             backgroundImage: AssetImage(
 
-                'assets/images/avatar/' +
+                'assets/images/location/' +
                     (image == null
                         ? 'noavatar.png'
                         : image)),
@@ -102,6 +103,7 @@ alignment: Alignment.topCenter,
     return Dialog(
 
       shape: RoundedRectangleBorder(
+
         borderRadius: BorderRadius.circular(Consts.padding),
       ),
       elevation: 0.0,

@@ -1,11 +1,5 @@
-import 'package:animal_farm/src/models/character.dart';
-import 'package:animal_farm/src/models/location.dart';
 import 'package:animal_farm/src/models/message.dart';
-import 'package:animal_farm/src/widgets/avatar_dialog_widget.dart';
-import 'package:animal_farm/src/widgets/bottomnav_widget.dart';
-import 'package:animal_farm/src/widgets/message_widget.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import '../../util/data.dart';
 import 'package:flutter/material.dart';
 import 'package:frideos/frideos.dart';
 
