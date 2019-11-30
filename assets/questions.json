@@ -43,13 +43,13 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
-		"question": "Who reduced the ideas of Animalism to the phrase \"Four legs good, two legs bad?",
+		"question": "Who reduced Animalism to \"Four legs good, two legs bad?",
 		"correct_answer": "Snowball",
 		"incorrect_answers": ["Napoleon", "Squealer", "Boxer"]
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
-		"question": "Who teaches the sheep to chant \"Four legs good, two legs better?",
+		"question": "Who teaches the sheep\"Four legs good, two legs better?",
 		"correct_answer": "Squealer",
 		"incorrect_answers": ["Napoleon", "Moses", "Clover"]
 	}, {
@@ -57,7 +57,7 @@
 		"difficulty": "easy",
 		"question": "What is Sugarcandy Mountain?",
 		"correct_answer": "Moses the raven's idea of animal heaven",
-		"incorrect_answers": ["The mountain the animals can see from the farm", "Old Major talks about it in his dream", "The place Squealer uses as an example of how the farm could be"]
+		"incorrect_answers": ["The mountain seen from the farm", "Old Major talks about it", "Squealer uses as an e.g. of the future farm"]
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
@@ -74,9 +74,9 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "easy",
-		"question": "Why does Napoleon think he is dying the morning after he drinks the whisky?",
+		"question": "Why does Napoleon think he is dying after he drinks whisky?",
 		"correct_answer": "He has a hangover",
-		"incorrect_answers": ["He sees the ghost of Old Major", "He wanted to leave Animal Farm", "He doesn't remember what it used to be like in the farm"]
+		"incorrect_answers": ["He sees the ghost of Old Major", "He wanted to leave Animal Farm", "He doesn't remember anything"]
 	}, {	
 		"type": "multiple",
 	    	"difficulty": "easy",
@@ -86,7 +86,7 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
-		"question": "Who lies to the animals when he tells them that Boxer died peacefully at the hospital?",
+		"question": "Who lies to the animals when he says how Boxer died?",
 		"correct_answer": "Squealer",
 		"incorrect_answers": ["Napoleon", "Snowball", "Clover"]
 
@@ -123,13 +123,13 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "easy",
-		"question": "Who starts work half an hour earlier than all the others?",
+		"question": "Who starts work half an hour early?",
 		"correct_answer": "Boxer",
 		"incorrect_answers": ["Clover", "Jessie", "Bluebell"]
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
-		"question": "Which of the pigs composes the song that replaces \"Beasts of England?",
+		"question": "Which of the pigs composes the song replacing \"Beasts of England?",
 		"correct_answer": "Minimus",
 		"incorrect_answers": ["Snowball", "Maximus", "Napoleon"]
 	}, {
@@ -149,7 +149,7 @@
 		"difficulty": "easy",
 		"question": "Why does the windmill collapse initially?",
 		"correct_answer": "It is blown down in a storm",
-		"incorrect_answers": ["Snowball sabotages it", "The farmers blow it up with dynamite", "Napoleon vandalises it and blames Snowball"]
+		"incorrect_answers": ["Snowball sabotages it", "The farmers blow it up", "Napoleon vandalises it and blames Snowball"]
 	}, {
 		"type": "multiple",
 		"difficulty": "easy",
@@ -159,7 +159,7 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
-		"question": "What is the song the animals sing at the end of Old Major's speech?",
+		"question": "Which song do the animals sing at the end of Old Major's speech?",
 		"correct_answer": "Beasts of England",
 		"incorrect_answers": ["Tyrant Man", "The Fruitful Fields of England", "Beasts of Every Land and Clime"]
 	}, {
@@ -171,7 +171,7 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "easy",
-		"question": "What name do the animals give to the battle in which Jones is defeated when he returns to claim the farm?",
+		"question": "What name do the animals give to the first battle?",
 		"correct_answer": "The Battle of the Cowshed",
 		"incorrect_answers": ["The Battle of the Pig Sty", "Snowball's Victory", "The Battle of the Stable"]
 	}, {
@@ -189,13 +189,13 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "easy",
-		"question": "What is the single law that the Seven Commandments of Animalism are reduced to?",
+		"question": "What single law are the Seven Commandments reduced to?",
 		"correct_answer": "All animals are equal, but some animals are more equal than others.",
 		"incorrect_answers": ["All animals must sacrifice for the common good of the whole", "No animals shall drink alcohol", "No animal shall sleep in a bed"]
 	}, {
 		"type": "multiple",
 		"difficulty": "easy",
-		"question": "What is the name of Jones' farm before the animals rename it Animal Farm?",
+		"question": "What is the original name of Jones' farm?",
 		"correct_answer": "Manor Farm",
 		"incorrect_answers": ["Old Farm", "Jones Family Farm", "Chestnut Hill Farm"]
 	}, {	
@@ -213,7 +213,7 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
-		"question": "Who said \"War is war.  The only good human being is a dead one?",
+		"question": "Who said \"War is war. The only good human being is a dead one?\",
 		"correct_answer": "Snowball", 
 		"incorrect_answers": ["Moses", "Squealer", "Bluebell"]
 	}, {
@@ -225,19 +225,19 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who was this said about? \"This traitor has crept here under the cover of night",
+		"question": "Who is this? \"This traitor has crept here under the cover of night\",
 		"correct_answer": "Snowball",
 		"incorrect_answers": ["Boxer", "Squealer", "Old Major"]
 	}, {
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What does Napoleon claim was his idea, which was really Snowball's idea?",
+		"question": "What does Napoleon claim was his idea?",
 		"correct_answer": "Building a windmill",
 		"incorrect_answers": ["Building a well", "Building a bridge", "Building an arsenal"]
 	}, {
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said \"Do not imagine, comrades, that leadership is a pleasure! On the contrary it is a deep and heavy responsibility.",
+		"question": "Who said \"Do not imagine, comrades, that leadership is a pleasure!",
 		"correct_answer": "Squealer",
 		"incorrect_answers": ["Napoleon", "Snowball", "Boxer"]
 	}, {
@@ -256,25 +256,25 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said \"and shall I still be allowed to wear ribbons in my mane?",
+		"question": "Who said \"and shall I still be allowed to wear ribbons in my mane?\",
 		"correct_answer": "Mollie",
 		"incorrect_answers": ["Clover", "Minimus", "Bluebell"]
 	}, {
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said \"Day and night we are watching over your welfare. It is for your sake that we drink that milk and eat those apples.",
+		"question": "Who said \"It is for your sake that we drink that milk.\",
 		"correct_answer": "Squealer",
 		"incorrect_answers": ["Napoleon", "Old Major", "Snowball"]
 	}, {
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said \"I have no wish to take life, not even human life.",
+		"question": "Who said \"I have no wish to take life, not even human life.\",
 		"correct_answer": "Boxer",
 		"incorrect_answers": ["Clover", "Benjamin", "Moses"]
 	}, {
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said \"If you have your lower animals to contend with, we have our lower classes!",
+		"question": "Who said \"If you have your lower animals to contend with, we have our lower classes!\",
 		"correct_answer": "Pilkington",
 		"incorrect_answers": ["Jones", "Frederick", "Whymper"]
 	}, {
