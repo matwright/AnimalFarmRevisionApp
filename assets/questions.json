@@ -878,7 +878,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who sends \"serves you right\" to Napoleon?",
+		"question": "Who sends a \"serves you right\" note to Napoleon?",
 		"correct_answer": "Pilkington",
 		"incorrect_answers": ["Frederick", "Whymper", "Jones"]
 	},{
@@ -896,7 +896,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What did Squealer say the pigs do with the files and reports?",
+		"question": "What did Squealer say the pigs did with the files and reports?",
 		"correct_answer": "Burnt in the furnaces",
 		"incorrect_answers": ["Put on the wall in the farmhouse", "Hidden in the barn", "Kept in the farmhouse kitchen"]
 	},{
@@ -904,11 +904,11 @@
 		"difficulty": "medium",
 		"question": "What were the older animals trying to remember?",
 		"correct_answer": "Whether things had been better or worse with Jones",
-		"incorrect_answers": ["Whether the commandments had changed", "The names of their friends who were no longer with them", "Who first suggested the rebellion"]
+		"incorrect_answers": ["Whether the commandments had changed", "The names of their old friends", "Who first suggested the rebellion"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said they remembered every detail of their long life?",
+		"question": "Who said they remembered every detail of their life?",
 		"correct_answer": "Benjamin",
 		"incorrect_answers": ["Clover", "Muriel", "Boxer"]
 	
@@ -917,17 +917,17 @@
 		"difficulty": "medium",
 		"question": "Why did Clover neigh terrifyingly?",
 		"correct_answer": "She saw a pig walking on his hind legs",
-		"incorrect_answers": ["She saw Jones and the men running towards them", "Boxer had collapsed", "The windmill was blown up"]
+		"incorrect_answers": ["She saw Jones running towards them", "Boxer had collapsed", "The windmill was blown up"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "How long did it take the sheep to learn \"Four legs good, two legs better?",
-		"correct_answer": "One week",
-		"incorrect_answers": ["Five days", "Three days", "Two weeks"]
+		"question": "The sheep learnt \"Four legs good, two legs better?\",
+		"correct_answer": "In one week",
+		"incorrect_answers": ["In five days", "In three days", "In two weeks"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What was Napoleon's toast at the end of the book?",
+		"question": "What was Napoleon's toast?",
 		"correct_answer": "To the prosperity of Manor Farm!",
 		"incorrect_answers": ["To the prosperity of Animal Farm!", "To the new friendship with Pilkington", "To the comfort of the farmhouse"]
 	},{
@@ -936,8 +936,7 @@
 		"difficulty": "medium",
 		"question": "How did the flag change?",
 		"correct_answer": "The hoof and horn were removed",
-		"incorrect_answers": ["A trotter and snout replace the hoof and horn", "The green background became brown", "The horn was removed"]
-	
+		"incorrect_answers": ["A trotter and snout was addes", "The green background became brown", "The horn was removed"]
 	
 	},{
 		
@@ -949,13 +948,13 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who shouted\"Boxer! Get out! Get out quickly!",
+		"question": "Who shouted \"Boxer! Get out! Get out quickly!\",
 		"correct_answer": "Clover",
 		"incorrect_answers": ["Benjamin", "Muriel", "The cows"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What do the pigs spend the money they get from selling Boxer on?",
+		"question": "What do the pigs buy with the money they get from selling Boxer?",
 		"correct_answer": "Whisky",
 		"incorrect_answers": ["Extra land", "Food for the pigs", "Beer"]
 	},{
@@ -963,31 +962,31 @@
 		"difficulty": "medium",
 		"question": "Who did the pigs blame for everything?",
 		"correct_answer": "Snowball",
-		"incorrect_answers": ["Benjamin","Mollie", "Moses"]
+		"incorrect_answers": ["Benjamin", "Mollie", "Moses"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "When Animal Farm became a republic, how many candidates were standing for President?",
+		"question": "How many candidates stood for President of the republic?",
 		"correct_answer": "1",
 		"incorrect_answers": ["3", "2", "0"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What was next to the poem about Napoleon on the wall opposite the COmmandments?",
-		"correct_answer": "A portrait of Napoleon by Squealer, in white paint",
-		"incorrect_answers": ["A portrait of Napoleon by Squealer, in black paint", "A portrait of Napoleon by Snowball, in black paint", "A portrait of Napoleon by Snowball, in white paint"]
-	},{
+		"question": "One of the things on the wall opposite the Commandments was",
+		"correct_answer": "A white portrait of Napoleon by Squealer",
+		"incorrect_answers": ["A black portrait of Napoleon by Squealer", "A black portrait of Napoleon by Snowball", "A white portrait of Napoleon by Snowball"]
+	},{ 
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What did the black cockerel do?",
-		"correct_answer": "Marched in front of Napoleon letting out a loud \"cock-a-doodle-do",
-		"incorrect_answers": ["Rode on Napoleon's back when he was inspecting the farm", "He made sure everyone was silent before Napoleon spoke", "He stopped anyone getting too close to Napoleon"]
+		"correct_answer": "Marched in front of Napoleon",
+		"incorrect_answers": ["Rode on Napoleon's back", "Ensured silence before Napoleon spoke", "Stopped anyone getting close to Napoleon"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What did Boxer say when Squealer said Snowball was Jones' agent from the start, according to Napoleon?",
+		"question": "What did Boxer say when Napoleon said Snowball was Jones' agent?",
 		"correct_answer": "If Comrade Napoleon says it, it must be right.",
-		"incorrect_answers": ["I don't believe that Snowball was a traitor", "Snowball was so brave in the Battle of the Cowshed", "How did Napoleon find out?"]
+		"incorrect_answers": ["I don't believe Snowball was a traitor", "Snowball was so brave", "How did Napoleon find out?"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -997,7 +996,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "How thick were the windmill walls the second time it was built?",
+		"question": "How thick were the windmill walls when it was rebuilt?",
 		"correct_answer": "3 feet thick",
 		"incorrect_answers": ["2 feet thick", "4 feet thick", "3.5 feet thick"]
 	},{
@@ -1027,20 +1026,20 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What is the second commandment?",
-		"correct_answer": "Whatever goes upon four legs, or has wings, is a friend",
-		"incorrect_answers": ["No animals shall wear clothes", "Whatever goes upon two legs in an enemy", "All animals are equal"]
+		"question": "How does the second commandment end?",
+		"correct_answer": "or has wings, is a friend",
+		"incorrect_answers": ["shall wear clothes", "is an enemy", "are equal"]
 	},{
 				      
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Who owns the title-deeds of the farm?",
-		"correct_answer": "The pigs",
+		"correct_answer": "The Pigs",
 		"incorrect_answers": ["All the animals equally", "Pilkington", "Jones"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What happened to Old Major's skull near the end of the book?",
+		"question": "What happened to Old Major's skull near the end?",
 		"correct_answer": "It was removed from the post and buried",
 		"incorrect_answers": ["It was attached to a post", "It was thrown away", "It was stolen"]
 	},{
@@ -1066,7 +1065,7 @@
 		"difficulty": "medium",
 		"question": "What do the pigs use to deceive?",
 		"correct_answer": "Language",
-		"incorrect_answers":["violence", "fear", "humour"]
+		"incorrect_answers":["Violence", "Fear", "Humour"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1096,11 +1095,11 @@
 		"difficulty": "medium",
 		"question": "What does Old Major tell the animals?",
 		"correct_answer": "Man is their enemy",
-		"incorrect_answers": ["Have a meeting every week to share your news and views", "Leave Manor Farm and move to a better farm", "Try and work with Jones"]
+		"incorrect_answers": ["Have a meeting every day", "Leave Manor Farm", "Try and work with Jones"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who does Snowball learn his military tactics from?",
+		"question": "Who inspires Snowball's military tactics?",
 		"correct_answer": "Julius Caesar.",
 		"incorrect_answers": ["Mark Anthony", "Genghis Khan", "Alexander the Great"]
 	},{
@@ -1114,7 +1113,7 @@
 		"difficulty": "medium",
 		"question": "Where was Boxer buried?",
 		"correct_answer": "nowhere",
-		"incorrect_answers": ["in the orchard", "by the windmill", "in the pasture"]
+		"incorrect_answers": ["The Orchard", "The Windmill", "The Pasture"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1130,7 +1129,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium", 
-		"question": "How much beer was every pig (except Napoleon) given daily?",
+		"question": "How much beer was every pig given daily?",
 		"correct_answer": "A pint",
 		"incorrect_answers": ["Half a pint", "A gallon", "Two pints"]
 	},{
@@ -1160,9 +1159,9 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What did the seven commandments become?",
-		"correct_answer": "All animals are equal, but some animals are more equal than others",
-		"incorrect_answers": ["4 legs good 2 legs better", "No animal shall sleep in a a bed with sheets", "No animal shall drink alcohol to excess"]
+		"question": "What is second half of the commandment at the end?",
+		"correct_answer": "but some animals are more equal than others",
+		"incorrect_answers": ["two legs better", "shall sleep in a bed", "shall drink alcohol"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1174,11 +1173,11 @@
 		"difficulty": "medium",
 		"question": "Who is blamed for everything?",
 		"correct_answer": "Snowball",
-		"incorrect_answers": ["Squealer", "The porkers", "Napoleon"]
+		"incorrect_answers": ["Squealer", "The Porkers", "Napoleon"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What did the animals do secretly near the end of the book?",
+		"question": "What did the animals do secretly?",
 		"correct_answer": "Hum Beasts of England", 
 		"incorrect_answers": ["Hide food", "Have meetings", "Plot against Napoleon"]
 	},{
@@ -1190,7 +1189,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What did Frederick tell everyone about the animals in Animal Farm?",
+		"question": "What did Frederick say about the animals?",
 		"correct_answer": "That they practised cannibalism",
 		"incorrect_answers": ["That they were all sick", "That they wanted Jones back", "That half of them had run away"]
 	},{
@@ -1208,33 +1207,33 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What is the retirment age for cows?",
+		"question": "What is the retirement age for cows?",
 		"correct_answer": "14",
 		"incorrect_answers": ["12", "11", "10"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What is the retirment age for horses?",
+		"question": "What is the retirement age for horses?",
 		"correct_answer": "12",
 		"incorrect_answers": ["14", "10", "13"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What is the retiremnte age for sheep?",
+		"question": "What is the retirement age for sheep?",
 		"correct_answer": "7",
 		"incorrect_answers": ["10", "8", "9"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "How does the rebellion start",
-		"correct_answer": "One of the cow's kicks in the store-shed door",
-		"incorrect_answers": ["One of the sheep kicks in the store-shed door", "The cockerel crows three times", "The pigeons drop stones on Jones and the men as they go through the gate of the farm."]
+		"correct_answer": "A cow kicks in the shed door",
+		"incorrect_answers": ["A sheep kicks in the shed door", "The cockerel crows three times", "The pigeons drop stones on the men at the gate."]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question":"Where is Mollie seen after she leaves the farm?",
-		"correct_answer": "Standing outside a pub in Willingdon",
-		"incorrect_answers": ["In Foxwood Farm", "In Pinchfield Farm", "Pulling a cart along the road outside Animal Farm"]
+		"correct_answer": "Outside a pub in Willingdon",
+		"incorrect_answers": ["In Foxwood Farm", "In Pinchfield Farm", "Pulling a cart along the road"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1252,7 +1251,7 @@
 		"difficulty": "medium",
 		"question": "How do the pigs teach themselves to read?",
 		"correct_answer": "An old spelling book",
-		"incorrect_answers": ["News of the World", "One of Jones' children's story books", "Old scraps of newspapers"]
+		"incorrect_answers": ["News of the World", "Children's story books", "Old scraps of newspapers"]
 	},{
 		
 		"type": "multiple",
@@ -1269,7 +1268,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who isn't much of a talker but still gets their own way",
+		"question": "Who doesn't talk much but gets their own way?",
 		"correct_answer": "Napoleon",
 		"incorrect_answers": ["Boxer", "Clover", "Snowball"]
 	},{
@@ -1281,9 +1280,9 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Why is the rebellion called the Battle of the Cowshed?",
-		"correct_answer": "It is where the animals hid waiting to ambush the men",
-		"incorrect_answers": ["Where Snowball planned the attack", "Where the fight took place", "The animals' favourite place on the farm"]
+		"question": "The Battle of the Cowshed is named that because?",
+		"correct_answer": "It is where the animals hid waiting to ambush",
+		"incorrect_answers": ["Where Snowball planned the attack", "Where the fight took place", "The animals' favourite place"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1301,19 +1300,19 @@
 		"difficulty": "medium",
 		"question": "What does Napoleon having dogs wait on him mean?",
 		"correct_answer": "Animals are no longer equal",
-		"incorrect_answers": ["They are loyal because he raised them", "They want to please him", "It is all they know"]
+		"incorrect_answers": ["They are loyal", "They want to please him", "It is all they know"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who tastes all Napoleon's food to make sure it isn't poisoned?",
+		"question": "Who tastes all Napoleon's food checking for poison?",
 		"correct_answer": "Pinkeye",
 		"incorrect_answers": ["Squealer", "One of the dogs", "Curly"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Who did not understand Snowball's long words?",
-		"correct_answer": "The birds",
-		"incorrect_answers": ["The rats", "The sheep", "The cows"]
+		"correct_answer": "The Birds",
+		"incorrect_answers": ["The Rats", "The Sheep", "The Cows"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1347,15 +1346,15 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Why does Napoleon gallop around the yard in a bowler hat?",
+		"question": "Why does Napoleon run around in a bowler hat?",
 		"correct_answer": "He was drunk",
-		"incorrect_answers": ["He was trying to catch Snowball", "He was showing how silly animals looked with clothes on","He didn't realise he had the hat on"]
+		"incorrect_answers": ["Trying to catch Snowball", "Showing how animals look with clothes", "He didn't realise the hat was on"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Which part of the farm was supposed to be put aside for animals when they retired?",
+		"question": "Which part of the farm was for retiring animals?",
 		"correct_answer": "A corner of the pasture",
-		"incorrect_answers": ["The spinney", "The paddock", "By the drinking pool"]
+		"incorrect_answers": ["The Spinney", "The Paddock", "By the drinking pool"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1377,13 +1376,13 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "WHich animals were the first to be executed?",
+		"question": "Which animals were the first to be executed?",
 		"correct_answer": "4 pigs",
 		"incorrect_answers": ["3 hens", "5 pigeons", "2 sheep"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Which two animals are not convinced about life without Jones?",
+		"question": "Which animals think it was better with Jones?",
 		"correct_answer": "Moses and Mollie",
 		"incorrect_answers": ["Mollie and Muriel", "Moses and Benjamin", "Muriel and Moses"]
 	},{
@@ -1391,19 +1390,19 @@
 		"difficulty": "medium",
 		"question": "What does Snowball say about the 7 commandments?",
 		"correct_answer": "They are an unalterable law",
-		"incorrect_answers": ["Everyone must learn to read them", "Everyone must learn to write them", "Everyone must recite them every morning and evening"]
+		"incorrect_answers": ["All must learn to read them", "All must learn to write them", "All must recite them daily"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Who executes the animals?",
-		"correct_answer": "The dogs",
-		"incorrect_answers": ["Napoleon", "Squealer", "The cows"]
+		"correct_answer": "The Dogs",
+		"incorrect_answers": ["Napoleon", "Squealer", "The Cows"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What was the first rumour spread about Snowball after he escaped?",
+		"question": "What rumour was spread about Snowball after he escaped?",
 		"correct_answer": "He went to Pinchfield, Frederick's farm",
-		"incorrect_answers": ["He went to Foxwood, Pilkington's farm", "He went and found Mollie", "he died"]
+		"incorrect_answers": ["He went to Foxwood, Pilkington's farm", "He went and found Mollie", "He died"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1425,14 +1424,14 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What is the location of the Battle of the Cowshed?",
-		"correct_answer": "The yard",
-		"incorrect_answers": ["The cowshed", "The barn", "The paddock"]
+		"question": "Where does the Battle of the Cowshed take place?",
+		"correct_answer": "The Yard",
+		"incorrect_answers": ["The Cowshed", "The Barn", "The Paddock"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What does Boxer do when he is attacked?",
-		"correct_answer": "Kicks the dog and pins him to the ground",
+		"correct_answer": "Kicks back and pins the dog to the ground",
 		"incorrect_answers": ["Turns and runs", "Gets badly injured", "He doesn't get attacked"]
 	},{
 		"type": "multiple",
@@ -1443,15 +1442,15 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who is described as having a wise and benevolent appearance",
+		"question": "Who has a wise and benevolent appearance",
 		"correct_answer": "Old Major",
 		"incorrect_answers": ["Boxer", "Snowball", "Benjamin"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "How does Napoleon investigate Snowball sneaking into the farm at night?",
-		"correct_answer": "He tours the farm with his dogs finding Snowball's scent everywhere.",
-		"incorrect_answers": ["He interviews all the animals", "He leaves a trap", "He sends some of the pigs to stay awake all night"]
+		"question": "Napoleon's evidence for Snowball sneaking in at night",
+		"correct_answer": "His dogs find Snowball's scent everywhere.",
+		"incorrect_answers": ["He interviews all the animals", "He leaves a trap", "The pigs stay awake all night"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
