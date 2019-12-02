@@ -43,13 +43,13 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
-		"question": "Who created \"Four legs good, two legs bad?\",
+		"question": "Who created \"Four legs good, two legs bad?\"",
 		"correct_answer": "Snowball",
 		"incorrect_answers": ["Napoleon", "Squealer", "Boxer"]
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
-		"question": "Who teaches the sheep\"Four legs good, two legs better?\",
+		"question": "Who teaches the sheep\"Four legs good, two legs better?\"",
 		"correct_answer": "Squealer",
 		"incorrect_answers": ["Napoleon", "Moses", "Clover"]
 	}, {
@@ -74,7 +74,7 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "easy",
-		"question": "Why does Napoleon think he is dying after he drinks whisky?",
+		"question": "Why does Napoleon think he's dying after he drinks whisky?",
 		"correct_answer": "He has a hangover",
 		"incorrect_answers": ["Old Major appears to him", "He wants to leave Animal Farm", "He remembers nothing"]
 	}, {	
@@ -129,7 +129,7 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
-		"question": "Who composes the song replacing \"Beasts of England?\",
+		"question": "Who composes the song replacing \"Beasts of England?\"",
 		"correct_answer": "Minimus",
 		"incorrect_answers": ["Snowball", "Maximus", "Napoleon"]
 	}, {
@@ -189,7 +189,7 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "easy",
-		"question": "Finish \"All animals are equal,\",
+		"question": "Finish \"All animals are equal,\"",
 		"correct_answer": "but some animals are more equal than others.",
 		"incorrect_answers": ["unless they are hens", "but the pigs are more equal", "except Moses"]
 	}, {
@@ -213,7 +213,7 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "hard",
-		"question": "Who said \"The only good human being is a dead one?\",
+		"question": "Who said \"The only good human being is a dead one?\"",
 		"correct_answer": "Snowball", 
 		"incorrect_answers": ["Moses", "Squealer", "Bluebell"]
 	}, {
@@ -268,7 +268,7 @@
 	}, {
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said \"I have no wish to take life.\",
+		"question": "Who said \"I have no wish to take life.\"",
 		"correct_answer": "Boxer",
 		"incorrect_answers": ["Clover", "Benjamin", "Moses"]
 	}, {
@@ -322,7 +322,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who reduces Animalism to \"Four legs good, two legs bad?\",
+		"question": "Who reduces Animalism to \"Four legs good, two legs bad?\"",
 		"correct_answer": "Snowball",
 		"incorrect_answers": ["Napoleon", "Squealer", "Boxer"]
 	
@@ -366,7 +366,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "\"Whatever goes upon four legs, or has wings is...\",
+		"question": "\"Whatever goes upon four legs, or has wings is...\"",
 		"correct_answer": "a friend",
 		"incorrect_answers": ["a bird", "one of us", "a worker"]
 	},{
@@ -573,7 +573,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who says \"They are taking Boxer to the knacker's!\",
+		"question": "Who says \"They are taking Boxer to the knacker's!\"",
 		"correct_answer": "Benjamin",
 		"incorrect_answers": ["Clover", "The pigeons", "Moses"]
 	},{
@@ -712,7 +712,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said \"No animal must ever kill any other animal\",
+		"question": "Who said \"No animal must ever kill any other animal\"",
 		"correct_answer": "Old Major",
 		"incorrect_answers": ["Boxer", "Snowball", "Moses"]
 	},{
@@ -736,13 +736,13 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said \"Tactics, comrades, tactics!\",
+		"question": "Who said \"Tactics, comrades, tactics!\"",
 		"correct_answer": "Squealer",
 		"incorrect_answers": ["Snowball", "Napoleon", "Muriel"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said \"If comrade Napoleon says it, it must be right.\",
+		"question": "Who said \"If comrade Napoleon says it, it must be right.\"",
 		"correct_answer": "Boxer",
 		"incorrect_answers": ["Clover", "Muriel", "Benjamin"]
 	},{
@@ -884,7 +884,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who said \"The truest happiness lays in working hard\"?,
+		"question": "Who said \"The truest happiness lays in working hard\"?",
 		"correct_answer": "Napoleon",
 		"incorrect_answers": ["Boxer", "Squealer", "Pilkington"]
 	},{
@@ -921,7 +921,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "The sheep learnt \"Four legs good, two legs better?\",
+		"question": "The sheep learnt \"Four legs good, two legs better?\"",
 		"correct_answer": "In one week",
 		"incorrect_answers": ["In five days", "In three days", "In two weeks"]
 	},{
@@ -948,7 +948,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who shouted \"Boxer! Get out! Get out quickly!\",
+		"question": "Who shouted \"Boxer! Get out! Get out quickly!\"",
 		"correct_answer": "Clover",
 		"incorrect_answers": ["Benjamin", "Muriel", "The cows"]
 	},{
