@@ -29,6 +29,13 @@ List<Map<String, dynamic>> locations = [
   },
 
   {
+    "id": "stables",
+    "name": "Stables",
+    "image": "stables.png",
+    "strap_line": "Boxer, Benjamin, Clover and Mollie live in the stables."
+  },
+
+  {
     "id": "small_paddock",
     "name": "Small Paddock",
     "image": "small_paddock.png",
@@ -46,7 +53,7 @@ List<Map<String, dynamic>> locations = [
     "id": "yard",
     "name": "The Yard",
     "image": "yard.png",
-    "strap_line": "The farmhouse and other buildings all arranged around the yard. The yard is the location of the Battle of the Cowshed"
+    "strap_line": "The farmhouse and other buildings are all arranged around the yard. The yard is the location of the Battle of the Cowshed"
   },
 
   {
@@ -170,7 +177,7 @@ List<Map<String, dynamic>> characters = [
     "name": "Moses",
     "avatar": "moses.png",
     "bio":
-    "Moses the raven is jones’ pet. The animals don’t like him as he lies & does no work. Moses tells stories about Sugarcandy Mountain, which he describes as a paradise where the animals go after they die. The pigs decide it’s useful to have a raven convincing the oppressed labourers that paradise is waiting for them if they keep working hard enough. Moses represents the Russian Orthodox Church.",
+    "Moses the raven is Jones’ pet. The animals don’t like him as he lies & does no work. Moses tells stories about Sugarcandy Mountain, which he describes as a paradise where the animals go after they die. The pigs decide it’s useful to have a raven convincing the oppressed labourers that paradise is waiting for them if they keep working hard enough. Moses represents the Russian Orthodox Church.",
     "strap_line":
     "Oooh Sugarcandy Mountain",
     "color": Color(0xFF616161),
@@ -193,9 +200,9 @@ List<Map<String, dynamic>> characters = [
     "name": "Benjamin",
     "avatar": "benjamin.png",
     "bio":
-    "Benjamin is very intelligent, grumpy & cynical. He is the only animal other than the pigs who can read fluently. He is the oldest animal on the farm. He understands what’s going on but doesn’t do anything about it.   Benjamin is represents the intellectual Russians.",
+    "Benjamin is very intelligent, grumpy & cynical. He is the only animal other than the pigs who can read fluently. He is the oldest animal on the farm. He understands what’s going on but doesn’t do anything about it.   Benjamin represents the intellectual Russians.",
     "strap_line":
-    "Donkeys live a long time. None of you has ever seen a dead donkey",
+    "Donkeys live a long time.",
     "color": Color(0xfffcaa89),
     "text_color": Color(0xff000000)
   },
@@ -215,7 +222,7 @@ List<Map<String, dynamic>> characters = [
     "avatar": "mollie.png",
     "bio":
     "Mollie is vain, lazy & cowardly. She hides during the Battle of the Cowshed & has no interest in the rebellion. She likes ribbons & sugar, however these are banned in Animalism. Mollie represents the upper-class Russians.",
-    "strap_line": "Will there still be sugar after the Rebellion?",
+    "strap_line": "Will there still be sugar?",
     "color": Colors.deepPurpleAccent,
     "text_color": Color(0xffeeeeee)
   },
@@ -236,7 +243,7 @@ List<Map<String, dynamic>> characters = [
     "bio":
     "Pilkington owns Foxwood, a neighbouring farm that is shabby & neglected. He prefers pursuing his hobbies than looking after his farm. Pilkington eventually becomes Napoleon’s ally. Pilkington represents the capitalist west.",
     "strap_line":
-    "A toast! To the prosperity of Animal Farm!",
+    "Here's to Animal Farm!",
     "color": Color(0xFF66BB6A),
     "text_color": Color(0xffeeeeee)
   },
@@ -245,7 +252,7 @@ List<Map<String, dynamic>> characters = [
     "name": "Muriel",
     "avatar": "muriel.png",
     "bio":
-    "Muriel is a dependable goat & often worked alongside Benjamin in the construction of the windmills. She read all the changes to the commandments as they happened & reported back to the animals that couldn’t read. She represents the minority of educated working class people.",
+    "Muriel is a dependable goat & often works alongside Benjamin in the construction of the windmills. She reads all the changes to the commandments as they happen & reports back to the animals that can’t read. She represents the minority of educated working class people.",
     "strap_line": "A dependable goat",
     "color": Color(0xFF3E2723),
     "text_color": Color(0xffeeeeee)
