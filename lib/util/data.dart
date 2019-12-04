@@ -252,7 +252,7 @@ List<Map<String, dynamic>> characters = [
   }
 ];
 
-List<Map<String, dynamic>> awardsData = [
+List<Map<String, dynamic>>    awardsData = [
   {
     //When the student opens the app
     "id": awardTrigger.startApp,
