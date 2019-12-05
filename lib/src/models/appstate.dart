@@ -422,7 +422,7 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
 
     if (!currentAwards
             .contains(prefix0.describeEnum(awardTrigger.sundayQuizz)) &&
-        DateTime.now().day == 0) {
+        DateTime.now().weekday == 7)  {  
       addAward(awardTrigger.sundayQuizz);
       triggered = true;
     }
