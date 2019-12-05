@@ -157,7 +157,7 @@ List<Map<String, dynamic>> characters = [
     "avatar": "old_major.png",
     "bio":
     "Old Major is the oldest & wisest pig on the farm. He inspires the rebellion after sharing a dream he had a few days before he died. His vision is used as the basis for Animalism. He is respected by all the other animals. Old Major represents Karl Marx.",
-    "strap_line": "The wisest pig on the farm",
+    "strap_line": "Wisest pig on the farm",
     "color": Color(0xFF4A148C),
     "text_color": Color(0xffeeeeee)
   },

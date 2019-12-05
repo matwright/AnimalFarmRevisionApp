@@ -71,7 +71,7 @@ class MaterialPage extends StatelessWidget {
           routes: {
             // When navigating to the "/" route, build the FirstScreen widget.
             '/award': (context) => AwardPage(backgroundColor:(snapshot.data.name=='dark'?Colors.indigoAccent:Colors.indigoAccent)),
-            '/progress': (context) => ProgressPage(backgroundColor:(snapshot.data.name=='dark'?Colors.white:Colors.white)),
+            '/progress': (context) => ProgressPage(backgroundColor:(snapshot.data.name=='dark'?Colors.black26:Colors.white)),
             '/awards': (context) => AwardsPage(backgroundColor:(snapshot.data.name=='dark'?Colors.indigoAccent:Colors.indigoAccent)),
             '/trivia': (context) => TriviaPage(backgroundColor:(snapshot.data.name=='dark'?Colors.deepPurple:Colors.amber)),
             '/summary': (context) => SummaryPage(backgroundColor:(snapshot.data.name=='dark'?Colors.deepOrange:Colors.amber)),
