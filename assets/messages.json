@@ -65,11 +65,11 @@
  },{
     "created_by": "boxer",
     "text": "What did you think @Benjamin?  He's inspiring isn't he? #LongLiveOM #BeastsOfEngland",
-    "location": "small_paddock"
+    "location": "stables"
  },{
     "created_by": "benjamin",
     "text": "@Boxer.  He's ok.  Good for his age. #NotAsOldAsMe",
-    "location": "small_paddock"
+    "location": "stables"
  },{
    "created_by": "farmer_jones",
    "text": "I'm sure I heard a fox last night. Vermin. I fired out the window. That would've got rid. #ScaredyFox",
@@ -149,7 +149,7 @@
  },{
    "created_by": "mollie",
    "text": "Noooooooo.  Not my ribbons. @Squealer please? #Broken",
-   "location": "small_paddock"
+   "location": "stables"
  },{
    "created_by": "napoleon",
    "text": "No more Jones! Come to the storeroom for extra food. #ByeByeJones #Loadsafood",
@@ -215,11 +215,11 @@
  },{
    "created_by": "muriel",
    "text": "@Boxer, you are working like 3 horses. How do you do it? #SoStrong #MyHero",
-   "location": "small_paddock"
+   "location": "stables"
  },{
    "created_by": "boxer",
    "text": "I will work harder",
-   "location": "small_paddock"
+   "location": "stables"
  },{
    "created_by": "benjamin",
    "text": "Thanks for all your concern (not). None of you has ever seen a dead donkey #cryptic",
@@ -403,11 +403,11 @@
    "location": "small_paddock"
  },{
    "created_by": "clover",
-   "location": "small_paddock",
+   "location": "stables",
    "text":" @Mollie I saw you over at the fence allowing one of Pilkington’s men to stroke your nose. Why would you do that?"
  },{
    "created_by": "mollie",
-   "location": "small_paddock",
+   "location": "stables",
    "text":"I didn't. Honestly. Please don't say anything."
  },{
    "created_by": "clover",
@@ -886,7 +886,7 @@
     "text": "Thank you to my two BFFs @Benjamin and @Clover for staying by my side during this enforced rest time. Hopefully I will be retiring soon and will spend much time with them. #ReallyTiredNow"
  },{
     "created_by": "benjamin",
-    "location": "small_paddock",
+    "location": "stables",
     "text": "They took him away. The idiots thought it was to the hospital and I told them it was to the knacker's. I can read. We shouted at Boxer and he tried to kick his way out but was too late. My heart is broken. #BFF #RIPBoxer"
  },{
     "created_by": "squealer",
@@ -915,11 +915,11 @@
     "text": "Comrade Napoleon says excellent work on the second windmill everyone. #WorkHarder"
  },{
     "created_by": "benjamin",
-    "location": "small_paddock",
+    "location": "stables",
     "text": "Hey #Clover I dreamt of Boxer the other night. #Sad #Grumpy"
  },{
     "created_by": "clover",
-    "location": "small_paddock",
+    "location": "stables",
     "text": "@Benjamin, I still miss him. #MyHeart"
  },{
     "created_by": "napoleon",
