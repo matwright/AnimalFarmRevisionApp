@@ -15,14 +15,13 @@ import 'package:frideos/frideos.dart';
 import '../models/appstate.dart';
 
 class MainPage extends StatelessWidget {
-
   MainPage({this.backgroundColor});
 
   final Color backgroundColor;
+
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
-
 
     void _showDialog() {
       // flutter defined function
@@ -32,9 +31,7 @@ class MainPage extends StatelessWidget {
         builder: (BuildContext context) {
           // return object of type Dialog
           return AlertDialog(
-
             shape: RoundedRectangleBorder(
-
                 borderRadius: new BorderRadius.all(new Radius.circular(20.0))),
             backgroundColor: Colors.blueGrey,
             title: new Text("Welcome Comrade!"),
@@ -70,16 +67,16 @@ class MainPage extends StatelessWidget {
         },
       );
     }
+
     onBottom(Widget child) => Positioned.fill(
-      child: Align(
-        alignment: Alignment.bottomCenter,
-        child: child,
-      ),
-    );
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: child,
+          ),
+        );
 
     return Scaffold(
         appBar: AppBar(
-
           title: Text('Animal Farm GCSE Revision'),
         ),
         drawer: DrawerWidget(),
@@ -88,7 +85,6 @@ class MainPage extends StatelessWidget {
         body: FadeInWidget(
           duration: 20,
           child: Container(
-
             child: ValueBuilder(
               streamed: appState.currentCharacter,
               noDataChild: const CircularProgressIndicator(),
@@ -101,7 +97,6 @@ class MainPage extends StatelessWidget {
                 ].toList();
                 Character character = snapshot.data;
 
-
                 //only show notice if no avatar set and current context is this page
                 if (character.id == "noavatar" &&
                     ModalRoute.of(context).isCurrent) {
@@ -109,24 +104,23 @@ class MainPage extends StatelessWidget {
 
                   Prefs.savePref('messageShown', true);
                 }
-                return  Stack(
-                        children: <Widget>[
-                          Positioned.fill(child: AnimatedBackground()),
-
-                          onBottom(AnimatedWave(
-                            height: 180,
-                            speed: 0.1,
-                          )),
-                          onBottom(AnimatedWave(
-                            height: 120,
-                            speed:0.2,
-                            offset: pi,
-                          )),
-                          onBottom(AnimatedWave(
-                            height: 220,
-                            speed: 0.3,
-                            offset: pi / 2,
-                          )),
+                return Stack(
+                  children: <Widget>[
+                    Positioned.fill(child: AnimatedBackground()),
+                    onBottom(AnimatedWave(
+                      height: 180,
+                      speed: 0.1,
+                    )),
+                    onBottom(AnimatedWave(
+                      height: 120,
+                      speed: 0.2,
+                      offset: pi,
+                    )),
+                    onBottom(AnimatedWave(
+                      height: 220,
+                      speed: 0.3,
+                      offset: pi / 2,
+                    )),
                     Container(
                       margin: EdgeInsets.only(top: 0),
                       child: new Container(
@@ -136,13 +130,10 @@ class MainPage extends StatelessWidget {
                         child: new Center(
                           child: new Column(
                             children: <Widget>[
-
-
                               Container(
                                 padding: const EdgeInsets.only(top: 0.0),
                                 child: Text(
                                   'Hey, ' + character.name,
-
                                   style: TextStyle(
                                     color: Colors.brown.shade900,
                                     fontSize: 36.0,
@@ -155,7 +146,7 @@ class MainPage extends StatelessWidget {
                               Center(
                                 child: FadeAnimatedTextKit(
                                     text: greetings,
-                                    duration:Duration(seconds: 60),
+                                    duration: Duration(seconds: 60),
                                     isRepeatingAnimation: true,
                                     textStyle: TextStyle(
                                       fontSize: 18.0,
@@ -171,67 +162,51 @@ class MainPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                           Center(
-                                    child: AvatarGlow(
-                                      startDelay: Duration(milliseconds: 1000),
-                                      glowColor: (character.color != null
-                                          ? character.color
-                                          : Colors.blueGrey),
-                                      endRadius: 175.00,
-                                      duration: Duration(milliseconds: 2000),
-                                      repeat: true,
-                                      showTwoGlows: true,
-                                      repeatPauseDuration: Duration(milliseconds: 100),
-                                      child: Material(
-                                          elevation: 25.0,
-                                          shape: CircleBorder(),
-                                          color: (character.color != null
-                                              ? character.color.withOpacity(0.9)
-                                              : Colors.blueGrey.withOpacity(0.9)),
-                                          child: FlatButton(
-                                            onPressed: () =>
-                                                Navigator.pushNamed(context, "/avatar"),
-                                            child: CircleAvatar(
-                                              backgroundColor: (character.color != null
-                                                  ? character.color.withOpacity(0.9)
-                                                  : Colors.blueGrey),
-                                              backgroundImage: AssetImage(
-                                                  'assets/images/avatar/' +
-                                                      (character == null
-                                                          ? 'noavatar'
-                                                          : character.id) +
-                                                      '.png'),
-                                              maxRadius: 150.00,
-
-                                            ),
-                                          )),
-                                    ),
-                                  ),
-
-
-
-                      Align(
-                        alignment: Alignment.bottomCenter,
-
-                        child:
-                            Padding(
-                              padding: EdgeInsets.only(bottom: 25),
-                child:
-                RoundedButtonWidget(
-
-                    height:60,
-                    width:300,
-                    route: "trivia",
-
-                    buttonText: "Let's Revise Animal Farm!")
-                )
-                    ,
-                )
-
-
-
-
-
+                    Center(
+                      child: AvatarGlow(
+                        startDelay: Duration(milliseconds: 1000),
+                        glowColor: (character.color != null
+                            ? character.color
+                            : Colors.blueGrey),
+                        endRadius: 175.00,
+                        duration: Duration(milliseconds: 2000),
+                        repeat: true,
+                        showTwoGlows: true,
+                        repeatPauseDuration: Duration(milliseconds: 100),
+                        child: Material(
+                            elevation: 25.0,
+                            shape: CircleBorder(),
+                            color: (character.color != null
+                                ? character.color.withOpacity(0.9)
+                                : Colors.blueGrey.withOpacity(0.9)),
+                            child: FlatButton(
+                              onPressed: () =>
+                                  Navigator.pushNamed(context, "/avatar"),
+                              child: CircleAvatar(
+                                backgroundColor: (character.color != null
+                                    ? character.color.withOpacity(0.9)
+                                    : Colors.blueGrey),
+                                backgroundImage: AssetImage(
+                                    'assets/images/avatar/' +
+                                        (character == null
+                                            ? 'noavatar'
+                                            : character.id) +
+                                        '.png'),
+                                maxRadius: 150.00,
+                              ),
+                            )),
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Padding(
+                          padding: EdgeInsets.only(bottom: 25),
+                          child: RoundedButtonWidget(
+                              height: 60,
+                              width: 300,
+                              route: "trivia",
+                              buttonText: "Let's Revise Animal Farm!")),
+                    )
                   ],
                 );
               },
@@ -259,101 +234,73 @@ class DrawerWidget extends StatelessWidget {
     return ValueBuilder(
         streamed: appState.stopwatchStream,
         builder: (context, snapshot) {
-
-
           return Drawer(
-
             child: ListView(
               padding: EdgeInsets.zero,
               children: <Widget>[
                 DrawerHeader(
-
-                  child:
-                      Align(
-                        alignment: Alignment.center,
-                child:   Wrap(
-                  children: <Widget>[
-                    Center(
-
-                      child:
-
-                      const Text(
-                        'Animal Farm',
-                        style: TextStyle(
-                          fontFamily: "PermanentMarker",
-                          fontSize: 28.0,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white,
-                          letterSpacing: 4.0,
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Wrap(
+                      children: <Widget>[
+                        Center(
+                          child: const Text(
+                            'Animal Farm',
+                            style: TextStyle(
+                              fontFamily: "PermanentMarker",
+                              fontSize: 28.0,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
+                              letterSpacing: 4.0,
+                            ),
+                          ),
                         ),
-
-                      ),
-
-
-                    ),
-                    Center(
-
-                      child:
-
-                      const Text(
-                        'GCSE Revision',
-                        style: TextStyle(
-                          fontFamily: "Raleway",
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white,
-                          letterSpacing: 4.0,
+                        Center(
+                          child: const Text(
+                            'GCSE Revision',
+                            style: TextStyle(
+                              fontFamily: "Raleway",
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
+                              letterSpacing: 4.0,
+                            ),
+                          ),
                         ),
-
-                      ),
-
-
+                      ],
                     ),
-
-                  ],
-                ),
-            )
-
-                ,
+                  ),
                   decoration: BoxDecoration(
                     color: Theme.of(context).primaryColor,
                   ),
                 ),
                 ListTile(
-                  leading: Icon(
-                    Icons.info,
-
-                    size: 32,
-                  ),
-                  title: const Text('Instructions'),
-                  onTap: () {
-                    Navigator.pop(context);
-                    Navigator.pushNamed(
-                      context,
-                      '/instructions',
-                    );
-                  }),
-                  ListTile(
                     leading: Icon(
-                      Icons.timelapse,
-
+                      Icons.info,
                       size: 32,
                     ),
-                    title: const Text('Your Progress'),
+                    title: const Text('Instructions'),
                     onTap: () {
-
+                      Navigator.pop(context);
                       Navigator.pushNamed(
                         context,
-                        '/progress'
+                        '/instructions',
                       );
-                    },
+                    }),
+                ListTile(
+                  leading: Icon(
+                    Icons.timelapse,
+                    size: 32,
                   ),
-
+                  title: const Text('Your Progress'),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/progress');
+                  },
+                ),
                 ListTile(
                     title: const Text('Colour Theme'),
                     leading: Icon(
                       Icons.color_lens,
-
                       size: 32,
                     )),
                 Row(
@@ -375,40 +322,28 @@ class DrawerWidget extends StatelessWidget {
                   ],
                 ),
                 AboutListTile(
-                  applicationIcon: Icon(Icons.info_outline) ,
+                  applicationIcon: Icon(Icons.info_outline),
                   applicationName: "This App",
                   applicationVersion: "1.0.0.beta",
-                  icon: Icon(Icons.info_outline,size: 32,),
-                  applicationLegalese: "MA Creative App Development\n\nMatthew Wright\nAllegra Gee\nKurt Wunderlich\n\nhttps://www.falmouth.ac.uk\n\n",
-
+                  icon: Icon(
+                    Icons.info_outline,
+                    size: 32,
+                  ),
+                  applicationLegalese:
+                      "MA Creative App Development\n\nMatthew Wright\nAllegra Gee\nKurt Wunderlich\n\nhttps://www.falmouth.ac.uk\n\n",
                   aboutBoxChildren: <Widget>[
                     Align(
                         alignment: Alignment.bottomCenter,
-                        child:
-                        Padding(
-
-                            padding:EdgeInsets.all(20),
-                            child:
-                            CircleAvatar(
-
+                        child: Padding(
+                            padding: EdgeInsets.all(20),
+                            child: CircleAvatar(
                                 maxRadius: 50,
                                 minRadius: 25,
-                                backgroundColor:
-                                Colors.white.withOpacity(0),
+                                backgroundColor: Colors.white.withOpacity(0),
                                 backgroundImage:
-                                AssetImage(
-                                    'assets/icon/falmouth.png')
-
-                            ))
-                    )
-
+                                    AssetImage('assets/icon/falmouth.png'))))
                   ],
                 ),
-
-
-
-
-
               ],
             ),
           );

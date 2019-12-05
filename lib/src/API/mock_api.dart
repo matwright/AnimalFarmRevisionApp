@@ -4,12 +4,12 @@ import 'dart:convert' as convert;
 
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
-import '../../util/data.dart' as prefix0;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:frideos/frideos.dart';
 import 'package:frideos_core/frideos_core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../util/data.dart' as prefix0;
 import '../models/category.dart';
 import '../models/question.dart';
 import 'api_interface.dart';

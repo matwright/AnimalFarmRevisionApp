@@ -1,5 +1,3 @@
-
-
 class Message {
   Message(
       {this.id,

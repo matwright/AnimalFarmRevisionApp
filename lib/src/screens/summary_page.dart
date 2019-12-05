@@ -9,9 +9,10 @@ import '../models/appstate.dart';
 import '../models/trivia_stats.dart';
 
 class SummaryPage extends StatelessWidget {
-
   SummaryPage({this.backgroundColor});
+
   final backgroundColor;
+
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
@@ -26,7 +27,7 @@ class SummaryPage extends StatelessWidget {
                 title: Text('Revision Summary'),
               ),
               drawer: DrawerWidget(),
-             backgroundColor: backgroundColor,
+              backgroundColor: backgroundColor,
               body: FadeInWidget(
                 duration: 100,
                 child: Container(
@@ -37,14 +38,12 @@ class SummaryPage extends StatelessWidget {
                     builder: (context, snapshot) {
                       Character character = snapshot.data;
 
-
                       return Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: <Widget>[
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: <Widget>[
-
                               Container(
                                 padding: const EdgeInsets.only(bottom: 10.0),
                                 child: Text(
@@ -63,7 +62,8 @@ class SummaryPage extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                padding: const EdgeInsets.fromLTRB(10,0,10, 50.0),
+                                padding:
+                                    const EdgeInsets.fromLTRB(10, 0, 10, 50.0),
                                 child: Text(
                                   (stats.corrects.length == 0
                                       ? "You didn't answer any questions correctly.\n But, don't worry. Just take another quiz!"

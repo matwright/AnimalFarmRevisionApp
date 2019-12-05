@@ -4,7 +4,6 @@ import 'dart:math';
 import 'package:animal_farm/src/models/award.dart';
 import 'package:animal_farm/src/models/character.dart';
 import 'package:animal_farm/src/models/message.dart';
-import '../../util/data.dart';
 import 'package:clock/clock.dart';
 import 'package:flutter/foundation.dart' as prefix0;
 import 'package:flutter/material.dart';
@@ -12,6 +11,7 @@ import 'package:frideos/frideos.dart';
 import 'package:frideos_core/frideos_core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../util/data.dart';
 import '../API/api_interface.dart';
 import '../API/mock_api.dart';
 import '../API/trivia_api.dart';
@@ -343,7 +343,6 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
         name: 'light',
         scaffoldBackgroundColor: const Color(0xff111740),
       ),
-
       MyTheme(
         name: 'dark',
         brightness: ThemeData.dark().brightness,
@@ -358,7 +357,6 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
         secondaryHeaderColor: ThemeData.dark().secondaryHeaderColor,
         cardColor: ThemeData.dark().cardColor,
         canvasColor: ThemeData.dark().backgroundColor,
-
       ),
     ]);
   }
@@ -422,7 +420,7 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
 
     if (!currentAwards
             .contains(prefix0.describeEnum(awardTrigger.sundayQuizz)) &&
-        DateTime.now().weekday == 7)  {  
+        DateTime.now().weekday == 7) {
       addAward(awardTrigger.sundayQuizz);
       triggered = true;
     }

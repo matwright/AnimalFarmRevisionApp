@@ -10,10 +10,10 @@ import '../widgets/countdown_widget.dart';
 import '../widgets/question_widget.dart';
 
 class TriviaPage extends StatelessWidget {
-
   TriviaPage({this.backgroundColor});
 
   final Color backgroundColor;
+
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
@@ -51,7 +51,7 @@ class TriviaPage extends StatelessWidget {
                       ),
                       title: Text('Revision'),
                     ),
-backgroundColor: backgroundColor,
+                    backgroundColor: backgroundColor,
                     // drawer: DrawerWidget(),
                     body: Container(
                         width: MediaQuery.of(context).size.width,
