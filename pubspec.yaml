@@ -37,7 +37,6 @@ dependencies:
   cupertino_icons: ^0.1.2
   sticky_headers: ^0.1.8
   shared_preferences: ^0.5.3
-  flutter_ringtone_player: ^1.0.3
 dev_dependencies:
   flutter_native_splash: ^0.1.9
   flutter_launcher_icons: ^0.7.3
