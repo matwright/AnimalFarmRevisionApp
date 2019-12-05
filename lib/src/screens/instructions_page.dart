@@ -21,7 +21,6 @@ class _InstructionsPageState extends State<InstructionsPage> {
 
     amountController.text = (appState.questionsAmount.value);
 
-
     return Scaffold(
       resizeToAvoidBottomPadding: true,
       appBar: AppBar(
@@ -46,12 +45,9 @@ class _InstructionsPageState extends State<InstructionsPage> {
                           style: Theme.of(context).textTheme.headline),
                       new Container(
                         margin: const EdgeInsets.only(top: 25.0),
-                      child:
-                      new Text('Pick A Character'
-                          ,
-                          style: Theme.of(context).textTheme.subhead),
+                        child: new Text('Pick A Character',
+                            style: Theme.of(context).textTheme.subhead),
                       ),
-
                       new Container(
                         margin: const EdgeInsets.only(top: 5.0),
                         child: new Text(
@@ -95,15 +91,15 @@ class _InstructionsPageState extends State<InstructionsPage> {
                       new Text('Trotter Social',
                           style: Theme.of(context).textTheme.subhead),
                       new Container(
-                        margin: const EdgeInsets.only(top: 5.0,bottom:20),
+                        margin: const EdgeInsets.only(top: 5.0, bottom: 20),
                         child: new Text(
                             'Keep your eyes open for Animal Farm’s social media feed, Trotter, giving you additional hints into the characters and the story.'),
                       ),
-                      new Text('Happy Revision !',
-
-
-                          style: TextStyle(fontFamily: "PermanentMarker",fontSize: 32),),
-
+                      new Text(
+                        'Happy Revision !',
+                        style: TextStyle(
+                            fontFamily: "PermanentMarker", fontSize: 32),
+                      ),
                     ],
                   ),
                 ))

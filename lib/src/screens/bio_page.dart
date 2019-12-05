@@ -8,17 +8,15 @@ import 'package:slimy_card/slimy_card.dart';
 import '../models/appstate.dart';
 
 class BioPage extends StatelessWidget {
-
   BioPage({this.backgroundColor});
 
   final Color backgroundColor;
 
   @override
   Widget build(BuildContext context) {
-
     final appState = AppStateProvider.of<AppState>(context);
 
-    final Size size=MediaQuery.of(context).size;
+    final Size size = MediaQuery.of(context).size;
 
     return Scaffold(
         bottomNavigationBar: BottomNavWidget(selectedIndex: 0),
@@ -29,7 +27,6 @@ class BioPage extends StatelessWidget {
           ),
           title: Text('Choose Your Character'),
         ),
-
         backgroundColor: backgroundColor,
         // drawer: DrawerWidget(),
         body: FadeInWidget(
@@ -46,7 +43,6 @@ class BioPage extends StatelessWidget {
                       }
 
                       return Container(
-
                           height: double.maxFinite,
                           padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
                           child: Stack(
@@ -54,14 +50,15 @@ class BioPage extends StatelessWidget {
                               SlimyCard(
                                 color: character.color,
                                 width: MediaQuery.of(context).size.width,
-                                topCardHeight:(size.width > 600?525:size.height/2.75) ,
-
-                                bottomCardHeight:
-                                ((size.width > 600? size.height -815: size.height/4)),
+                                topCardHeight: (size.width > 600
+                                    ? 525
+                                    : size.height / 2.75),
+                                bottomCardHeight: ((size.width > 600
+                                    ? size.height - 815
+                                    : size.height / 4)),
                                 borderRadius: 15,
                                 topCardWidget: TopCard(),
                                 bottomCardWidget: BottomCard(),
-
                                 slimeEnabled: true,
                               ),
                               Positioned(
@@ -71,7 +68,6 @@ class BioPage extends StatelessWidget {
                                     padding: EdgeInsets.all(10),
                                     child: FloatingActionButton.extended(
                                         elevation: 2,
-
                                         label: Text(
                                           "Play As " + character.name,
                                           style: TextStyle(fontSize: 16),
@@ -92,7 +88,7 @@ class TopCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
-    final Size size=MediaQuery.of(context).size;
+    final Size size = MediaQuery.of(context).size;
     return ValueBuilder(
         streamed: appState.bioCharacter,
         noDataChild: const CircularProgressIndicator(),
@@ -104,7 +100,7 @@ class TopCard extends StatelessWidget {
               AvatarGlow(
                   startDelay: Duration(milliseconds: 1000),
                   glowColor: character.textColor,
-                  endRadius: (size.width > 600?200.0:size.width/5),
+                  endRadius: (size.width > 600 ? 200.0 : size.width / 5),
                   duration: Duration(milliseconds: 3000),
                   repeat: true,
                   showTwoGlows: true,
@@ -115,7 +111,7 @@ class TopCard extends StatelessWidget {
                     backgroundImage: AssetImage('assets/images/avatar/' +
                         (character == null ? 'noavatar' : character.id) +
                         '.png'),
-                    radius: (size.width > 600?180.0:size.width/6),
+                    radius: (size.width > 600 ? 180.0 : size.width / 6),
                     child: Container(),
                   )),
               Container(
@@ -142,13 +138,12 @@ class BottomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appState = AppStateProvider.of<AppState>(context);
-    final Size size=MediaQuery.of(context).size;
+    final Size size = MediaQuery.of(context).size;
     return ValueBuilder(
         streamed: appState.bioCharacter,
         noDataChild: const CircularProgressIndicator(),
         builder: (context, snapshot) {
           Character character = snapshot.data;
-
 
           return Center(
               child: Column(
@@ -157,25 +152,22 @@ class BottomCard extends StatelessWidget {
                 child: Container(
                     child: new Scrollbar(
                         child: new SingleChildScrollView(
-                            scrollDirection: Axis.vertical,
-                            reverse: false,
-                            primary: true,
-                            child:
-                            Text(
-
-                              character.bio,
-
-                              textScaleFactor: 1.2,
-                              style: TextStyle(
-                                fontSize: (size.width > 600?32:16.0),
-                                letterSpacing: 1,
-                                fontWeight: FontWeight.w400,
-                                fontFamily: "Raleway",
-                                color: character.textColor.withOpacity(0.8),
-                                shadows: [],
-                              ),
-                            ),
-                          ))),
+                  scrollDirection: Axis.vertical,
+                  reverse: false,
+                  primary: true,
+                  child: Text(
+                    character.bio,
+                    textScaleFactor: 1.2,
+                    style: TextStyle(
+                      fontSize: (size.width > 600 ? 32 : 16.0),
+                      letterSpacing: 1,
+                      fontWeight: FontWeight.w400,
+                      fontFamily: "Raleway",
+                      color: character.textColor.withOpacity(0.8),
+                      shadows: [],
+                    ),
+                  ),
+                ))),
               )
             ],
           ));

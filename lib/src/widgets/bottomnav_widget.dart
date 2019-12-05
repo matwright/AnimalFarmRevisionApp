@@ -12,19 +12,17 @@ class BottomNavWidget extends StatefulWidget {
 }
 
 class _BottomNavState extends State<BottomNavWidget> {
-
   @override
   void initState() {
     print(widget.selectedIndex.toString());
     super.initState();
-
   }
 
   void _onItemTapped(int index) {
     setState(() {
       switch (index) {
         case (0):
-          Navigator.pushNamed(context,'/');
+          Navigator.pushNamed(context, '/');
           break;
         case (1):
           Navigator.pushNamed(context, "/trivia");
@@ -34,8 +32,7 @@ class _BottomNavState extends State<BottomNavWidget> {
           break;
 
         case (3):
-
-              Navigator.pushNamed(context, "/messages");
+          Navigator.pushNamed(context, "/messages");
 
           break;
       }
@@ -52,20 +49,20 @@ class _BottomNavState extends State<BottomNavWidget> {
               streamed: appState.awardsUnseenStream,
               builder: (context, snapshotUnseenAwards) {
                 return BottomNavigationBar(
-
                     currentIndex: widget.selectedIndex,
-                    backgroundColor:Theme.of(context).primaryColor ,
+                    backgroundColor: Theme.of(context).primaryColor,
                     onTap: _onItemTapped,
                     items: <BottomNavigationBarItem>[
                       BottomNavigationBarItem(
-                          backgroundColor:Theme.of(context).primaryColor ,
+                          backgroundColor: Theme.of(context).primaryColor,
                           icon: Icon(Icons.account_circle),
                           title: Text('Home')),
                       BottomNavigationBarItem(
-                          backgroundColor:Theme.of(context).primaryColor ,
-                          icon: Icon(Icons.school), title: Text('Quiz')),
+                          backgroundColor: Theme.of(context).primaryColor,
+                          icon: Icon(Icons.school),
+                          title: Text('Quiz')),
                       BottomNavigationBarItem(
-                          backgroundColor:Theme.of(context).primaryColor ,
+                          backgroundColor: Theme.of(context).primaryColor,
                           title: Text('Awards'),
                           icon: new Stack(children: <Widget>[
                             new Icon(Icons.card_giftcard),
@@ -78,7 +75,6 @@ class _BottomNavState extends State<BottomNavWidget> {
                                         padding: EdgeInsets.all(1),
                                         decoration: new BoxDecoration(
                                           color: Colors.red,
-
                                           borderRadius:
                                               BorderRadius.circular(6),
                                         ),
@@ -87,7 +83,6 @@ class _BottomNavState extends State<BottomNavWidget> {
                                           minHeight: 10,
                                         ),
                                         child: new Text(
-
                                           snapshotUnseenAwards.data.toString(),
                                           style: new TextStyle(
                                             color: Colors.white,
@@ -99,7 +94,7 @@ class _BottomNavState extends State<BottomNavWidget> {
                                     : new Container()))
                           ])),
                       BottomNavigationBarItem(
-                          backgroundColor:Theme.of(context).primaryColor ,
+                          backgroundColor: Theme.of(context).primaryColor,
                           title: Text('Social'),
                           icon: new Stack(children: <Widget>[
                             new Icon(Icons.message),

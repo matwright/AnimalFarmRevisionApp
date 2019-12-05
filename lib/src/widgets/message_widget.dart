@@ -39,7 +39,7 @@ class _MessageState extends State<MessageWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final Size size=MediaQuery.of(context).size;
+    final Size size = MediaQuery.of(context).size;
     Runes rune;
     if (widget.rune != null) {
 //http://www.unicode.org/emoji/charts/full-emoji-list.html
@@ -100,7 +100,7 @@ class _MessageState extends State<MessageWidget> {
                                         : ""),
                                 style: TextStyle(
                                     fontFamily: "Raleway",
-                                    fontSize: (size.width>600?40:20),
+                                    fontSize: (size.width > 600 ? 40 : 20),
                                     color: widget.character.textColor)))
                         : Container()),
                 (widget.img == null
@@ -186,47 +186,40 @@ class _MessageState extends State<MessageWidget> {
                       avatar:
                           Icon(Icons.insert_emoticon, color: Colors.white70),
                     ),
-              GestureDetector(
-                  onTap:()=> appState.characterBio(
-                      widget.character,
-                      context),
-                child:
-                    Chip(
-                      backgroundColor: Colors.pink,
-                      label: Text(widget.character.name,
-                          style: TextStyle(
-                            color: Colors.white70,
-                            fontFamily: "Raleway",
-                            fontSize: 14,
-                          )),
-                      avatar: Icon(Icons.account_circle, color: Colors.white70),
-                    )),
                     GestureDetector(
-                      onTap:()=>
-                      showDialog(
-                        context: context,
-                        builder: (BuildContext context) => CustomDialog(
-                          title: widget.location.name,
-                          description:
-                          widget.location.strapLine,
-                          buttonText: "Oink",
-                          image:widget.location.image
-                        ),
-                      ),
-                      child:
-                      Chip(
-
-                        backgroundColor: Colors.green,
-                        label: Text(widget.location.name,
-                            style: TextStyle(
-                              color: Colors.white70,
-                              fontFamily: "Raleway",
-                              fontSize: 14,
-                            )),
-                        avatar: Icon(Icons.location_on, color: Colors.white70),
-                      )
-                    )
-
+                        onTap: () =>
+                            appState.characterBio(widget.character, context),
+                        child: Chip(
+                          backgroundColor: Colors.pink,
+                          label: Text(widget.character.name,
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontFamily: "Raleway",
+                                fontSize: 14,
+                              )),
+                          avatar:
+                              Icon(Icons.account_circle, color: Colors.white70),
+                        )),
+                    GestureDetector(
+                        onTap: () => showDialog(
+                              context: context,
+                              builder: (BuildContext context) => CustomDialog(
+                                  title: widget.location.name,
+                                  description: widget.location.strapLine,
+                                  buttonText: "Oink",
+                                  image: widget.location.image),
+                            ),
+                        child: Chip(
+                          backgroundColor: Colors.green,
+                          label: Text(widget.location.name,
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontFamily: "Raleway",
+                                fontSize: 14,
+                              )),
+                          avatar:
+                              Icon(Icons.location_on, color: Colors.white70),
+                        ))
                   ]))
         ])),
       ]),

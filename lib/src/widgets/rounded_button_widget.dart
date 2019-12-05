@@ -2,12 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RoundedButtonWidget extends StatelessWidget {
-  const RoundedButtonWidget({this.buttonText, this.route, this.width, this.height});
+  const RoundedButtonWidget(
+      {this.buttonText, this.route, this.width, this.height});
 
   final String route;
   final String buttonText;
   final double width;
   final double height;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

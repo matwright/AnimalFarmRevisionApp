@@ -12,11 +12,9 @@ class CustomDialog extends StatelessWidget {
     this.image,
   });
 
-
   dialogContent(BuildContext context) {
     return Stack(
       children: <Widget>[
-
         Container(
           padding: EdgeInsets.only(
             top: Consts.avatarRadius + Consts.padding,
@@ -26,7 +24,7 @@ class CustomDialog extends StatelessWidget {
           ),
           margin: EdgeInsets.only(top: Consts.avatarRadius),
           decoration: new BoxDecoration(
-     color: Theme.of(context).canvasColor,
+            color: Theme.of(context).canvasColor,
             shape: BoxShape.rectangle,
             borderRadius: BorderRadius.circular(Consts.padding),
             boxShadow: [
@@ -43,7 +41,6 @@ class CustomDialog extends StatelessWidget {
               Text(
                 title,
                 style: TextStyle(
-
                   fontFamily: "Raleway",
                   fontSize: 24.0,
                   fontWeight: FontWeight.w700,
@@ -52,7 +49,6 @@ class CustomDialog extends StatelessWidget {
               SizedBox(height: 16.0),
               Text(
                 description,
-
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: "Raleway",
@@ -73,26 +69,14 @@ class CustomDialog extends StatelessWidget {
           ),
         ),
         Center(
-
-          child:
-          Align(
-alignment: Alignment.topCenter,
-              child:
-          CircleAvatar(
-
-            backgroundImage: AssetImage(
-
-                'assets/images/location/' +
-                    (image == null
-                        ? 'noavatar.png'
-                        : image)),
-            backgroundColor: Colors.blueAccent,
-
-            radius: Consts.avatarRadius,
-          )
-
-          )
-         ,
+          child: Align(
+              alignment: Alignment.topCenter,
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/images/location/' +
+                    (image == null ? 'noavatar.png' : image)),
+                backgroundColor: Colors.blueAccent,
+                radius: Consts.avatarRadius,
+              )),
         )
       ],
     );
@@ -101,9 +85,7 @@ alignment: Alignment.topCenter,
   @override
   Widget build(BuildContext context) {
     return Dialog(
-
       shape: RoundedRectangleBorder(
-
         borderRadius: BorderRadius.circular(Consts.padding),
       ),
       elevation: 0.0,
@@ -118,5 +100,4 @@ class Consts {
 
   static const double padding = 16.0;
   static const double avatarRadius = 66;
-
 }
