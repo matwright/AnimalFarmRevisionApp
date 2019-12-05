@@ -78,7 +78,7 @@ class ProgressPage extends StatelessWidget {
                       center: new Text(
                       hoursSpent.toString()+" hours",
                       style:
-                      new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+                      new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0, ),
                       ),
                         header: new Text("Time Spent Revising"),
                       circularStrokeCap: CircularStrokeCap.butt,
