@@ -427,7 +427,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who represents the female proletariat workers and labourers?",
+		"question": "Who represents the female workers and labourers?",
 		"correct_answers": "Clover",
 		"incorrect_answers": ["Mollie", "The Hens", "The Cows"]
 	},{
@@ -476,7 +476,7 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What do the hens and ducks do?",
-		"correct_answer": "Gather up stalks",
+		"correct_answer": "Gather up stalks.",
 		"incorrect_answers": ["Pull the machinery", "Turn and gather the hay", "Adapt the tools"]
 	},{
 		"type": "multiple",
@@ -664,7 +664,7 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What does anthropomorphic mean?",
-		"correct_answer": "Attribution of human characteristics to not human",
+		"correct_answer": "Attribution of human characteristics to non human",
 		"incorrect_answers": ["Cross between ant and a pomeranian", "A human with animal parts", "The study of people"]
 		
 	},{
@@ -801,7 +801,7 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Which animal was described as sly?",
-		"correct_answer": "Squealor",
+		"correct_answer": "Squealer",
 		"incorrect_answers": ["Napoleon", "Snowball", "Moses"]
 	
 	},{
@@ -846,7 +846,7 @@
 		"difficulty": "medium",
 		"question": "What playing card starts the argument?",
 		"correct_answer": "Ace of Spades",
-		"incorrect_answers": ["Ace of hearts", "Ace of clubs", "Ace of diamonds"]
+		"incorrect_answers": ["Ace of Hearts", "Ace of Clubs", "Ace of Diamonds"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -954,7 +954,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What do the pigs buy with the money they get from selling Boxer?",
+		"question": "What do the pigs buy with the money from selling Boxer?",
 		"correct_answer": "Whisky",
 		"incorrect_answers": ["Extra land", "Food for the pigs", "Beer"]
 	},{
@@ -984,7 +984,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What did Boxer say when Napoleon said Snowball was Jones' agent?",
+		"question": "Napoleon said Snowball was Jones' agent. Boxer said",
 		"correct_answer": "If Comrade Napoleon says it, it must be right.",
 		"incorrect_answers": ["I don't believe Snowball was a traitor", "Snowball was so brave", "How did Napoleon find out?"]
 	},{
@@ -1014,7 +1014,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What time is Animal set in?",
+		"question": "What time is Animal Farm set in?",
 		"correct_answer": "an unspecified time",
 		"incorrect_answers": ["1917", "1945", "1939"]
 	},{
@@ -1159,7 +1159,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "What is second half of the commandment at the end?",
+		"question": "The second half of the commandment at the end?",
 		"correct_answer": "but some animals are more equal than others",
 		"incorrect_answers": ["two legs better", "shall sleep in a bed", "shall drink alcohol"]
 	},{
