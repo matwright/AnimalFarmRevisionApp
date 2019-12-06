@@ -131,9 +131,11 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
 
   set _changeTab(AppTab appTab) => tabController.value = appTab;
 
-  addAward(awardTrigger award) {
+  addAward(awardTrigger award)async {
     prefix0.debugPrint(prefix0.describeEnum(award));
     playerAwards.add(prefix0.describeEnum(award));
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setStringList('playerAwards', playerAwards);
   }
 
   void characterBio(Character character, BuildContext context) {
@@ -177,7 +179,7 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
     //save data to drive
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setStringList('seenAwards', getSeenAwards());
-
+    prefs.setStringList('playerAwards', playerAwards);
     apiType.dispose();
     categoryChosen.dispose();
     countdown.dispose();
