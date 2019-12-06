@@ -132,6 +132,7 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
   set _changeTab(AppTab appTab) => tabController.value = appTab;
 
   addAward(awardTrigger award) {
+    prefix0.debugPrint(prefix0.describeEnum(award));
     playerAwards.add(prefix0.describeEnum(award));
   }
 
@@ -163,10 +164,10 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
    Get Player Awards
 
    */
-  void chooseCharacter(String id) {
+  void chooseCharacter (String id) async {
     Prefs.savePref<String>('appCharacter', id);
     currentCharacter.value = getCharacterById(id);
-    addAward(awardTrigger.characterSelected);
+    await addAward(awardTrigger.characterSelected);
     _loadUnseenAwards();
   }
 
@@ -289,18 +290,18 @@ class AppState extends AppStateModel with WidgetsBindingObserver {
 
   triggerAwards() {
     if (triggerAwardsTimer == null) {
-      Timer(Duration(seconds: 5), () {
+      Timer(Duration(seconds: 1), () {
         triggerAwardsTimer =
-            Timer.periodic(Duration(seconds: 5), (Timer t) => _triggerAwards());
+            Timer.periodic(Duration(seconds: 2), (Timer t) => _triggerAwards());
       });
     }
   }
 
   loadUnseenAwards() {
     if (unseenAwardsTimer == null) {
-      Timer(Duration(seconds: 10), () {
+      Timer(Duration(seconds: 1), () {
         unseenAwardsTimer = Timer.periodic(
-            Duration(seconds: 10), (Timer t) => _loadUnseenAwards());
+            Duration(seconds: 5), (Timer t) => _loadUnseenAwards());
       });
     }
   }

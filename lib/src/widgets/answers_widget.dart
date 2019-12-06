@@ -129,8 +129,8 @@ class _AnswersWidgetState extends State<AnswersWidget>
         // If the answer isn't the chosen one to the top parameter
         // is passed the value of the animation, while for the chosen
         // answer it is passed a fixed position.
-        top: (index != widget.answerAnimation.chosenAnswerIndex
-            ? animations[index].value
+        top: (index != widget.answerAnimation.chosenAnswerIndex && animations[index]!=null
+            ?   animations[index].value
             : boxHeight * index),
         left: 0.0,
         child: GestureDetector(

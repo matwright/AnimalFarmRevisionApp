@@ -43,12 +43,8 @@ class TriviaPage extends StatelessWidget {
               streamed: bloc.currentQuestion,
               builder: (context, snapshotQuestion) {
                 return Scaffold(
-                    bottomNavigationBar: BottomNavWidget(selectedIndex: 1),
+
                     appBar: AppBar(
-                      leading: IconButton(
-                        icon: Icon(Icons.arrow_back),
-                        onPressed: () => Navigator.pop(context, false),
-                      ),
                       title: Text('Revision'),
                     ),
                     backgroundColor: backgroundColor,
