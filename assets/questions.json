@@ -335,7 +335,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Which pig writes the poem honoring Napoleon?",
+		"question": "Which pig writes the poem honouring Napoleon?",
 		"correct_answer": "Minimus",
 		"incorrect_answers": ["Squealer", "Snowball", "Napoleon himself"]
 	},{
@@ -428,7 +428,7 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Who represents the female workers and labourers?",
-		"correct_answers": "Clover",
+		"correct_answer": "Clover",
 		"incorrect_answers": ["Mollie", "The Hens", "The Cows"]
 	},{
 		"type": "multiple",
@@ -464,26 +464,26 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What do the pigs do?",
-		"correct_answer": "Adapt the tools.",
+		"correct_answer": "Adapt the tools",
 		"incorrect_answers": ["Pull the machinery", "Turn and gather the hay", "Gather up stalks"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What do the horses do?",
-		"correct_answer": "Pull the machinery.",
+		"correct_answer": "Pull the machinery",
 		"incorrect_answers": ["Adapt the tools", "Gather up stalks", "Turn and gather the hay"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What do the hens and ducks do?",
-		"correct_answer": "Gather up stalks.",
+		"correct_answer": "Gather up stalks",
 		"incorrect_answers": ["Pull the machinery", "Turn and gather the hay", "Adapt the tools"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question":"Who gets a medal for the Battle of the Cowshed?",
-		"correct_answer": "Snowball, a Sheep, and Boxer.",
-		"incorrect_answers": ["Napoleon, Snowball and Boxer", "Napoleon, Boxer and a chicken", "Clover, Snowball and a Sheep"]
+		"correct_answer": "Snowball, a sheep, and Boxer.",
+		"incorrect_answers": ["Napoleon, Snowball and Boxer", "Napoleon, Boxer and a chicken", "Clover, Snowball and a sheep"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -521,7 +521,7 @@
 		"difficulty": "medium",
 		"question": "Whose rise to power does Napoleon's represent?",
 		"correct_answer": "Stalin",
-		"incorrect_answers": ["Trotsky", "Marx", "Hitler", "Tsar Nicholas II"]
+		"incorrect_answers": ["Trotsky", "Marx", "Tsar Nicholas II"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -557,7 +557,7 @@
 		"difficulty": "medium",
 		"question": "Who does Napoleon blame when the windmill blows down?",
 		"correct_answer": "Snowball",
-		"incorrect_answers": ["Boxer", "The Cows", "Mollie"]
+		"incorrect_answers": ["Boxer", "The cows", "Mollie"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -635,7 +635,7 @@
 		"difficulty": "medium",
 		"question": "What does Mollie learn to read and write?",
 		"correct_answer": "The five letters of her name",
-		"incorrect_answers": ["The commandments", "The letters of ribbons", "Nothing"]
+		"incorrect_answers": ["The commandments", "The word ribbons", "Nothing"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -684,13 +684,13 @@
 		"difficulty": "medium",
 		"question": "What is totalitariansim?",
 		"correct_answer": "The ruler has complete control.",
-		"incorrect_answers": ["Eveyrthing is owned by the state and shared", "Private or corporate ownership", "Everything is owned by the people."]
+		"incorrect_answers": ["Everything is owned by the state and shared", "Private or corporate ownership", "Everything is owned by the people."]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What do the animals call each other?",
-		"correct_answer": "comrade",
-		"incorrect_answers": ["friend", "mate", "compatriot"]
+		"correct_answer": "Comrade",
+		"incorrect_answers": ["Friend", "Mate", "Compatriot"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -701,14 +701,14 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What is one of the first rituals the animals adopt?",
-		"correct_answer": "Hoisting the flag.",
+		"correct_answer": "Hoisting the flag",
 		"incorrect_answers": ["Shooting Jones' gun", "Chanting commandments", "Marching round the farmhouse"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What does Old Major stop the dogs doing?",
 		"correct_answer": "Chasing rats",
-		"incorrect_answers": ["pushing animals out of the way", "talking during his talk", "chasing pigeons"]
+		"incorrect_answers": ["Pushing animals out of the way", "Talking during his talk", "Chasing pigeons"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -781,7 +781,7 @@
 		"difficulty": "medium",
 		"question": "What reward was offered to catch Snowball alive?",
 		"correct_answer": "A full bushel of apples",
-		"incorrect_answers": ["half a bushel of apples", "apples and milk", "a day off from work"]
+		"incorrect_answers": ["Half a bushel of apples", "Apples and milk", "A day off from work"]
 	
 	},{
 		"type": "multiple",
@@ -936,7 +936,7 @@
 		"difficulty": "medium",
 		"question": "How did the flag change?",
 		"correct_answer": "The hoof and horn were removed",
-		"incorrect_answers": ["A trotter and snout was addes", "The green background became brown", "The horn was removed"]
+		"incorrect_answers": ["A trotter and snout was added", "The green background became brown", "The horn was removed"]
 	
 	},{
 		
@@ -1100,7 +1100,7 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Who inspires Snowball's military tactics?",
-		"correct_answer": "Julius Caesar.",
+		"correct_answer": "Julius Caesar",
 		"incorrect_answers": ["Mark Anthony", "Genghis Khan", "Alexander the Great"]
 	},{
 		"type": "multiple",
@@ -1112,12 +1112,12 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Where was Boxer buried?",
-		"correct_answer": "nowhere",
-		"incorrect_answers": ["The Orchard", "The Windmill", "The Pasture"]
+		"correct_answer": "Nowhere",
+		"incorrect_answers": ["The orchard", "The windmill", "The pasture"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who is defeated in the Battles of the Cowshed?",
+		"question": "Who is defeated in the Battle of the Cowshed?",
 		"correct_answer": "Jones",
 		"incorrect_answers": ["Napoleon", "Pilkington", "Frederick"]
 	},{
@@ -1135,7 +1135,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "Who has the idea for the Windmill?",
+		"question": "Who has the idea for the windmill?",
 		"correct_answer": "Snowball",
 		"incorrect_answers": ["Napoleon", "Boxer", "Jones"]
 	},{
@@ -1225,7 +1225,7 @@
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
-		"question": "How does the rebellion start",
+		"question": "How does the rebellion start?",
 		"correct_answer": "A cow kicks in the shed door",
 		"incorrect_answers": ["A sheep kicks in the shed door", "The cockerel crows three times", "The pigeons drop stones on the men at the gate."]
 	},{
@@ -1311,8 +1311,8 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Who did not understand Snowball's long words?",
-		"correct_answer": "The Birds",
-		"incorrect_answers": ["The Rats", "The Sheep", "The Cows"]
+		"correct_answer": "The birds",
+		"incorrect_answers": ["The rats", "The sheep", "The cows"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1354,7 +1354,7 @@
 		"difficulty": "medium",
 		"question": "Which part of the farm was for retiring animals?",
 		"correct_answer": "A corner of the pasture",
-		"incorrect_answers": ["The Spinney", "The Paddock", "By the drinking pool"]
+		"incorrect_answers": ["The spinney", "The paddock", "By the drinking pool"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1395,14 +1395,14 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Who executes the animals?",
-		"correct_answer": "The Dogs",
-		"incorrect_answers": ["Napoleon", "Squealer", "The Cows"]
+		"correct_answer": "The dogs",
+		"incorrect_answers": ["Napoleon", "Squealer", "The cows"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What rumour was spread about Snowball after he escaped?",
-		"correct_answer": "He went to Pinchfield, Frederick's farm",
-		"incorrect_answers": ["He went to Foxwood, Pilkington's farm", "He went and found Mollie", "He died"]
+		"correct_answer": "He went to Pinchfield",
+		"incorrect_answers": ["He went to Foxwood", "He went and found Mollie", "He died"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
@@ -1419,19 +1419,19 @@
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Who attacks Boxer?",
-		"correct_answer": "The Dogs",
-		"incorrect_answers": ["Napoleon", "Moses", "The Pigs"]
+		"correct_answer": "The dogs",
+		"incorrect_answers": ["Napoleon", "Moses", "The pigs"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "Where does the Battle of the Cowshed take place?",
-		"correct_answer": "The Yard",
-		"incorrect_answers": ["The Cowshed", "The Barn", "The Paddock"]
+		"correct_answer": "The yard",
+		"incorrect_answers": ["The cowshed", "The barn", "The paddock"]
 	},{
 		"type": "multiple",
 		"difficulty": "medium",
 		"question": "What does Boxer do when he is attacked?",
-		"correct_answer": "Kicks back and pins the dog to the ground",
+		"correct_answer": "Kicks and pins the dog to the ground",
 		"incorrect_answers": ["Turns and runs", "Gets badly injured", "He doesn't get attacked"]
 	},{
 		"type": "multiple",
